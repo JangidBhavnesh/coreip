@@ -1,8 +1,10 @@
 import numpy as np
 
-data='''
+# Note: I have replace the He and Ar electronegativity with 0.
+
+pdata='''
 1       H       hydrogen        2.20
-2       He      helium          no data
+2       He      helium          0  
 3       Li      lithium         0.98
 4       Be      beryllium       1.57
 5       B       boron           2.04
@@ -10,7 +12,7 @@ data='''
 7       N       nitrogen        3.04
 8       O       oxygen          3.44
 9       F       fluorine        3.98
-10      Ne      neon            no data
+10      Ne      neon            
 11      Na      sodium          0.93
 12      Mg      magnesium       1.31
 13      Al      aluminium       1.61
@@ -18,7 +20,7 @@ data='''
 15      P       phosphorus      2.19
 16      S       sulfur          2.58
 17      Cl      chlorine        3.16
-18      Ar      argon           no data
+18      Ar      argon           0
 19      K       potassium       0.82
 20      Ca      calcium         1.00
 21      Sc      scandium        1.36
@@ -105,10 +107,10 @@ data='''
 102     No      nobelium        1.3
 '''
 
-def give_paulingdata():
+def give_paulingdata(pdata):
     paulingdata = {}
 
-    for line in data.strip().splitlines():
+    for line in pdata.strip().splitlines():
         tempdata = line.strip().split()
         atomnum = int(tempdata[0])
         electronegativity = tempdata[-1]
@@ -118,3 +120,10 @@ def give_paulingdata():
             electronegativity = np.nan
         paulingdata[atomnum] = electronegativity
     return paulingdata
+
+# Creation of relative electronegativity matrix
+paulingdata = give_paulingdata(pdata)
+data = np.array(list(paulingdata.values()))
+elenegMat = data[:,None]-data[None, :]
+
+# Next: 
