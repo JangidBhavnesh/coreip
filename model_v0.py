@@ -72,9 +72,6 @@ if __name__=='__main__':
     cmat = []
     lmat = []
     for smile in smiles:
-        if smile == 'S1SSSSSSS1': # Skip this data for now
-            continue
-        
         try:
             vectors = get_full_neighbor_vectors(smile)
         except:
@@ -89,7 +86,7 @@ if __name__=='__main__':
                 continue
             temp_list += [n]
         node_raw_data = tuple(temp_list)
-        assert len(vectors) == len(node_raw_data), f'{smile}, {node_raw_data}'
+
         for v, n in zip(vectors, node_raw_data):
             idx, symbol, vec = v
             for orb, binding_e in zip(n['orbitals'], n['binding_energies']):
@@ -105,24 +102,22 @@ if __name__=='__main__':
                 cmat += [temp_cmat]
                 exp_energies += [binding_e]
                 orb_en = -giveorbitalenergy(symbol, orb)
-                if orb_en > 2500:
-                    print(smile)
                 ref_energies += [orb_en]
-
     full_lmat = np.array(lmat)
     full_lmat = np.atleast_2d(full_lmat)
     full_cmat = np.array(cmat).squeeze().T
     full_cmat = full_cmat.reshape(full_lmat.T.shape)
     full_exp_energies = np.array(exp_energies)
     full_ref_energies = np.array(ref_energies)
-    null_loss = np.linalg.norm(full_ref_energies-full_exp_energies) / len(full_lmat)
+    
+    null_loss = np.sqrt(np.mean((full_ref_energies - full_exp_energies)**2))
     print(f"Null Loss: {null_loss:.3f} eV")
-    plt.scatter(full_exp_energies, full_ref_energies, label=f'RMSE={null_loss:.3f}eV')
+    plt.scatter(full_exp_energies, full_ref_energies,label=f'RMSE={null_loss:.3f}eV')
     plt.xlabel('Experimental Energy (eV)')
     plt.ylabel('Reference Orbital Energies (eV)')
     ylim = plt.ylim()
     xlim = plt.xlim()
-    plt.plot([-100, 100000], [-100, 100000], c='k')
+    plt.plot([-100, 10000], [-100, 10000], c='k')
     plt.ylim(ylim)
     plt.xlim(xlim)
     plt.title("Null Model: Compare to reference orbital energy")
@@ -147,7 +142,7 @@ if __name__=='__main__':
 
     def errorfunc(x):
         xvec = get_xvec(x, element_list)
-        loss = np.linalg.norm(lemcmat * xvec / (np.sum(cmat,axis=0) + 1) + ref_energies - exp_energies) / len(xvec)
+        loss = np.sqrt(np.mean((lemcmat * xvec / (np.sum(cmat,axis=0) + 1) + ref_energies - exp_energies) ** 2))
         return loss
     
     from scipy import optimize
@@ -169,7 +164,7 @@ if __name__=='__main__':
     xvec = get_xvec(weights, element_list)
     # print(lemcmat.shape, xvec.shape, cmat.shape, exp_energies.shape, ref_energies.shape)
     predict = lemcmat * xvec / (np.sum(cmat,axis=0) + 1) + ref_energies
-    predict_loss = np.linalg.norm(predict-exp_energies) / len(predict)
+    predict_loss = np.sqrt(np.mean((predict-exp_energies) ** 2))
     print(f"Testing RMSE over {test_samples} samples: {predict_loss:.3f} eV")
     # for e, p in zip(exp_energies, predict):
     #     print(f"{e} predicted as {p}")
