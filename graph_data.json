@@ -81207,10 +81207,10 @@
         "atom_type": "O",
         "formal_charge": -1,
         "orbitals": [
-          -1
+          "1s"
         ],
         "binding_energies": [
-          -1
+          541.96
         ],
         "id": 1
       },
@@ -81218,10 +81218,10 @@
         "atom_type": "F",
         "formal_charge": 0,
         "orbitals": [
-          "1s"
+          -1
         ],
         "binding_energies": [
-          541.96
+          -1
         ],
         "id": 2
       },
@@ -81229,10 +81229,10 @@
         "atom_type": "F",
         "formal_charge": 0,
         "orbitals": [
-          "1s"
+          -1
         ],
         "binding_energies": [
-          541.96
+          -1
         ],
         "id": 3
       },
@@ -81240,10 +81240,10 @@
         "atom_type": "F",
         "formal_charge": 0,
         "orbitals": [
-          "1s"
+          -1
         ],
         "binding_energies": [
-          541.96
+          -1
         ],
         "id": 4
       }
@@ -111737,13 +111737,13 @@
       }
     ]
   },
-  "[Ti]": {
+  "[Tl]": {
     "directed": false,
     "multigraph": false,
     "graph": {},
     "nodes": [
       {
-        "atom_type": "Ti",
+        "atom_type": "Tl",
         "formal_charge": 0,
         "orbitals": [
           "4f7/2"
