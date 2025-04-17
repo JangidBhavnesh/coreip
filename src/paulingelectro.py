@@ -12,7 +12,7 @@ pdata='''
 7       N       nitrogen        3.04
 8       O       oxygen          3.44
 9       F       fluorine        3.98
-10      Ne      neon            
+10      Ne      neon            0
 11      Na      sodium          0.93
 12      Mg      magnesium       1.31
 13      Al      aluminium       1.61
@@ -103,9 +103,9 @@ pdata='''
 98      Cf      californium     1.3
 99      Es      einsteinium     1.3
 100     Fm      fermium         1.3
-101     Md      mendelevium     1.3
-102     No      nobelium        1.3
 '''
+# 101     Md      mendelevium     1.3
+# 102     No      nobelium        1.3
 
 def give_paulingdata(pdata):
     paulingdata = {}
@@ -121,9 +121,11 @@ def give_paulingdata(pdata):
         paulingdata[atomnum] = electronegativity
     return paulingdata
 
-# Creation of relative electronegativity matrix
-paulingdata = give_paulingdata(pdata)
-data = np.array(list(paulingdata.values()))
-elenegMat = data[:,None]-data[None, :]
-
+def get_eleneg_diff_mat():
+    # Creation of relative electronegativity matrix
+    paulingdata = give_paulingdata(pdata)
+    data = np.array(list(paulingdata.values()))
+    elenegMat = data[:,None]-data[None, :]
+    return elenegMat
+    
 # Next: 
