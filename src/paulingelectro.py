@@ -12,7 +12,7 @@ pdata='''
 7       N       nitrogen        3.04
 8       O       oxygen          3.44
 9       F       fluorine        3.98
-10      Ne      neon            
+10      Ne      neon            0
 11      Na      sodium          0.93
 12      Mg      magnesium       1.31
 13      Al      aluminium       1.61
