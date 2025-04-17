@@ -89,10 +89,10 @@ def giveorbitalenergy(ele, orb):
         raise KeyError("Element symbol not found")
     
     n, l = get_n_l(orb)
-    cbenergy = orbenegele[str(l-1)][n]
+    cbenergy = orbenegele[str(l)][n-l-1]
     cbenergy *= au2eV
     print(f"{ele}: {orb} orbital energy is {cbenergy} eV")
     return cbenergy
 
-print(giveorbitalenergy('Al', '2p'))
+print(giveorbitalenergy('Ag', '3d'))
 
