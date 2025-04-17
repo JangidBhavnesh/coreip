@@ -110,9 +110,9 @@ if __name__=='__main__':
     full_exp_energies = np.array(exp_energies)
     full_ref_energies = np.array(ref_energies)
     
-    null_loss = np.sqrt(np.mean((full_ref_energies - full_exp_energies)**2))
-    print(f"Null Loss: {null_loss:.3f} eV")
-    plt.scatter(full_exp_energies, full_ref_energies,label=f'RMSE={null_loss:.3f}eV')
+    null_loss = np.sqrt(np.mean(((full_ref_energies - full_exp_energies)/full_exp_energies)**2))
+    print(f"Null Loss: {null_loss*100:.3f}%")
+    plt.scatter(full_exp_energies, full_ref_energies,label=f'RMSE={null_loss*100:.3f}%')
     plt.xlabel('Experimental Energy (eV)')
     plt.ylabel('Reference Orbital Energies (eV)')
     ylim = plt.ylim()
@@ -142,7 +142,7 @@ if __name__=='__main__':
 
     def errorfunc(x):
         xvec = get_xvec(x, element_list)
-        loss = np.sqrt(np.mean((lemcmat * xvec / (np.sum(cmat,axis=0) + 1) + ref_energies - exp_energies) ** 2))
+        loss = np.sqrt(np.mean(((lemcmat * xvec / (np.sum(cmat,axis=0) + 1) + ref_energies - exp_energies)/exp_energies) ** 2))
         return loss
     
     from scipy import optimize
@@ -151,7 +151,7 @@ if __name__=='__main__':
     results = optimize.minimize(errorfunc, weights)
     weights = results['x']
     # print(f'Weights: {weights}')
-    print(f"Training RMSE over {train_samples} samples: {results['fun']:.3f} eV")
+    print(f"Training RMSE over {train_samples} samples: {results['fun']*100:.3f} %")
     
     lmat = full_lmat[train_samples:train_samples+test_samples,:]
     cmat = full_cmat[:, train_samples:train_samples+test_samples]
@@ -164,12 +164,12 @@ if __name__=='__main__':
     xvec = get_xvec(weights, element_list)
     # print(lemcmat.shape, xvec.shape, cmat.shape, exp_energies.shape, ref_energies.shape)
     predict = lemcmat * xvec / (np.sum(cmat,axis=0) + 1) + ref_energies
-    predict_loss = np.sqrt(np.mean((predict-exp_energies) ** 2))
-    print(f"Testing RMSE over {test_samples} samples: {predict_loss:.3f} eV")
+    predict_loss = np.sqrt(np.mean(((predict-exp_energies)/exp_energies) ** 2))
+    print(f"Testing RMSE over {test_samples} samples: {predict_loss*100:.3f}%")
     # for e, p in zip(exp_energies, predict):
     #     print(f"{e} predicted as {p}")
     plt.figure()
-    plt.scatter(exp_energies, predict, label=f'RMSE={predict_loss:.3f}eV')
+    plt.scatter(exp_energies, predict, label=f'RMSE={predict_loss*100:.3f}%')
     plt.xlabel('Experimental Energy (eV)')
     plt.ylabel('Predicted Energies (eV)')
     ylim = plt.ylim()
