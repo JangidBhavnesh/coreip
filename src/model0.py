@@ -62,3 +62,37 @@ from scipy import optimize
 x0 = np.ones(4)
 optimize.minimize(errorfunc, x0, method='nelder-mead')
 
+
+import json
+
+au2eV = 27.21139
+
+def get_l(l):
+    '''
+    l = s, p, d, f, g
+    '''
+    return {'s': 0, 'p': 1, 'd': 2, 'f': 3, 'g':4,}.get(l, "l value is not valid")
+
+def get_n_l(orb):
+    n = int(orb[0])
+    l = get_l(str(orb[1]))
+    return n, l
+
+def giveorbitalenergy(ele, orb):
+
+    with open('orbitalenergy.json', 'r') as f:
+        data = json.load(f)
+    try:
+        orbenegele = data[ele]
+        del data
+    except KeyError:
+        raise KeyError("Element symbol not found")
+    
+    n, l = get_n_l(orb)
+    cbenergy = orbenegele[str(l-1)][n]
+    cbenergy *= au2eV
+    print(f"{ele}: {orb} orbital energy is {cbenergy} eV")
+    return cbenergy
+
+print(giveorbitalenergy('Al', '2p'))
+
