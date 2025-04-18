@@ -145,7 +145,7 @@ if __name__=='__main__':
     
         results = optimize.minimize(errorfunc, weights)
         weights = results['x']
-        with open(f"model_l3_CV{n_cv}_weights.txt", 'w') as f:
+        with open(f"model_p2_CV{n_cv}_weights.txt", 'w') as f:
             f.write(str(weights.reshape(cmat.shape[0],2)))
             
         train_loss += [results['fun']]
