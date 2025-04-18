@@ -82,13 +82,12 @@ def process_nodes(node_raw_data):
 
 def networkx2torch(data):
     smiles = list(data.keys())
-    netx_graphs = list(data.values())
     
     # For each networkx graph, process the nodes and edges into torch_geometric.data.Data graphs
     torch_graphs = []
-    for graph_num, temp in enumerate(zip(smiles, netx_graphs)):
-        smile_str, graph = temp
-        print(f"Processing graph {graph_num+1}/{len(netx_graphs)}")
+    for graph_num, smile in enumerate(smiles):
+        graph = data[smile]
+        print(f"Processing graph {graph_num+1}/{len(smiles)}")
         ### Process Edge information  
         edge_index, edge_attr = process_edge(graph)
 
@@ -109,13 +108,13 @@ def networkx2torch(data):
                 x = node_data[:,:-1]
                 y = node_data[:,-1]
                 torch_graph = Data(x, edge_index, edge_attr, y)
-                torch_graph.smile = smile_str
+                torch_graph.smile = smile
                 torch_graphs += [torch_graph]
         else: # Or if there's just one possibility
             x = node_data[:,:-1]
             y = node_data[:,-1]
             torch_graph = Data(x, edge_index, edge_attr, y)
-            torch_graph.smile = smile_str
+            torch_graph.smile = smile
             torch_graphs += [torch_graph]
     return torch_graphs
 
