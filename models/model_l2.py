@@ -144,15 +144,14 @@ if __name__=='__main__':
 
     def errorfunc(x):
         xvec = get_xvec(x, element_list)
-        loss = np.sqrt(np.mean((lemcmat * xvec / (np.sum(cmat,axis=0) + 1) + ref_energies - exp_energies) ** 2))
+        loss = np.sqrt(np.mean((lemcmat * xvec + ref_energies - exp_energies) ** 2))
         return loss
     
     from scipy import optimize
     np.set_printoptions(threshold=1000)
-    # print(ref_energies - exp_energies)
     results = optimize.minimize(errorfunc, weights)
     weights = results['x']
-    # print(f'Weights: {weights}')
+    
     print(f"Training RMSE over {train_samples} samples: {results['fun']:.3f}eV")
     
     lmat = full_lmat[train_samples:train_samples+test_samples,:]
@@ -164,12 +163,11 @@ if __name__=='__main__':
     element_list = lmat.argmax(axis=1)
     
     xvec = get_xvec(weights, element_list)
-    # print(lemcmat.shape, xvec.shape, cmat.shape, exp_energies.shape, ref_energies.shape)
-    predict = lemcmat * xvec / (np.sum(cmat,axis=0) + 1) + ref_energies
+
+    predict = lemcmat * xvec + ref_energies
     predict_loss = np.sqrt(np.mean((predict-exp_energies) ** 2))
     print(f"Testing RMSE over {test_samples} samples: {predict_loss:.3f}eV")
-    # for e, p in zip(exp_energies, predict):
-    #     print(f"{e} predicted as {p}")
+
     plt.figure()
     plt.scatter(exp_energies, predict, label=f'RMSE={predict_loss:.3f}eV')
     plt.xlabel('Experimental Energy (eV)')
