@@ -5,6 +5,8 @@ import numpy as np
 from src.smiletovectors import get_full_neighbor_vectors
 from src.paulingelectro import get_eleneg_diff_mat
 from scipy import optimize
+from rdkit import Chem
+
 '''
 This file provides functionality for fitting to the function:
 y = mx + b
@@ -191,7 +193,6 @@ def train_model_p2(elements, e_neg, ref_e, exp_e, num_elements=100):
     loss = results['fun']
     return weights, loss
 
-from rdkit import Chem
 if __name__=='__main__':
     # Input arguments
     in_filename = sys.argv[1] # networkx .json file
