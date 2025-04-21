@@ -35,10 +35,48 @@ def get_full_neighbor_vectors(smiles):
 
     return atom_vectors
 
+
+def get_second_neighbors_vector(smiles):
+    mol = Chem.MolFromSmiles(smiles)
+    mol = Chem.AddHs(mol)
+
+    atom_vectors = []
+
+    for atom in mol.GetAtoms():
+
+        if atom.GetSymbol() == 'H':
+            continue 
+
+        vec = np.zeros((100, 1), dtype=int)
+        second_nn = {}
+        for nbr in atom.GetNeighbors():
+            atomic_num = nbr.GetAtomicNum()
+            if atomic_num < 100:
+                vec[atomic_num-1][0] += 1
+            
+            newvec = np.zeros((100, 1), dtype=int)
+            for nbr_ in nbr.GetNeighbors():
+                atomic_num = nbr.GetAtomicNum()
+                if atomic_num < 100:
+                    newvec[atomic_num-1][0] += 1
+            if (atomic_num-1) not in second_nn:
+                second_nn[atomic_num-1] = newvec
+            else:   
+                second_nn[atomic_num-1] += newvec
+
+        atom_vectors.append((atom.GetIdx(), atom.GetSymbol(), vec, second_nn))
+   
+    return atom_vectors
+
+
 if __name__=='__main__':
     smiles = "CCO" # #CH3CH2OH
-    vectors = get_full_neighbor_vectors(smiles)
+    vectors = get_second_neighbors_vector(smiles)
 
-    for idx, symbol, vec in vectors:
+    for idx, symbol, first_nn, second_nn in vectors:
         print(f"Atom {idx} ({symbol})")
-        print(vec.T)
+        print(first_nn.T)
+
+        for k in second_nn.keys():
+            print(second_nn[k].shape)
+
