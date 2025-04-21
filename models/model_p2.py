@@ -9,6 +9,7 @@ from torch_geometric.data import Data
 from src.smiletovectors import get_full_neighbor_vectors
 from src.paulingelectro import get_eleneg_diff_mat
 import matplotlib.pyplot as plt
+from scipy import optimize
 
 au2eV = 27.21139
 
@@ -40,8 +41,11 @@ def get_n_l(orb):
     l = get_l(str(orb[1]))
     return n, l
 
-def giveorbitalenergy(ele, orb):
-    with open('orbitalenergy.json', 'r') as f:
+def giveorbitalenergy(ele, orb, orbital_energy_file='orbitalenergy.json'):
+    '''
+    For a given element and orbital, return the orbital energy in eV
+    '''
+    with open(orbital_energy_file, 'r') as f:
         data = json.load(f)
     try:
         orbenegele = data[ele]
@@ -54,6 +58,122 @@ def giveorbitalenergy(ele, orb):
     cbenergy *= au2eV
     return cbenergy
 
+def process_nodes(node_raw_data, vectors, en_mat):
+    node_data = []
+    assert len(vectors) == len(node_raw_data), f'{len(vectors)} != {len(node_raw_data)}'
+    for node_idx, data in enumerate(zip(vectors, node_raw_data)):
+        v, n = data
+        idx, symbol, cmat = v
+        
+        lmat = np.zeros((1,en_mat.shape[0]))
+        lmat[0, Chem.Atom(symbol).GetAtomicNum() - 1] = 1
+        
+        e_neg_score = np.einsum('ij,jk,ki->i', lmat, en_mat, cmat)[0]
+        
+        atom_type = n['atom_type']
+        formal_charge = n['formal_charge']
+        
+        for orb, binding_e in zip(n['orbitals'], n['binding_energies']):
+            if orb == -1 or binding_e == -1:
+                continue
+            ref_e = -giveorbitalenergy(symbol, orb)
+            n, l = get_n_l(orb)
+            assert symbol == atom_type
+            # Binding energy zeroed against reference energy
+            # AKA, train against the difference from reference atomic orbital energy
+            # Each entry is as follows:
+            # [Atomic Num, formal charge, e_neg_score, quantum number 'n', quantum number 'l', atomic_orbital_e, binding_e]
+            node_data += [np.array([Chem.Atom(symbol).GetAtomicNum(), formal_charge, e_neg_score, n, l, ref_e, binding_e],dtype=np.float64)]
+    return node_data
+
+def networkx2arr(data, num_elements=100):
+    smiles = list(data.keys())
+    en_mat = get_eleneg_diff_mat(num_elements)
+
+    graph_data = []
+    for graph_num, smile in enumerate(smiles):
+        graph = data[smile]
+        print(f"Processing graph {graph_num+1}/{len(smiles)}: {smile}")
+        
+        try:
+            vectors = get_full_neighbor_vectors(smile)
+        except:
+            print(f"Skipping smile {smile} due to RDKit error")
+            continue
+        nodes, node_raw_data = zip(*graph.nodes(data=True))
+        # Hydrogen will never have a core binding energy
+        # For atom-centric data formatting, Hydrogen may be safely omitted
+        temp_list = []
+        for n in node_raw_data:
+            if n['atom_type'] == 'H':
+                continue
+            temp_list += [n]
+        node_raw_data = tuple(temp_list)
+        
+        ### Process Node information
+        new_data = process_nodes(node_raw_data, vectors, en_mat)
+        if len(new_data) != 0:
+            graph_data += [np.atleast_2d(new_data)]
+        else:
+            print(f"Found no information in {smile}")
+
+    return np.vstack(graph_data)
+
+def get_xvec(weights, element_list):
+    return np.array([weights[int(el)-1] for el in element_list])
+
+def test_model_p2(weights, elements, e_neg, ref_e, exp_e):
+    '''
+    Return the testing loss for Polynomial Model 1 with weights 'weights'
+        - model_p2: Fit the function y = mx + b
+        - y = exp_e - ref_e
+        - m = weights
+        - x = electronegativity environment 'e_neg'
+        - b = constant for a given element
+    Arguments:
+        - weights: 1D array of length 'num_element'
+        - elements: 1D array of atomic numbers
+        - e_neg: 1D array of electronegativity environments
+        - ref_e: Atomic orbital energy (reference)
+        - exp_e: Experimental binding energy
+    Returns:
+        predict: Predictions
+        loss: RMSE Error
+    '''        
+    xvec = get_xvec(weights.reshape(-1,2), elements)
+    predict = np.sum(np.vstack((e_neg, np.ones(e_neg.shape))).T * xvec,axis=1) + ref_e
+    loss = np.sqrt(np.mean((predict - exp_e) ** 2))
+    return predict, loss
+
+
+def train_model_p2(elements, e_neg, ref_e, exp_e, num_elements=100):
+    '''
+    Return the optimized weights for fitting Polynomial Model 1
+        - model_p2: Fit the function y = mx + b
+        - y = exp_e - ref_e
+        - m = weights
+        - x = electronegativity environment 'e_neg'
+        - b = constant for a given element
+    Arguments:
+        - elements: 1D array of atomic numbers
+        - e_neg: 1D array of electronegativity environments
+        - ref_e: Atomic orbital energy (reference)
+        - exp_e: Experimental binding energy
+        - num_elements: Number of elements to compute weights for (fields will be 0 for elements not encountered in training)
+    Returns:
+        weights: 1D array of length 'num_element'
+    '''
+    weights = np.zeros(num_elements*2)
+    def errorfunc(x):
+        xvec = get_xvec(x.reshape(-1,2), elements)
+        arr = np.vstack([e_neg, np.ones(e_neg.shape)]).T
+        loss = np.sqrt(np.mean((np.sum(arr * xvec, axis=1) + ref_e - exp_e) ** 2))
+        return loss
+    results = optimize.minimize(errorfunc, weights)
+    weights = results['x']
+    loss = results['fun']
+    return weights, loss
+
 from rdkit import Chem
 if __name__=='__main__':
     # Input arguments
@@ -64,126 +184,32 @@ if __name__=='__main__':
     
     # Load in networkx graphs
     data = load_data_from_file(in_filename)
-    smiles = list(data.keys())
-    en_mat = get_eleneg_diff_mat()
-    exp_energies = []
-    ref_energies = []
+    num_elements = 100
+    # [Atomic Num, formal charge, e_neg_score, quantum number 'n', quantum number 'l', atomic_orbital_e, binding_e]
+    graph_data = networkx2arr(data, num_elements)
     
-    cmat = []
-    lmat = []
-    for smile in smiles:
-        try:
-            vectors = get_full_neighbor_vectors(smile)
-        except:
-            print(f"Skipping smile {smile} due to RDKit error")
-            continue
-            
-        nodes, node_raw_data = zip(*data[smile].nodes(data=True))
-        
-        temp_list = []
-        for n in node_raw_data:
-            if n['atom_type'] == 'H':
-                continue
-            temp_list += [n]
-        node_raw_data = tuple(temp_list)
-
-        for v, n in zip(vectors, node_raw_data):
-            idx, symbol, vec = v
-            for orb, binding_e in zip(n['orbitals'], n['binding_energies']):
-                if orb == -1 or binding_e == -1:
-                    continue
-
-                temp_lmat = np.zeros(en_mat.shape[0])
-                temp_lmat[Chem.Atom(symbol).GetAtomicNum() - 1] = 1
-                
-                temp_cmat = [vec]
-                
-                lmat += [temp_lmat]
-                cmat += [temp_cmat]
-                exp_energies += [binding_e]
-                orb_en = -giveorbitalenergy(symbol, orb)
-                # if np.abs(orb_en - binding_e) > 40:
-                #     print(smile, orb)
-                ref_energies += [orb_en]
-    full_lmat = np.array(lmat)
-    full_lmat = np.atleast_2d(full_lmat)
-    full_cmat = np.array(cmat).squeeze().T
-    full_cmat = full_cmat.reshape(full_lmat.T.shape)
-    full_exp_energies = np.array(exp_energies)
-    full_ref_energies = np.array(ref_energies)
-    
-    null_loss = np.sqrt(np.mean((full_ref_energies - full_exp_energies)**2))
+    null_loss = np.sqrt(np.mean((graph_data[:,5] - graph_data[:,6])**2))
     print(f"Null Loss: {null_loss:.3f}eV")
-    plt.scatter(full_exp_energies, full_ref_energies,label=f'RMSE={null_loss:.3f}eV')
-    plt.xlabel('Experimental Energy (eV)')
-    plt.ylabel('Reference Orbital Energies (eV)')
-    ylim = plt.ylim()
-    xlim = plt.xlim()
-    plt.plot([-100, 10000], [-100, 10000], c='k')
-    plt.ylim(ylim)
-    plt.xlim(xlim)
-    plt.title("Null Model: Compare to reference orbital energy")
-    plt.legend()
-    plt.savefig("model_null.png")
 
     train_samples = 2500
-    test_samples = len(full_lmat) - train_samples
+    test_samples = graph_data.shape[0] - train_samples
     
-    indices = np.arange(len(full_lmat))
-    np.random.shuffle(indices)
+    ### Training
+    exp_energies = graph_data[:train_samples,6]
+    ref_energies = graph_data[:train_samples, 5]
+    lemcmat = graph_data[:train_samples, 2]
+    element_list = graph_data[:train_samples, 0].flatten()
     
-    train_idx = indices[:train_samples]
-    lmat = full_lmat[train_idx,:]
-    cmat = full_cmat[:, train_idx]
-    exp_energies = full_exp_energies[train_idx]
-    ref_energies = full_ref_energies[train_idx]
+    weights, loss = train_model_p2(element_list, lemcmat, ref_energies, exp_energies)
+    print(f"Training RMSE over {train_samples} samples: {loss:.3f}eV")
     
-    lemcmat = np.einsum('ij,jk,ki->i', lmat, en_mat, cmat)
-    lemcmat = np.vstack([lemcmat, np.ones(lemcmat.shape)]).T
-    
-    element_list = lmat.argmax(axis=1)
-    weights = np.zeros((cmat.shape[0]*2))
-    
-    def get_xvec(weights, element_list):
-        return np.array([weights[el] for el in element_list])
+    ### Testing
+    exp_energies = graph_data[train_samples:train_samples+test_samples, 6]
+    ref_energies = graph_data[train_samples:train_samples+test_samples, 5]
+    exp_minus_ref = exp_energies - ref_energies
+    element_list = graph_data[train_samples:train_samples+test_samples, 0]
+    lemcmat = graph_data[train_samples:train_samples+test_samples, 2]
 
-    def errorfunc(x):
-        xvec = get_xvec(x.reshape(cmat.shape[0],2), element_list)
-        loss = np.sqrt(np.mean((np.sum(lemcmat * xvec, axis=1) + ref_energies - exp_energies) ** 2))
-        return loss
+    predict, predict_loss = test_model_p2(weights, element_list, lemcmat, ref_energies, exp_energies)
     
-    from scipy import optimize
-    np.set_printoptions(threshold=1000)
-    # print(ref_energies - exp_energies)
-    results = optimize.minimize(errorfunc, weights)
-    weights = results['x']
-    # print(f'Weights: {weights}')
-    print(f"Training RMSE over {train_samples} samples: {results['fun']:.3f}eV")
-    
-    lmat = full_lmat[train_samples:train_samples+test_samples,:]
-    cmat = full_cmat[:, train_samples:train_samples+test_samples]
-    exp_energies = full_exp_energies[train_samples:train_samples+test_samples]
-    ref_energies = full_ref_energies[train_samples:train_samples+test_samples]
-    
-    lemcmat = np.einsum('ij,jk,ki->i', lmat, en_mat, cmat)
-    lemcmat = np.vstack([lemcmat, np.ones(lemcmat.shape)]).T
-    element_list = lmat.argmax(axis=1)
-    
-    xvec = get_xvec(weights.reshape(cmat.shape[0],2), element_list)
-    print(lemcmat.shape, xvec.shape, cmat.shape, exp_energies.shape, ref_energies.shape)
-    predict = np.sum(lemcmat * xvec, axis=1) + ref_energies
-    predict_loss = np.sqrt(np.mean((predict-exp_energies) ** 2))
     print(f"Testing RMSE over {test_samples} samples: {predict_loss:.3f}eV")
-   
-    plt.figure()
-    plt.scatter(exp_energies, predict, label=f'RMSE={predict_loss:.3f}eV')
-    plt.xlabel('Experimental Energy (eV)')
-    plt.ylabel('Predicted Energies (eV)')
-    ylim = plt.ylim()
-    xlim = plt.xlim()
-    plt.plot([-100, 100000], [-100, 100000], c='k')
-    plt.ylim(ylim)
-    plt.xlim(xlim)
-    plt.title("Model V0: Linear fit to Electronegativity Environment")
-    plt.legend()
-    plt.savefig("model_v0.png")
