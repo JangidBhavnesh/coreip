@@ -1,15 +1,19 @@
-import itertools
 import sys
 import json
-from matplotlib.font_manager import weight_dict
 import networkx as nx
-import torch
 import numpy as np
-from torch_geometric.data import Data
 from src.smiletovectors import get_full_neighbor_vectors
 from src.paulingelectro import get_eleneg_diff_mat
-import matplotlib.pyplot as plt
 from scipy import optimize
+'''
+This file provides functionality for fitting to the function:
+y = mx
+
+y := experimental binding energy - atomic orbital energy
+m := weights to train
+x := electronegativity environment 
+'''
+
 
 au2eV = 27.21139
 
@@ -28,7 +32,6 @@ def _load_data_from_string_dict(string_dict) -> dict:
 		graph = nx.node_link_graph(string_dict[key], edges="edges")
 		result_dict[key] = graph
 	return result_dict
-
 
 def get_l(l):
     '''
