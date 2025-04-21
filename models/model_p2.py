@@ -1,15 +1,19 @@
-import itertools
 import sys
 import json
-from matplotlib.font_manager import weight_dict
 import networkx as nx
-import torch
 import numpy as np
-from torch_geometric.data import Data
 from src.smiletovectors import get_full_neighbor_vectors
 from src.paulingelectro import get_eleneg_diff_mat
-import matplotlib.pyplot as plt
 from scipy import optimize
+'''
+This file provides functionality for fitting to the function:
+y = mx + b
+
+y := experimental binding energy - atomic orbital energy
+m := weights to train
+x := electronegativity environment 
+b := Constant (per element)
+'''
 
 au2eV = 27.21139
 
@@ -58,10 +62,37 @@ def giveorbitalenergy(ele, orb, orbital_energy_file='orbitalenergy.json'):
     cbenergy *= au2eV
     return cbenergy
 
-def process_nodes(node_raw_data, vectors, en_mat):
+def process_nodes(data, smile, en_mat):
+    '''
+    Provided the raw data for a node into a matrix form with our desired features/labels
+    Arguments:
+        - data: networkx graph
+        - smile: SMILE string to use as key in 'data'
+        - en_mat: electronegativity difference matrix
+    returns:
+        matrix of size n_samples X n_features+n_labels
+    '''
+    graph = data[smile]    
+    try:
+        vectors = get_full_neighbor_vectors(smile)
+    except:
+        print(f"Skipping smile {smile} due to RDKit error")
+        return None
+    
+    nodes, node_raw_data = zip(*graph.nodes(data=True))
     node_data = []
-    assert len(vectors) == len(node_raw_data), f'{len(vectors)} != {len(node_raw_data)}'
-    for node_idx, data in enumerate(zip(vectors, node_raw_data)):
+    
+    # Hydrogen will never have a core binding energy
+    # For atom-centric data formatting, Hydrogen may be safely omitted
+    temp_list = []
+    for n in node_raw_data:
+        if n['atom_type'] == 'H':
+            continue
+        temp_list += [n]
+    node_data_no_H = tuple(temp_list)
+    
+    assert len(vectors) == len(node_data_no_H), f'{len(vectors)} != {len(node_data_no_H)}'
+    for node_idx, data in enumerate(zip(vectors, node_data_no_H)):
         v, n = data
         idx, symbol, cmat = v
         
@@ -92,26 +123,12 @@ def networkx2arr(data, num_elements=100):
 
     graph_data = []
     for graph_num, smile in enumerate(smiles):
-        graph = data[smile]
         print(f"Processing graph {graph_num+1}/{len(smiles)}: {smile}")
-        
-        try:
-            vectors = get_full_neighbor_vectors(smile)
-        except:
-            print(f"Skipping smile {smile} due to RDKit error")
-            continue
-        nodes, node_raw_data = zip(*graph.nodes(data=True))
-        # Hydrogen will never have a core binding energy
-        # For atom-centric data formatting, Hydrogen may be safely omitted
-        temp_list = []
-        for n in node_raw_data:
-            if n['atom_type'] == 'H':
-                continue
-            temp_list += [n]
-        node_raw_data = tuple(temp_list)
-        
         ### Process Node information
-        new_data = process_nodes(node_raw_data, vectors, en_mat)
+        new_data = process_nodes(data, smile, en_mat)
+        if new_data is None:
+            continue
+        
         if len(new_data) != 0:
             graph_data += [np.atleast_2d(new_data)]
         else:
@@ -124,14 +141,14 @@ def get_xvec(weights, element_list):
 
 def test_model_p2(weights, elements, e_neg, ref_e, exp_e):
     '''
-    Return the testing loss for Polynomial Model 1 with weights 'weights'
+    Return the testing loss for Polynomial Model 2 with weights 'weights'
         - model_p2: Fit the function y = mx + b
         - y = exp_e - ref_e
         - m = weights
         - x = electronegativity environment 'e_neg'
         - b = constant for a given element
     Arguments:
-        - weights: 1D array of length 'num_element'
+        - weights: 1D array of length 'num_element'*2
         - elements: 1D array of atomic numbers
         - e_neg: 1D array of electronegativity environments
         - ref_e: Atomic orbital energy (reference)
