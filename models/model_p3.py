@@ -160,7 +160,7 @@ def test_model_p3(weights, elements, e_neg, ref_e, exp_e):
     return predict, loss
 
 
-def train_model_p2(elements, e_neg, ref_e, exp_e, num_elements=100):
+def train_model_p3(elements, e_neg, ref_e, exp_e, num_elements=100):
     '''
     Return the optimized weights for fitting Polynomial Model 3
         y = ax^2 + bx + c
@@ -213,7 +213,7 @@ if __name__=='__main__':
     lemcmat = graph_data[:train_samples, 2]
     element_list = graph_data[:train_samples, 0].flatten()
     
-    weights, loss = train_model_p2(element_list, lemcmat, ref_energies, exp_energies)
+    weights, loss = train_model_p3(element_list, lemcmat, ref_energies, exp_energies)
     print(f"Training RMSE over {train_samples} samples: {loss:.3f}eV")
     
     ### Testing
@@ -223,6 +223,6 @@ if __name__=='__main__':
     element_list = graph_data[train_samples:train_samples+test_samples, 0]
     lemcmat = graph_data[train_samples:train_samples+test_samples, 2]
 
-    predict, predict_loss = test_model_p2(weights, element_list, lemcmat, ref_energies, exp_energies)
+    predict, predict_loss = test_model_p3(weights, element_list, lemcmat, ref_energies, exp_energies)
     
     print(f"Testing RMSE over {test_samples} samples: {predict_loss:.3f}eV")
