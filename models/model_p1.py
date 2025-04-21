@@ -125,10 +125,10 @@ def get_xvec(weights, element_list):
 def test_model_p1(weights, elements, e_neg, ref_e, exp_e):
     '''
     Return the testing loss for Polynomial Model 1 with weights 'weights'
-        - model_p1: Fit the function Aw=b
-        - A = electronegativity environment 'e_neg'
-        - w = weights
-        - b = exp_e - ref_e
+        - model_p1: Fit the function y=mx
+        - y = exp_e - ref_e
+        - m = weights
+        - x = electronegativity environment 'e_neg'
     Arguments:
         - weights: 1D array of length 'num_element'
         - elements: 1D array of atomic numbers
@@ -148,10 +148,10 @@ def test_model_p1(weights, elements, e_neg, ref_e, exp_e):
 def train_model_p1(elements, e_neg, ref_e, exp_e, num_elements=100):
     '''
     Return the optimized weights for fitting Polynomial Model 1
-        - model_p1: Fit the function Aw=b
-        - A = electronegativity environment 'e_neg'
-        - w = weights
-        - b = exp_e - ref_e
+        - model_p1: Fit the function y=mx
+        - y = exp_e - ref_e
+        - m = weights
+        - x = electronegativity environment 'e_neg'
     Arguments:
         - elements: 1D array of atomic numbers
         - e_neg: 1D array of electronegativity environments
