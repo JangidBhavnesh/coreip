@@ -1,0 +1,2578 @@
+{
+    "CC(=O)C1=CC=CC=N1": {
+        "chemical_formula": [
+            "C7H7NO",
+            "C7H7NO",
+            "C7H7NO",
+            "C7H7NO",
+            "C7H7NO",
+            "C7H7NO"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            405.12
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 121 in Jolly et al.)"
+        ]
+    },
+    "CC1=CC=C(C=C1)N": {
+        "chemical_formula": [
+            "C7H9N",
+            "C7H9N",
+            "C7H9N",
+            "C7H9N",
+            "C7H9N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            405.33
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CC1=CC(=CC=C1)N": {
+        "chemical_formula": [
+            "C7H9N",
+            "C7H9N",
+            "C7H9N",
+            "C7H9N",
+            "C7H9N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            405.34
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CCN1C=CC=C(C1=O)O": {
+        "chemical_formula": [
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            407.41
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)"
+        ]
+    },
+    "CC1=C(C=CC=C1N)N": {
+        "chemical_formula": [
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2"
+        ],
+        "orbitals": [
+            "N 1s",
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.05,
+            405.21
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 121 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 in Jolly et al.)"
+        ]
+    },
+    "CC1=CC(=C(C=C1)N)N": {
+        "chemical_formula": [
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2",
+            "C7H10N2"
+        ],
+        "orbitals": [
+            "N 1s",
+            "N 1s"
+        ],
+        "binding_energies": [
+            403.92,
+            405.61
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 121 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 in Jolly et al.)"
+        ]
+    },
+    "C1CN2CCC1CC2": {
+        "chemical_formula": [
+            "C7H13N",
+            "C7H13N",
+            "C7H13N",
+            "C7H13N",
+            "C7H13N",
+            "C7H13N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.43
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CN(C)CCCN(C)C": {
+        "chemical_formula": [
+            "C7H18N2",
+            "C7H18N2",
+            "C7H18N2",
+            "C7H18N2",
+            "C7H18N2",
+            "C7H18N2",
+            "C7H18N2"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.53
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 in Jolly et al.)"
+        ]
+    },
+    "CCNC1=CC=CC=C1": {
+        "chemical_formula": [
+            "C8H11N",
+            "C8H11N",
+            "C8H11N",
+            "C8H11N",
+            "C8H11N",
+            "C8H11N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            405.01
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CN(C)C1=CC=CC=C1": {
+        "chemical_formula": [
+            "C8H11N",
+            "C8H11N",
+            "C8H11N",
+            "C8H11N",
+            "C8H11N",
+            "C8H11N"
+        ],
+        "orbitals": [
+            "N 1s",
+            "N 1s"
+        ],
+        "binding_energies": [
+            405.06,
+            405.11
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 106 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CCCCNCCCC": {
+        "chemical_formula": [
+            "C8H19N",
+            "C8H19N",
+            "C8H19N",
+            "C8H19N",
+            "C8H19N",
+            "C8H19N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.43
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 2 in Jolly et al.)"
+        ]
+    },
+    "CN(C)CCCCN(C)C": {
+        "chemical_formula": [
+            "C8H20N2",
+            "C8H20N2",
+            "C8H20N2",
+            "C8H20N2",
+            "C8H20N2",
+            "C8H20N2",
+            "C8H20N2"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.53
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 in Jolly et al.)"
+        ]
+    },
+    "CCC1=CC=CC(=C1N)C": {
+        "chemical_formula": [
+            "C9H13N",
+            "C9H13N",
+            "C9H13N",
+            "C9H13N",
+            "C9H13N",
+            "C9H13N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.91
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CCCN(CCC)CCC": {
+        "chemical_formula": [
+            "C9H21N",
+            "C9H21N",
+            "C9H21N",
+            "C9H21N",
+            "C9H21N",
+            "C9H21N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.22
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 2 in Jolly et al.)"
+        ]
+    },
+    "C1=CC=C2C(=C1)C=CC=C2N": {
+        "chemical_formula": [
+            "C10H9N",
+            "C10H9N",
+            "C10H9N",
+            "C10H9N",
+            "C10H9N",
+            "C10H9N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            405.37
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "C1CN1CCC2=CC=CC=C2": {
+        "chemical_formula": [
+            "C10H13N",
+            "C10H13N",
+            "C10H13N",
+            "C10H13N",
+            "C10H13N",
+            "C10H13N",
+            "C10H13N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.79
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CCN(CC)C1=CC=CC=C1": {
+        "chemical_formula": [
+            "C10H15N",
+            "C10H15N",
+            "C10H15N",
+            "C10H15N",
+            "C10H15N",
+            "C10H15N",
+            "C10H15N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.73
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CN(C)C1=CC=C(C=C1)N(C)C": {
+        "chemical_formula": [
+            "C10H16N2",
+            "C10H16N2",
+            "C10H16N2",
+            "C10H16N2",
+            "C10H16N2",
+            "C10H16N2",
+            "C10H16N2",
+            "C10H16N2"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.78
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CN(C)CCCCCCN(C)C": {
+        "chemical_formula": [
+            "C10H24N2",
+            "C10H24N2",
+            "C10H24N2",
+            "C10H24N2",
+            "C10H24N2",
+            "C10H24N2",
+            "C10H24N2",
+            "C10H24N2"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.53
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 in Jolly et al.)"
+        ]
+    },
+    "C1=CC=C2C(=C1)C=CC=C2C[N-]N": {
+        "chemical_formula": [
+            "C11H11N2-",
+            "C11H11N2-",
+            "C11H11N2-",
+            "C11H11N2-",
+            "C11H11N2-",
+            "C11H11N2-",
+            "C11H11N2-",
+            "C11H11N2-",
+            "C11H11N2-"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            405.22
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "C1C2CC3CC1CC(C2)(C3)C#N": {
+        "chemical_formula": [
+            "C11H15N",
+            "C11H15N",
+            "C11H15N",
+            "C11H15N",
+            "C11H15N",
+            "C11H15N",
+            "C11H15N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.64
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "C1CCC(CC1)N=CC2=CC=CC=C2": {
+        "chemical_formula": [
+            "C13H17N",
+            "C13H17N",
+            "C13H17N",
+            "C13H17N",
+            "C13H17N",
+            "C13H17N",
+            "C13H17N"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.61
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "CN(C)C1=CC=CC2=C1C(=CC=C2)N(C)C": {
+        "chemical_formula": [
+            "C14H18N2",
+            "C14H18N2",
+            "C14H18N2",
+            "C14H18N2",
+            "C14H18N2",
+            "C14H18N2",
+            "C14H18N2",
+            "C14H18N2"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            404.65
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
+        ]
+    },
+    "NN": {
+        "chemical_formula": [
+            "H4N2",
+            "H4N2",
+            "H4N2",
+            "H4N2"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            406.1
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 51 , 2 in Jolly et al.)"
+        ]
+    },
+    "N(=O)[O]": {
+        "chemical_formula": [
+            "NO2",
+            "NO2",
+            "NO2"
+        ],
+        "orbitals": [
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "N 1s"
+        ],
+        "binding_energies": [
+            412.6,
+            412.9,
+            413.3,
+            541.3,
+            542.0
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 51 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)"
+        ]
+    },
+    "N#N": {
+        "chemical_formula": [
+            "N2",
+            "N2"
+        ],
+        "orbitals": [
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "N 1s"
+        ],
+        "binding_energies": [
+            409.9,
+            409.93,
+            409.95,
+            409.52
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 148 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 2 , 22 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 170 in Jolly et al.)"
+        ]
+    },
+    "[N-]=[N+]=O": {
+        "chemical_formula": [
+            "N2O",
+            "N2O",
+            "N2O"
+        ],
+        "orbitals": [
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "N 1s",
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            408.5,
+            408.6,
+            408.75,
+            408.77,
+            412.5,
+            412.5,
+            412.62,
+            412.64,
+            541.4,
+            541.42
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 51 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 46 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 51 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 46 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)"
+        ]
+    },
+    "N1=S=NS1": {
+        "chemical_formula": [
+            "N2S2",
+            "N2S2",
+            "N2S2",
+            "N2S2"
+        ],
+        "orbitals": [
+            "N 1s",
+            "S 2s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            405.86,
+            236.58,
+            172.44
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 112 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 112 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 112 in Jolly et al.)"
+        ]
+    },
+    "[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].[N+](=O)([O-])[O-].[Ti+4]": {
+        "chemical_formula": [
+            "N4O12Ti",
+            "N4O12Ti",
+            "N4O12Ti",
+            "N4O12Ti",
+            "N4O12Ti",
+            "N4O12Ti",
+            "N4O12Ti"
+        ],
+        "orbitals": [
+            "N 1s",
+            "O 1s",
+            "Ti 2p3/2"
+        ],
+        "binding_energies": [
+            414.5,
+            540.5,
+            466.8
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 179 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 179 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 179 in Jolly et al.)"
+        ]
+    },
+    "N1=S=NSN=S=NS1": {
+        "chemical_formula": [
+            "N4S4",
+            "N4S4",
+            "N4S4",
+            "N4S4"
+        ],
+        "orbitals": [
+            "N 1s"
+        ],
+        "binding_energies": [
+            405.6
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 44 , 2 in Jolly et al.)"
+        ]
+    },
+    "C1C=CC=[C-]1.C1C=CC=[C-]1.[Ni+2]": {
+        "chemical_formula": [
+            "C10H10Ni",
+            "C10H10Ni",
+            "C10H10Ni",
+            "C10H10Ni",
+            "C10H10Ni",
+            "C10H10Ni",
+            "C10H10Ni",
+            "C10H10Ni"
+        ],
+        "orbitals": [
+            "Ni 2p3/2"
+        ],
+        "binding_energies": [
+            859.87
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)"
+        ]
+    },
+    "C(C(F)(F)F)[O-]": {
+        "chemical_formula": [
+            "C2H2F3O-",
+            "C2H2F3O-",
+            "C2H2F3O-",
+            "C2H2F3O-",
+            "C2H2F3O-",
+            "C2H2F3O-",
+            "C2H2F3O-",
+            "C2H2F3O-"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            541.35
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 124 , 17 in Jolly et al.)"
+        ]
+    },
+    "C1CO1": {
+        "chemical_formula": [
+            "C2H4O",
+            "C2H4O",
+            "C2H4O",
+            "C2H4O",
+            "C2H4O"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.84
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)"
+        ]
+    },
+    "CC(=O)O": {
+        "chemical_formula": [
+            "C2H4O2",
+            "C2H4O2",
+            "C2H4O2",
+            "C2H4O2",
+            "C2H4O2",
+            "C2H4O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s",
+            "O 1s",
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.29,
+            538.36,
+            540.0,
+            540.09,
+            540.15
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+        ]
+    },
+    "C(=C/O)\\C=O": {
+        "chemical_formula": [
+            "C3H4O2",
+            "C3H4O2",
+            "C3H4O2",
+            "C3H4O2",
+            "C3H4O2",
+            "C3H4O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.14,
+            539.71
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 49 in Jolly et al.)"
+        ]
+    },
+    "CCCO": {
+        "chemical_formula": [
+            "C3H8O",
+            "C3H8O",
+            "C3H8O",
+            "C3H8O",
+            "C3H8O"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.75
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+        ]
+    },
+    "CC(C)O": {
+        "chemical_formula": [
+            "C3H8O",
+            "C3H8O",
+            "C3H8O",
+            "C3H8O",
+            "C3H8O"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.6
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+        ]
+    },
+    "CP(C)CO": {
+        "chemical_formula": [
+            "C3H9OP",
+            "C3H9OP",
+            "C3H9OP",
+            "C3H9OP",
+            "C3H9OP",
+            "C3H9OP"
+        ],
+        "orbitals": [
+            "O 1s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            536.05,
+            137.8
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 , 27 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 , 27 in Jolly et al.)"
+        ]
+    },
+    "CC(=O)OCC#N": {
+        "chemical_formula": [
+            "C4H5NO2",
+            "C4H5NO2",
+            "C4H5NO2",
+            "C4H5NO2",
+            "C4H5NO2",
+            "C4H5NO2",
+            "C4H5NO2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            539.1,
+            540.5
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 , 25 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 , 25 in Jolly et al.)"
+        ]
+    },
+    "CC(C=O)C=O": {
+        "chemical_formula": [
+            "C4H6O2",
+            "C4H6O2",
+            "C4H6O2",
+            "C4H6O2",
+            "C4H6O2",
+            "C4H6O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.53,
+            539.79
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)"
+        ]
+    },
+    "CC(C)C(=O)O": {
+        "chemical_formula": [
+            "C4H8O2",
+            "C4H8O2",
+            "C4H8O2",
+            "C4H8O2",
+            "C4H8O2",
+            "C4H8O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.27,
+            539.55
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+        ]
+    },
+    "CCOCC": {
+        "chemical_formula": [
+            "C4H10O",
+            "C4H10O",
+            "C4H10O",
+            "C4H10O",
+            "C4H10O",
+            "C4H10O"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.11
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+        ]
+    },
+    "CC(C)(C)O": {
+        "chemical_formula": [
+            "C4H10O",
+            "C4H10O",
+            "C4H10O",
+            "C4H10O",
+            "C4H10O",
+            "C4H10O"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.39
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+        ]
+    },
+    "[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[Mn].[Br-]": {
+        "chemical_formula": [
+            "C5BrMnO5-",
+            "C5BrMnO5-",
+            "C5BrMnO5-",
+            "C5BrMnO5-",
+            "C5BrMnO5-",
+            "C5BrMnO5-",
+            "C5BrMnO5-",
+            "C5BrMnO5-",
+            "C5BrMnO5-"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            540.43
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 79 in Jolly et al.)"
+        ]
+    },
+    "CCC(=O)C(=O)C": {
+        "chemical_formula": [
+            "C5H8O2",
+            "C5H8O2",
+            "C5H8O2",
+            "C5H8O2",
+            "C5H8O2",
+            "C5H8O2"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.7
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 116 in Jolly et al.)"
+        ]
+    },
+    "CC(=O)CC(=S)C": {
+        "chemical_formula": [
+            "C5H8OS",
+            "C5H8OS",
+            "C5H8OS",
+            "C5H8OS",
+            "C5H8OS",
+            "C5H8OS"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.47,
+            539.11
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "CN1C=CC=CC1=O": {
+        "chemical_formula": [
+            "C6H7NO",
+            "C6H7NO",
+            "C6H7NO",
+            "C6H7NO",
+            "C6H7NO",
+            "C6H7NO"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            536.36
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)"
+        ]
+    },
+    "CN1C=CC=C1C=O": {
+        "chemical_formula": [
+            "C6H7NO",
+            "C6H7NO",
+            "C6H7NO",
+            "C6H7NO",
+            "C6H7NO",
+            "C6H7NO"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            539.5
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 147 in Jolly et al.)"
+        ]
+    },
+    "C/C(=C\\C(=O)C)/SC": {
+        "chemical_formula": [
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            536.89
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "C1=CC=C(C(=C1)C=O)O": {
+        "chemical_formula": [
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.0,
+            539.0
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 14 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)"
+        ]
+    },
+    "C1=CC=C(C=C1)C(=O)O": {
+        "chemical_formula": [
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            536.95,
+            536.27
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)"
+        ]
+    },
+    "OC=C1C=CC=C1C=O": {
+        "chemical_formula": [
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2",
+            "C7H6O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.74,
+            539.07
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)"
+        ]
+    },
+    "C1=CC(=O)N(C=C1)CCO": {
+        "chemical_formula": [
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2",
+            "C7H9NO2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            536.49,
+            539.58
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)"
+        ]
+    },
+    "CC(C)CC(=O)C(=O)C": {
+        "chemical_formula": [
+            "C7H12O2",
+            "C7H12O2",
+            "C7H12O2",
+            "C7H12O2",
+            "C7H12O2",
+            "C7H12O2",
+            "C7H12O2"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.08
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)"
+        ]
+    },
+    "C(CC)OC(\\C=C(\\C)/S)=O": {
+        "chemical_formula": [
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.56,
+            539.07
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "CC(=O)C1=CC=CC=C1O": {
+        "chemical_formula": [
+            "C8H8O2",
+            "C8H8O2",
+            "C8H8O2",
+            "C8H8O2",
+            "C8H8O2",
+            "C8H8O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.12,
+            539.01
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 14 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)"
+        ]
+    },
+    "COC(=O)C1=CC=CC=C1": {
+        "chemical_formula": [
+            "C8H8O2",
+            "C8H8O2",
+            "C8H8O2",
+            "C8H8O2",
+            "C8H8O2",
+            "C8H8O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.08,
+            539.6
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)"
+        ]
+    },
+    "C(C)(=O)C1C(CCCC1)=S": {
+        "chemical_formula": [
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            537.2,
+            539.5,
+            168.9
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "C(C)(=S)C1C(CCCC1)=O": {
+        "chemical_formula": [
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS",
+            "C8H12OS"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            537.1,
+            538.5,
+            168.6
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "OC1=CC=C2C=CC=C3C=CC(C1=C32)=O": {
+        "chemical_formula": [
+            "C13H8O2",
+            "C13H8O2",
+            "C13H8O2",
+            "C13H8O2",
+            "C13H8O2",
+            "C13H8O2",
+            "C13H8O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            536.64,
+            539.23
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)"
+        ]
+    },
+    "CC1=CC(=CC(=C1C(=O)C)C)C(C)(C)C": {
+        "chemical_formula": [
+            "C14H20O",
+            "C14H20O",
+            "C14H20O",
+            "C14H20O",
+            "C14H20O",
+            "C14H20O",
+            "C14H20O"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.38
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)"
+        ]
+    },
+    "O=S(F)F": {
+        "chemical_formula": [
+            "F2OS",
+            "F2OS",
+            "F2OS",
+            "F2OS"
+        ],
+        "orbitals": [
+            "O 1s",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            539.7,
+            176.2
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)"
+        ]
+    },
+    "OO": {
+        "chemical_formula": [
+            "H2O2",
+            "H2O2",
+            "H2O2",
+            "H2O2"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            541.8
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 83 in Jolly et al.)"
+        ]
+    },
+    "O([SiH3])[SiH3]": {
+        "chemical_formula": [
+            "H6OSi2",
+            "H6OSi2",
+            "H6OSi2",
+            "H6OSi2",
+            "H6OSi2",
+            "H6OSi2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "Si 2p"
+        ],
+        "binding_energies": [
+            538.6,
+            107.81
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 8 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 8 in Jolly et al.)"
+        ]
+    },
+    "N(=O)[O-].[O-2].[Ti+3]": {
+        "chemical_formula": [
+            "NO3Ti",
+            "NO3Ti",
+            "NO3Ti",
+            "NO3Ti",
+            "NO3Ti"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            541.3,
+            538.3
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 167 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 167 in Jolly et al.)"
+        ]
+    },
+    "O=O": {
+        "chemical_formula": [
+            "O2",
+            "O2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s",
+            "O 1s",
+            "O 1s",
+            "O 1s",
+            "O 1s",
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            543.1,
+            543.35,
+            543.39,
+            543.72,
+            543.75,
+            543.75,
+            544.47,
+            544.47
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 43 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 50 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 43 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 in Jolly et al.)"
+        ]
+    },
+    "O=S=O": {
+        "chemical_formula": [
+            "O2S",
+            "O2S",
+            "O2S"
+        ],
+        "orbitals": [
+            "O 1s",
+            "S 1s",
+            "S 2p3/2",
+            "S 2p3/2",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            539.84,
+            2483.7,
+            174.8,
+            174.81,
+            174.84
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 149 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 142 in Jolly et al.)"
+        ]
+    },
+    "[O-][O+]=O": {
+        "chemical_formula": [
+            "O3",
+            "O3"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            541.5,
+            546.2
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 82 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 82 in Jolly et al.)"
+        ]
+    },
+    "O=S(=O)=O": {
+        "chemical_formula": [
+            "O3S",
+            "O3S",
+            "O3S"
+        ],
+        "orbitals": [
+            "O 1s",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            540.68,
+            176.67
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 95 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 95 in Jolly et al.)"
+        ]
+    },
+    "O1P2OP3OP1OP(O2)O3": {
+        "chemical_formula": [
+            "O6P4",
+            "O6P4",
+            "O6P4",
+            "O6P4"
+        ],
+        "orbitals": [
+            "O 1s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            539.25,
+            139.87
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 111 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 111 in Jolly et al.)"
+        ]
+    },
+    "CP(Cl)Cl": {
+        "chemical_formula": [
+            "CH3Cl2P",
+            "CH3Cl2P",
+            "CH3Cl2P",
+            "CH3Cl2P",
+            "CH3Cl2P",
+            "CH3Cl2P",
+            "CH3Cl2P"
+        ],
+        "orbitals": [
+            "P 1s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            2152.77,
+            138.88
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)"
+        ]
+    },
+    "CP(=S)(Cl)Cl": {
+        "chemical_formula": [
+            "CH3Cl2PS",
+            "CH3Cl2PS",
+            "CH3Cl2PS",
+            "CH3Cl2PS",
+            "CH3Cl2PS",
+            "CH3Cl2PS",
+            "CH3Cl2PS",
+            "CH3Cl2PS"
+        ],
+        "orbitals": [
+            "P 1s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            2154.07,
+            139.94
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)"
+        ]
+    },
+    "C(P(=O)(Cl)Cl)Cl": {
+        "chemical_formula": [
+            "CH2Cl3OP",
+            "CH2Cl3OP",
+            "CH2Cl3OP",
+            "CH2Cl3OP",
+            "CH2Cl3OP",
+            "CH2Cl3OP",
+            "CH2Cl3OP",
+            "CH2Cl3OP"
+        ],
+        "orbitals": [
+            "P 1s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            2154.65,
+            140.53
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)"
+        ]
+    },
+    "COP(=S)(OC)Cl": {
+        "chemical_formula": [
+            "C2H6ClO2PS",
+            "C2H6ClO2PS",
+            "C2H6ClO2PS",
+            "C2H6ClO2PS",
+            "C2H6ClO2PS",
+            "C2H6ClO2PS",
+            "C2H6ClO2PS",
+            "C2H6ClO2PS",
+            "C2H6ClO2PS",
+            "C2H6ClO2PS"
+        ],
+        "orbitals": [
+            "P 1s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            2154.48,
+            140.13
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)"
+        ]
+    },
+    "COP(=O)(C)OC": {
+        "chemical_formula": [
+            "C3H9O3P",
+            "C3H9O3P",
+            "C3H9O3P",
+            "C3H9O3P",
+            "C3H9O3P",
+            "C3H9O3P",
+            "C3H9O3P"
+        ],
+        "orbitals": [
+            "P 1s"
+        ],
+        "binding_energies": [
+            2152.7
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)"
+        ]
+    },
+    "COP(=O)(OC)SC": {
+        "chemical_formula": [
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS"
+        ],
+        "orbitals": [
+            "P 1s"
+        ],
+        "binding_energies": [
+            2154.14
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)"
+        ]
+    },
+    "CCP(CC)CC": {
+        "chemical_formula": [
+            "C6H15P",
+            "C6H15P",
+            "C6H15P",
+            "C6H15P",
+            "C6H15P",
+            "C6H15P"
+        ],
+        "orbitals": [
+            "P 1s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            2149.4,
+            135.82
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)"
+        ]
+    },
+    "P12P3P1P23": {
+        "chemical_formula": [
+            "P4",
+            "P4"
+        ],
+        "orbitals": [
+            "P 2s",
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            194.8,
+            136.2
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 58 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 58 , 189 in Jolly et al.)"
+        ]
+    },
+    "P12P3P1SP(S2)S3": {
+        "chemical_formula": [
+            "P4S3",
+            "P4S3",
+            "P4S3",
+            "P4S3"
+        ],
+        "orbitals": [
+            "P 2s",
+            "P 2p3/2",
+            "S 2s",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            195.1,
+            137.3,
+            234.5,
+            170.0
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 58 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 58 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 58 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 58 in Jolly et al.)"
+        ]
+    },
+    "CPC": {
+        "chemical_formula": [
+            "C2H7P",
+            "C2H7P",
+            "C2H7P",
+            "C2H7P",
+            "C2H7P"
+        ],
+        "orbitals": [
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            136.23
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 68 in Jolly et al.)"
+        ]
+    },
+    "COP(=S)(OC)OC": {
+        "chemical_formula": [
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS",
+            "C3H9O3PS"
+        ],
+        "orbitals": [
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            139.74
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 188 in Jolly et al.)"
+        ]
+    },
+    "CP(=S)(C)C": {
+        "chemical_formula": [
+            "C3H9PS",
+            "C3H9PS",
+            "C3H9PS",
+            "C3H9PS",
+            "C3H9PS",
+            "C3H9PS"
+        ],
+        "orbitals": [
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            137.62
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 in Jolly et al.)"
+        ]
+    },
+    "C1=CC=PC=C1": {
+        "chemical_formula": [
+            "C5H5P",
+            "C5H5P",
+            "C5H5P",
+            "C5H5P",
+            "C5H5P"
+        ],
+        "orbitals": [
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            136.1
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 23 in Jolly et al.)"
+        ]
+    },
+    "C[Pb](C)(C)C": {
+        "chemical_formula": [
+            "C4H12Pb",
+            "C4H12Pb",
+            "C4H12Pb",
+            "C4H12Pb",
+            "C4H12Pb",
+            "C4H12Pb",
+            "C4H12Pb"
+        ],
+        "orbitals": [
+            "Pb 5d5/2"
+        ],
+        "binding_energies": [
+            24.27
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 91 in Jolly et al.)"
+        ]
+    },
+    "C1C/C(=C\\C(=O)O)/C=C1C2=CC=CC=C2.[Rh]": {
+        "chemical_formula": [
+            "C13H12O2Rh",
+            "C13H12O2Rh",
+            "C13H12O2Rh",
+            "C13H12O2Rh",
+            "C13H12O2Rh",
+            "C13H12O2Rh",
+            "C13H12O2Rh",
+            "C13H12O2Rh",
+            "C13H12O2Rh",
+            "C13H12O2Rh"
+        ],
+        "orbitals": [
+            "Rh 3d5/2"
+        ],
+        "binding_energies": [
+            314.28
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 93 in Jolly et al.)"
+        ]
+    },
+    "S1SSSSSSS1": {
+        "chemical_formula": [
+            "S8",
+            "S8"
+        ],
+        "orbitals": [
+            "S 2s",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            234.2,
+            170.5
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 84 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 84 in Jolly et al.)"
+        ]
+    },
+    "C1=CSS2=C1C=CS2": {
+        "chemical_formula": [
+            "C5H4S3",
+            "C5H4S3",
+            "C5H4S3",
+            "C5H4S3",
+            "C5H4S3",
+            "C5H4S3"
+        ],
+        "orbitals": [
+            "S 2p3/2",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            168.8,
+            170.3
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 126 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 126 in Jolly et al.)"
+        ]
+    },
+    "C(C)(=S)CC(C)=O": {
+        "chemical_formula": [
+            "C5H8OS",
+            "C5H8OS",
+            "C5H8OS",
+            "C5H8OS",
+            "C5H8OS",
+            "C5H8OS"
+        ],
+        "orbitals": [
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            168.6
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "CSC(=CC(C)=O)C": {
+        "chemical_formula": [
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS",
+            "C6H10OS"
+        ],
+        "orbitals": [
+            "P 2p3/2"
+        ],
+        "binding_energies": [
+            169.79
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "CC1SS2SC(=CC2=C1)C": {
+        "chemical_formula": [
+            "C7H10S3",
+            "C7H10S3",
+            "C7H10S3",
+            "C7H10S3",
+            "C7H10S3",
+            "C7H10S3",
+            "C7H10S3"
+        ],
+        "orbitals": [
+            "S 2p3/2",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            168.5,
+            170.0
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 126 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 126 in Jolly et al.)"
+        ]
+    },
+    "S\\C(=C/C(=O)OCCC)\\C": {
+        "chemical_formula": [
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S",
+            "C7H12O2S"
+        ],
+        "orbitals": [
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            169.82
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "[SiH3]S[SiH3]": {
+        "chemical_formula": [
+            "H6SSi2",
+            "H6SSi2",
+            "H6SSi2",
+            "H6SSi2",
+            "H6SSi2",
+            "H6SSi2"
+        ],
+        "orbitals": [
+            "P 2p3/2",
+            "Si 2p"
+        ],
+        "binding_energies": [
+            168.6,
+            107.45
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
+        ]
+    },
+    "[Sb].[Sb].[Sb].[Sb]": {
+        "chemical_formula": [
+            "Sb4",
+            "Sb4",
+            "Sb4"
+        ],
+        "orbitals": [
+            "Sb 3d5/2"
+        ],
+        "binding_energies": [
+            534.6
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 171 in Jolly et al.)"
+        ]
+    },
+    "[Se].[Se].[Se].[Se]": {
+        "chemical_formula": [
+            "Se4",
+            "Se4",
+            "Se4"
+        ],
+        "orbitals": [
+            "Se 2p3/2"
+        ],
+        "binding_energies": [
+            1441.4
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 189 in Jolly et al.)"
+        ]
+    },
+    "[GeH3][Se][GeH3]": {
+        "chemical_formula": [
+            "H6Ge2Se",
+            "H6Ge2Se",
+            "H6Ge2Se",
+            "H6Ge2Se",
+            "H6Ge2Se",
+            "H6Ge2Se",
+            "H6Ge2Se"
+        ],
+        "orbitals": [
+            "Se 3d"
+        ],
+        "binding_energies": [
+            61.05
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
+        ]
+    },
+    "[SiH3][Se][SiH3]": {
+        "chemical_formula": [
+            "H6SeSi2",
+            "H6SeSi2",
+            "H6SeSi2",
+            "H6SeSi2",
+            "H6SeSi2",
+            "H6SeSi2",
+            "H6SeSi2"
+        ],
+        "orbitals": [
+            "Se 3d",
+            "Si 2p"
+        ],
+        "binding_energies": [
+            61.91,
+            107.72
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
+        ]
+    },
+    "C=C[Si](Cl)(Cl)Cl": {
+        "chemical_formula": [
+            "C2H3Cl3Si",
+            "C2H3Cl3Si",
+            "C2H3Cl3Si",
+            "C2H3Cl3Si",
+            "C2H3Cl3Si",
+            "C2H3Cl3Si",
+            "C2H3Cl3Si",
+            "C2H3Cl3Si",
+            "C2H3Cl3Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            109.05
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "CC[Si](Cl)(Cl)Cl": {
+        "chemical_formula": [
+            "C2H5Cl3Si",
+            "C2H5Cl3Si",
+            "C2H5Cl3Si",
+            "C2H5Cl3Si",
+            "C2H5Cl3Si",
+            "C2H5Cl3Si",
+            "C2H5Cl3Si",
+            "C2H5Cl3Si",
+            "C2H5Cl3Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            108.97
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "C[Si](C=C)(Cl)Cl": {
+        "chemical_formula": [
+            "C3H6Cl2Si",
+            "C3H6Cl2Si",
+            "C3H6Cl2Si",
+            "C3H6Cl2Si",
+            "C3H6Cl2Si",
+            "C3H6Cl2Si",
+            "C3H6Cl2Si",
+            "C3H6Cl2Si",
+            "C3H6Cl2Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            108.07
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "C=CC[Si](Cl)(Cl)Cl": {
+        "chemical_formula": [
+            "C3H5Cl3Si",
+            "C3H5Cl3Si",
+            "C3H5Cl3Si",
+            "C3H5Cl3Si",
+            "C3H5Cl3Si",
+            "C3H5Cl3Si",
+            "C3H5Cl3Si",
+            "C3H5Cl3Si",
+            "C3H5Cl3Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            108.92
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "CC[Si](CC)(Cl)Cl": {
+        "chemical_formula": [
+            "C4H10Cl2Si",
+            "C4H10Cl2Si",
+            "C4H10Cl2Si",
+            "C4H10Cl2Si",
+            "C4H10Cl2Si",
+            "C4H10Cl2Si",
+            "C4H10Cl2Si",
+            "C4H10Cl2Si",
+            "C4H10Cl2Si",
+            "C4H10Cl2Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            107.85
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "CO[Si](OC)(OC)OC": {
+        "chemical_formula": [
+            "C4H12O4Si",
+            "C4H12O4Si",
+            "C4H12O4Si",
+            "C4H12O4Si",
+            "C4H12O4Si",
+            "C4H12O4Si",
+            "C4H12O4Si",
+            "C4H12O4Si",
+            "C4H12O4Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            107.7
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "C[Si](C)(C)C.O": {
+        "chemical_formula": [
+            "C4H14OSi",
+            "C4H14OSi",
+            "C4H14OSi",
+            "C4H14OSi",
+            "C4H14OSi",
+            "C4H14OSi",
+            "C4H14OSi",
+            "C4H14OSi"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            106.83
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
+        ]
+    },
+    "C[Si](C)(CC=C)Cl": {
+        "chemical_formula": [
+            "C5H11ClSi",
+            "C5H11ClSi",
+            "C5H11ClSi",
+            "C5H11ClSi",
+            "C5H11ClSi",
+            "C5H11ClSi",
+            "C5H11ClSi",
+            "C5H11ClSi",
+            "C5H11ClSi"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            106.98
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "C[Si](C)(C)CCO": {
+        "chemical_formula": [
+            "C5H14OSi",
+            "C5H14OSi",
+            "C5H14OSi",
+            "C5H14OSi",
+            "C5H14OSi",
+            "C5H14OSi",
+            "C5H14OSi",
+            "C5H14OSi"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            106.29
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "CC[Si](CC)(CC)Cl": {
+        "chemical_formula": [
+            "C6H15ClSi",
+            "C6H15ClSi",
+            "C6H15ClSi",
+            "C6H15ClSi",
+            "C6H15ClSi",
+            "C6H15ClSi",
+            "C6H15ClSi",
+            "C6H15ClSi",
+            "C6H15ClSi"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            106.6
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "C1=CC=C(C=C1)[Si](Cl)(Cl)Cl": {
+        "chemical_formula": [
+            "C6H5Cl3Si",
+            "C6H5Cl3Si",
+            "C6H5Cl3Si",
+            "C6H5Cl3Si",
+            "C6H5Cl3Si",
+            "C6H5Cl3Si",
+            "C6H5Cl3Si",
+            "C6H5Cl3Si",
+            "C6H5Cl3Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            108.81
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "CCO[Si](C)(C)OCC": {
+        "chemical_formula": [
+            "C6H16O2Si",
+            "C6H16O2Si",
+            "C6H16O2Si",
+            "C6H16O2Si",
+            "C6H16O2Si",
+            "C6H16O2Si",
+            "C6H16O2Si",
+            "C6H16O2Si",
+            "C6H16O2Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            106.69
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "CCO[Si](C)(OCC)OCC": {
+        "chemical_formula": [
+            "C7H18O3Si",
+            "C7H18O3Si",
+            "C7H18O3Si",
+            "C7H18O3Si",
+            "C7H18O3Si",
+            "C7H18O3Si",
+            "C7H18O3Si",
+            "C7H18O3Si",
+            "C7H18O3Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            107.9
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "C=C[Si](C=C)(C=C)C=C": {
+        "chemical_formula": [
+            "C8H12Si",
+            "C8H12Si",
+            "C8H12Si",
+            "C8H12Si",
+            "C8H12Si",
+            "C8H12Si",
+            "C8H12Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            106.03
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "CCO[Si](OCC)(OCC)OCC": {
+        "chemical_formula": [
+            "C8H20O4Si",
+            "C8H20O4Si",
+            "C8H20O4Si",
+            "C8H20O4Si",
+            "C8H20O4Si",
+            "C8H20O4Si",
+            "C8H20O4Si",
+            "C8H20O4Si",
+            "C8H20O4Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            107.56
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "[SiH](Cl)(Cl)Cl": {
+        "chemical_formula": [
+            "HCl3Si",
+            "HCl3Si",
+            "HCl3Si",
+            "HCl3Si",
+            "HCl3Si",
+            "HCl3Si"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            109.44
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
+        ]
+    },
+    "[SiH3][SiH3]": {
+        "chemical_formula": [
+            "H6Si2",
+            "H6Si2",
+            "H6Si2",
+            "H6Si2",
+            "H6Si2"
+        ],
+        "orbitals": [
+            "Si 2p"
+        ],
+        "binding_energies": [
+            106.86
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 43 in Jolly et al.)"
+        ]
+    },
+    "[SiH3][Te][SiH3]": {
+        "chemical_formula": [
+            "H6Si2Te",
+            "H6Si2Te",
+            "H6Si2Te",
+            "H6Si2Te",
+            "H6Si2Te",
+            "H6Si2Te",
+            "H6Si2Te"
+        ],
+        "orbitals": [
+            "Si 2p",
+            "Te 4d"
+        ],
+        "binding_energies": [
+            107.5,
+            46.93
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
+        ]
+    },
+    "Br[Sn]Br": {
+        "chemical_formula": [
+            "Br2Sn",
+            "Br2Sn",
+            "Br2Sn",
+            "Br2Sn",
+            "Br2Sn"
+        ],
+        "orbitals": [
+            "Sn 4d5/2"
+        ],
+        "binding_energies": [
+            33.15
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 181 in Jolly et al.)"
+        ]
+    },
+    "Cl[Sn]Cl": {
+        "chemical_formula": [
+            "Cl2Sn",
+            "Cl2Sn",
+            "Cl2Sn",
+            "Cl2Sn",
+            "Cl2Sn"
+        ],
+        "orbitals": [
+            "Sn 4d5/2"
+        ],
+        "binding_energies": [
+            33.48
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 181 in Jolly et al.)"
+        ]
+    },
+    "O1NC=C2C=NO[TeH]12": {
+        "chemical_formula": [
+            "C3H4N2O2Te",
+            "C3H4N2O2Te",
+            "C3H4N2O2Te",
+            "C3H4N2O2Te",
+            "C3H4N2O2Te",
+            "C3H4N2O2Te",
+            "C3H4N2O2Te",
+            "C3H4N2O2Te",
+            "C3H4N2O2Te",
+            "C3H4N2O2Te"
+        ],
+        "orbitals": [
+            "Te 3d5/2"
+        ],
+        "binding_energies": [
+            581.49
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)"
+        ]
+    },
+    "[Te][Te]": {
+        "chemical_formula": [
+            "Te2",
+            "Te2",
+            "Te2"
+        ],
+        "orbitals": [
+            "Te 3d5/2"
+        ],
+        "binding_energies": [
+            580.14
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 154 in Jolly et al.)"
+        ]
+    },
+    "[O-2].[F-].[F-].[F-].[V]": {
+        "chemical_formula": [
+            "F3OV-5",
+            "F3OV-5",
+            "F3OV-5",
+            "F3OV-5",
+            "F3OV-5",
+            "F3OV-5"
+        ],
+        "orbitals": [
+            "V 2p3/2"
+        ],
+        "binding_energies": [
+            527.3
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 32 in Jolly et al.)"
+        ]
+    },
+    "O(OOOF)F.[Xe]": {
+        "chemical_formula": [
+            "F2O4Xe",
+            "F2O4Xe",
+            "F2O4Xe",
+            "F2O4Xe",
+            "F2O4Xe",
+            "F2O4Xe"
+        ],
+        "orbitals": [
+            "Xe 3d5/2",
+            "Xe 4d5/2"
+        ],
+        "binding_energies": [
+            683.51,
+            72.8
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 49 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 85 in Jolly et al.)"
+        ]
+    },
+    "C[CH2-].C[CH2-].[Zn+2]": {
+        "chemical_formula": [
+            "C4H10Zn",
+            "C4H10Zn",
+            "C4H10Zn",
+            "C4H10Zn",
+            "C4H10Zn",
+            "C4H10Zn",
+            "C4H10Zn"
+        ],
+        "orbitals": [
+            "Zn 3d5/2"
+        ],
+        "binding_energies": [
+            16.709
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 88 in Jolly et al.)"
+        ]
+    }
+}
