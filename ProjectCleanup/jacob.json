@@ -1,13 +1,7 @@
 {
     "C(C(F)(F)F)O": {
         "chemical_formula": [
-            "C2H3F3O",
-            "C2H3F3O",
-            "C2H3F3O",
-            "C2H3F3O",
-            "C2H3F3O",
-            "C2H3F3O",
-            "C2H3F3O"
+            "CF3CH2OH"
         ],
         "orbitals": [
             "F 1s"
@@ -21,13 +15,7 @@
     },
     "C1C(N1)C(F)(F)F": {
         "chemical_formula": [
-            "C3H4F3N",
-            "C3H4F3N",
-            "C3H4F3N",
-            "C3H4F3N",
-            "C3H4F3N",
-            "C3H4F3N",
-            "C3H4F3N"
+            "CF3CH2NH2"
         ],
         "orbitals": [
             "F 1s"
@@ -41,11 +29,7 @@
     },
     "C(F)(F)(F)SC(F)(F)F": {
         "chemical_formula": [
-            "C2F6S",
-            "C2F6S",
-            "C2F6S",
-            "C2F6S",
-            "C2F6S"
+            "CF3SCF3"
         ],
         "orbitals": [
             "F 1s"
@@ -59,11 +43,7 @@
     },
     "C#CC(F)(F)F": {
         "chemical_formula": [
-            "C3HF3",
-            "C3HF3",
-            "C3HF3",
-            "C3HF3",
-            "C3HF3"
+            "CF3CCH"
         ],
         "orbitals": [
             "F 1s"
@@ -77,12 +57,7 @@
     },
     "C=CC(F)(F)F": {
         "chemical_formula": [
-            "C3H3F3",
-            "C3H3F3",
-            "C3H3F3",
-            "C3H3F3",
-            "C3H3F3",
-            "C3H3F3"
+            "CF3CHCH2"
         ],
         "orbitals": [
             "F 1s"
@@ -96,16 +71,9 @@
     },
     "C(=O)=[Mo](=C=O)=C=O.P(F)(F)F.P(F)(F)F.P(F)(F)F": {
         "chemical_formula": [
-            "C3F9MoO3P3",
-            "C3F9MoO3P3",
-            "C3F9MoO3P3",
-            "C3F9MoO3P3",
-            "C3F9MoO3P3",
-            "C3F9MoO3P3",
-            "C3F9MoO3P3",
-            "C3F9MoO3P3",
-            "C3F9MoO3P3",
-            "C3F9MoO3P3"
+            "cis-Mo(CO)3(PF3)3",
+            "cis-Mo(CO)3(PF3)3",
+            "cis-Mo(CO)3(PF3)3"
         ],
         "orbitals": [
             "F 1s",
@@ -125,16 +93,7 @@
     },
     "FC(C(=O)O)(F)F.C[GeH2]C": {
         "chemical_formula": [
-            "C4H9F3GeO2",
-            "C4H9F3GeO2",
-            "C4H9F3GeO2",
-            "C4H9F3GeO2",
-            "C4H9F3GeO2",
-            "C4H9F3GeO2",
-            "C4H9F3GeO2",
-            "C4H9F3GeO2",
-            "C4H9F3GeO2",
-            "C4H9F3GeO2"
+            "((CH3)2GeH)OC(O)CF3"
         ],
         "orbitals": [
             "F 1s"
@@ -148,10 +107,8 @@
     },
     "C(=C(F)F)(C(F)(F)F)C(F)(F)F": {
         "chemical_formula": [
-            "C4F8",
-            "C4F8",
-            "C4F8",
-            "C4F8"
+            "CF3C*FCFCF3",
+            "CF*3CFCFCF3"
         ],
         "orbitals": [
             "F 1s",
@@ -168,15 +125,7 @@
     },
     "C(=O)=[Cr](=C=O)(=C=O)(=C=O)=C=O.P(F)(F)F": {
         "chemical_formula": [
-            "C5CrF3O5P",
-            "C5CrF3O5P",
-            "C5CrF3O5P",
-            "C5CrF3O5P",
-            "C5CrF3O5P",
-            "C5CrF3O5P",
-            "C5CrF3O5P",
-            "C5CrF3O5P",
-            "C5CrF3O5P"
+            "Cr(CO)5PF3"
         ],
         "orbitals": [
             "F 1s"
@@ -190,16 +139,8 @@
     },
     "F[Si](F)(F)[Mn](=C=O)(=C=O)(=C=O)(=C=O)=C=O": {
         "chemical_formula": [
-            "C5F3MnO5Si",
-            "C5F3MnO5Si",
-            "C5F3MnO5Si",
-            "C5F3MnO5Si",
-            "C5F3MnO5Si",
-            "C5F3MnO5Si",
-            "C5F3MnO5Si",
-            "C5F3MnO5Si",
-            "C5F3MnO5Si",
-            "C5F3MnO5Si"
+            "SiF3Mn(CO)5",
+            "SiF3Mn(CO)5"
         ],
         "orbitals": [
             "F 1s",
@@ -216,15 +157,7 @@
     },
     "C(=O)=[Mo](=C=O)(=C=O)(=C=O)=C=O.P(F)(F)F": {
         "chemical_formula": [
-            "C5F3MoO5P",
-            "C5F3MoO5P",
-            "C5F3MoO5P",
-            "C5F3MoO5P",
-            "C5F3MoO5P",
-            "C5F3MoO5P",
-            "C5F3MoO5P",
-            "C5F3MoO5P",
-            "C5F3MoO5P"
+            "Mo(CO)5PF3"
         ],
         "orbitals": [
             "F 1s"
@@ -238,12 +171,9 @@
     },
     "C1=C(C=C(C(=C1F)F)F)F": {
         "chemical_formula": [
-            "C6H2F4",
-            "C6H2F4",
-            "C6H2F4",
-            "C6H2F4",
-            "C6H2F4",
-            "C6H2F4"
+            "o-C6H2F4",
+            "p-C6H2F4",
+            "m-C6H2F4"
         ],
         "orbitals": [
             "F 1s",
@@ -281,10 +211,11 @@
     },
     "[N-](F)F": {
         "chemical_formula": [
-            "F2N-",
-            "F2N-",
-            "F2N-",
-            "F2N-"
+            "NF2",
+            "NF2",
+            "NF2",
+            "NF2",
+            "NF2"
         ],
         "orbitals": [
             "F 1s",
@@ -310,9 +241,8 @@
     },
     "O(F)F": {
         "chemical_formula": [
-            "F2O",
-            "F2O",
-            "F2O"
+            "OF2",
+            "OF2"
         ],
         "orbitals": [
             "F 1s",
@@ -329,11 +259,9 @@
     },
     "O=S(=O)(F)F": {
         "chemical_formula": [
-            "F2O2S",
-            "F2O2S",
-            "F2O2S",
-            "F2O2S",
-            "F2O2S"
+            "SO2F2",
+            "SO2F2",
+            "SO2F2"
         ],
         "orbitals": [
             "F 1s",
@@ -353,10 +281,11 @@
     },
     "F[Xe]F": {
         "chemical_formula": [
-            "F2Xe",
-            "F2Xe",
-            "F2Xe",
-            "F2Xe"
+            "XeF2",
+            "XeF2",
+            "XeF2",
+            "XeF2",
+            "XeF2"
         ],
         "orbitals": [
             "F 1s",
@@ -382,9 +311,8 @@
     },
     "N(F)(F)F": {
         "chemical_formula": [
-            "F3N",
-            "F3N",
-            "F3N"
+            "NF3",
+            "NF3"
         ],
         "orbitals": [
             "F 1s",
@@ -401,10 +329,9 @@
     },
     "[N+]([O-])(F)(F)F": {
         "chemical_formula": [
-            "F3NO",
-            "F3NO",
-            "F3NO",
-            "F3NO"
+            "NOF3",
+            "ONF3",
+            "ONF3"
         ],
         "orbitals": [
             "O 1s",
@@ -424,10 +351,9 @@
     },
     "N#S(F)(F)F": {
         "chemical_formula": [
-            "F3NS",
-            "F3NS",
-            "F3NS",
-            "F3NS"
+            "NSF3",
+            "NSF3",
+            "NSF3"
         ],
         "orbitals": [
             "F 1s",
@@ -447,10 +373,14 @@
     },
     "O=P(F)(F)F": {
         "chemical_formula": [
-            "F3OP",
-            "F3OP",
-            "F3OP",
-            "F3OP"
+            "POF3",
+            "POF3",
+            "POF3",
+            "POF3",
+            "POF3",
+            "POF3",
+            "POF3",
+            "POF3"
         ],
         "orbitals": [
             "F 1s",
@@ -485,10 +415,8 @@
     },
     "O(F)F.[V]": {
         "chemical_formula": [
-            "F2OV",
-            "F2OV",
-            "F2OV",
-            "F2OV"
+            "VOF3",
+            "VOF3"
         ],
         "orbitals": [
             "F 1s",
@@ -505,9 +433,13 @@
     },
     "FP(F)F": {
         "chemical_formula": [
-            "F3P",
-            "F3P",
-            "F3P"
+            "PF3",
+            "PF3",
+            "PF3",
+            "PF3",
+            "PF3",
+            "PF3",
+            "PF3"
         ],
         "orbitals": [
             "F 1s",
@@ -539,10 +471,14 @@
     },
     "FP(=S)(F)F": {
         "chemical_formula": [
-            "F3PS",
-            "F3PS",
-            "F3PS",
-            "F3PS"
+            "SPF3",
+            "SPF3",
+            "SPF3",
+            "SPF3",
+            "SPF3",
+            "SPF3",
+            "PSF3",
+            "PSF3"
         ],
         "orbitals": [
             "F 1s",
@@ -577,10 +513,9 @@
     },
     "F[Ge](F)(F)F": {
         "chemical_formula": [
-            "F4Ge",
-            "F4Ge",
-            "F4Ge",
-            "F4Ge"
+            "GeF4",
+            "GeF4",
+            "GeF4"
         ],
         "orbitals": [
             "F 1s",
@@ -600,10 +535,8 @@
     },
     "N(N(F)F)(F)F": {
         "chemical_formula": [
-            "F4N2",
-            "F4N2",
-            "F4N2",
-            "F4N2"
+            "N2F4",
+            "N2F4"
         ],
         "orbitals": [
             "F 1s",
@@ -620,11 +553,8 @@
     },
     "F[Xe](F)(F)(F)=O": {
         "chemical_formula": [
-            "F4OXe",
-            "F4OXe",
-            "F4OXe",
-            "F4OXe",
-            "F4OXe"
+            "XeOF4",
+            "XeOF4"
         ],
         "orbitals": [
             "F 1s",
@@ -641,9 +571,9 @@
     },
     "FS(F)(F)F": {
         "chemical_formula": [
-            "F4S",
-            "F4S",
-            "F4S"
+            "SF4",
+            "SF4",
+            "SF4"
         ],
         "orbitals": [
             "F 1s",
@@ -663,10 +593,9 @@
     },
     "F[Si](F)(F)F": {
         "chemical_formula": [
-            "F4Si",
-            "F4Si",
-            "F4Si",
-            "F4Si"
+            "SiF4",
+            "SiF4",
+            "SiF4"
         ],
         "orbitals": [
             "F 1s",
@@ -686,10 +615,9 @@
     },
     "F[Ti](F)(F)F": {
         "chemical_formula": [
-            "F4Ti",
-            "F4Ti",
-            "F4Ti",
-            "F4Ti"
+            "TiF4",
+            "TiF4",
+            "TiF4"
         ],
         "orbitals": [
             "F 1s",
@@ -709,10 +637,10 @@
     },
     "F[Xe](F)(F)F": {
         "chemical_formula": [
-            "F4Xe",
-            "F4Xe",
-            "F4Xe",
-            "F4Xe"
+            "XeF4",
+            "XeF4",
+            "XeF4",
+            "XeF4"
         ],
         "orbitals": [
             "F 1s",
@@ -735,9 +663,7 @@
     },
     "FI(F)(F)(F)F": {
         "chemical_formula": [
-            "F5I",
-            "F5I",
-            "F5I"
+            "IF5"
         ],
         "orbitals": [
             "F 1s"
@@ -751,9 +677,15 @@
     },
     "FP(F)(F)(F)F": {
         "chemical_formula": [
-            "F5P",
-            "F5P",
-            "F5P"
+            "PF5",
+            "PF5",
+            "PF5",
+            "PF5",
+            "PF5",
+            "PF5",
+            "PF5",
+            "PF5",
+            "PF5"
         ],
         "orbitals": [
             "F 1s",
@@ -791,10 +723,8 @@
     },
     "F[Sb](F)(F)(F)F": {
         "chemical_formula": [
-            "F5Sb",
-            "F5Sb",
-            "F5Sb",
-            "F5Sb"
+            "SbF5",
+            "SbF5"
         ],
         "orbitals": [
             "F 1s",
@@ -811,9 +741,8 @@
     },
     "F[V](F)(F)(F)F": {
         "chemical_formula": [
-            "F5V",
-            "F5V",
-            "F5V"
+            "VF5",
+            "VF5"
         ],
         "orbitals": [
             "F 1s",
@@ -830,12 +759,9 @@
     },
     "N1=P(N=P(N=P1(F)F)(F)F)(F)F": {
         "chemical_formula": [
-            "F6N3P3",
-            "F6N3P3",
-            "F6N3P3",
-            "F6N3P3",
-            "F6N3P3",
-            "F6N3P3"
+            "(NPF2)3",
+            "(NPF2)3",
+            "(NPF2)3"
         ],
         "orbitals": [
             "F 1s",
@@ -855,9 +781,13 @@
     },
     "FS(F)(F)(F)(F)F": {
         "chemical_formula": [
-            "F6S",
-            "F6S",
-            "F6S"
+            "SF6",
+            "SF6",
+            "SF6",
+            "SF6",
+            "SF6",
+            "SF6",
+            "SF6"
         ],
         "orbitals": [
             "F 1s",
@@ -889,9 +819,8 @@
     },
     "F[U](F)(F)(F)(F)F": {
         "chemical_formula": [
-            "F6U",
-            "F6U",
-            "F6U"
+            "UF6",
+            "UF6"
         ],
         "orbitals": [
             "F 1s",
@@ -908,9 +837,8 @@
     },
     "F[W](F)(F)(F)(F)F": {
         "chemical_formula": [
-            "F6W",
-            "F6W",
-            "F6W"
+            "WF6",
+            "WF6"
         ],
         "orbitals": [
             "F 1s",
@@ -927,10 +855,8 @@
     },
     "F[Xe](F)(F)(F)(F)F": {
         "chemical_formula": [
-            "F6Xe",
-            "F6Xe",
-            "F6Xe",
-            "F6Xe"
+            "XeF6",
+            "XeF6"
         ],
         "orbitals": [
             "F 1s",
@@ -947,12 +873,9 @@
     },
     "N1=P(N=P(N=P(N=P1(F)F)(F)F)(F)F)(F)F": {
         "chemical_formula": [
-            "F8N4P4",
-            "F8N4P4",
-            "F8N4P4",
-            "F8N4P4",
-            "F8N4P4",
-            "F8N4P4"
+            "(NPF2)4",
+            "(NPF2)4",
+            "(NPF2)4"
         ],
         "orbitals": [
             "F 1s",
@@ -972,13 +895,9 @@
     },
     "FP(F)F.FP(F)F.FP(F)F.FP(F)F.[Ni]": {
         "chemical_formula": [
-            "F12NiP4",
-            "F12NiP4",
-            "F12NiP4",
-            "F12NiP4",
-            "F12NiP4",
-            "F12NiP4",
-            "F12NiP4"
+            "Ni(PF3)4",
+            "Ni(PF3)4",
+            "Ni(PF3)4"
         ],
         "orbitals": [
             "F 1s",
@@ -998,14 +917,10 @@
     },
     "C=CC=C.[C-]#[O+].[C-]#[O+].[C-]#[O+].[Fe]": {
         "chemical_formula": [
-            "C7H6FeO3",
-            "C7H6FeO3",
-            "C7H6FeO3",
-            "C7H6FeO3",
-            "C7H6FeO3",
-            "C7H6FeO3",
-            "C7H6FeO3",
-            "C7H6FeO3"
+            "(CH2CHCHCH2)Fe(CO)3",
+            "(CH2CHCHCH2)Fe(CO)3",
+            "Fe(CO)3C4H6",
+            "(CH2)3CFe(CO)3"
         ],
         "orbitals": [
             "Fe 2p3/2",
@@ -1028,17 +943,10 @@
     },
     "I.I.[Fe].[Fe].[N]=O.[N]=O.[N]=O.[N]=O": {
         "chemical_formula": [
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4",
-            "H2Fe2I2N4O4"
+            "(Fe(NO)2I)2",
+            "(Fe(NO)2I)2",
+            "(Fe(NO)2I)2",
+            "(Fe(NO)2I)2"
         ],
         "orbitals": [
             "Fe 2p3/2",
@@ -1061,12 +969,7 @@
     },
     "C[Ga](C)C": {
         "chemical_formula": [
-            "C3H9Ga",
-            "C3H9Ga",
-            "C3H9Ga",
-            "C3H9Ga",
-            "C3H9Ga",
-            "C3H9Ga"
+            "Ga(CH3)3"
         ],
         "orbitals": [
             "Ga 3d5/2"
@@ -1080,7 +983,6 @@
     },
     "[Ge](I)(I)(I)I": {
         "chemical_formula": [
-            "GeI4",
             "GeI4",
             "GeI4",
             "GeI4"
@@ -1103,12 +1005,8 @@
     },
     "O([GeH3])[GeH3]": {
         "chemical_formula": [
-            "H6Ge2O",
-            "H6Ge2O",
-            "H6Ge2O",
-            "H6Ge2O",
-            "H6Ge2O",
-            "H6Ge2O"
+            "(GeH3)2O",
+            "(GeH3)2O"
         ],
         "orbitals": [
             "Ge 3d",
@@ -1125,12 +1023,8 @@
     },
     "S([GeH3])[GeH3]": {
         "chemical_formula": [
-            "H6Ge2S",
-            "H6Ge2S",
-            "H6Ge2S",
-            "H6Ge2S",
-            "H6Ge2S",
-            "H6Ge2S"
+            "(GeH3)2S",
+            "(GeH3)2S"
         ],
         "orbitals": [
             "Ge 3d",
@@ -1147,13 +1041,7 @@
     },
     "[GeH3].[GeH3].[Se]": {
         "chemical_formula": [
-            "H6Ge2Se",
-            "H6Ge2Se",
-            "H6Ge2Se",
-            "H6Ge2Se",
-            "H6Ge2Se",
-            "H6Ge2Se",
-            "H6Ge2Se"
+            "(GeH3)2Se"
         ],
         "orbitals": [
             "Ge 3d"
@@ -1167,13 +1055,8 @@
     },
     "[GeH3].[GeH3].[Te]": {
         "chemical_formula": [
-            "H6Ge2Te",
-            "H6Ge2Te",
-            "H6Ge2Te",
-            "H6Ge2Te",
-            "H6Ge2Te",
-            "H6Ge2Te",
-            "H6Ge2Te"
+            "(GeH3)2Te",
+            "(GeH3)2Te"
         ],
         "orbitals": [
             "Ge 3d",
@@ -1190,13 +1073,7 @@
     },
     "CC[Hg]CC": {
         "chemical_formula": [
-            "C4H10Hg",
-            "C4H10Hg",
-            "C4H10Hg",
-            "C4H10Hg",
-            "C4H10Hg",
-            "C4H10Hg",
-            "C4H10Hg"
+            "Hg(C2H5)2"
         ],
         "orbitals": [
             "Hg 5d5/2"
@@ -1210,11 +1087,7 @@
     },
     "CCI": {
         "chemical_formula": [
-            "C2H5I",
-            "C2H5I",
-            "C2H5I",
-            "C2H5I",
-            "C2H5I"
+            "CH3CH2I"
         ],
         "orbitals": [
             "I 3d5/2"
@@ -1228,11 +1101,7 @@
     },
     "CCCI": {
         "chemical_formula": [
-            "C3H7I",
-            "C3H7I",
-            "C3H7I",
-            "C3H7I",
-            "C3H7I"
+            "CH3CH2CH2I"
         ],
         "orbitals": [
             "I 3d5/2"
@@ -1246,11 +1115,7 @@
     },
     "CC(C)I": {
         "chemical_formula": [
-            "C3H7I",
-            "C3H7I",
-            "C3H7I",
-            "C3H7I",
-            "C3H7I"
+            "(CH3)2CHI"
         ],
         "orbitals": [
             "I 3d5/2"
@@ -1264,11 +1129,7 @@
     },
     "CCCCI": {
         "chemical_formula": [
-            "C4H9I",
-            "C4H9I",
-            "C4H9I",
-            "C4H9I",
-            "C4H9I"
+            "CH3CH2CH2CH2I"
         ],
         "orbitals": [
             "I 3d5/2"
@@ -1282,11 +1143,7 @@
     },
     "CC(C)(C)I": {
         "chemical_formula": [
-            "C4H9I",
-            "C4H9I",
-            "C4H9I",
-            "C4H9I",
-            "C4H9I"
+            "(CH3)3CI"
         ],
         "orbitals": [
             "I 3d5/2"
@@ -1300,12 +1157,7 @@
     },
     "CCCCCI": {
         "chemical_formula": [
-            "C5H11I",
-            "C5H11I",
-            "C5H11I",
-            "C5H11I",
-            "C5H11I",
-            "C5H11I"
+            "CH3(CH2)4I"
         ],
         "orbitals": [
             "I 3d5/2"
@@ -1319,6 +1171,10 @@
     },
     "II": {
         "chemical_formula": [
+            "I2",
+            "I2",
+            "I2",
+            "I2",
             "I2",
             "I2"
         ],
@@ -1349,10 +1205,8 @@
     },
     "[Sn](I)(I)(I)I": {
         "chemical_formula": [
-            "I4Sn",
-            "I4Sn",
-            "I4Sn",
-            "I4Sn"
+            "SnI4",
+            "SnI4"
         ],
         "orbitals": [
             "I 3d5/2",
@@ -1369,12 +1223,7 @@
     },
     "CC[In]C": {
         "chemical_formula": [
-            "C3H8In",
-            "C3H8In",
-            "C3H8In",
-            "C3H8In",
-            "C3H8In",
-            "C3H8In"
+            "In(CH3)3"
         ],
         "orbitals": [
             "In 4d5/2"
@@ -1388,14 +1237,7 @@
     },
     "C1C=CC=[C-]1.C1C=CC=[C-]1.[Mg+2]": {
         "chemical_formula": [
-            "C10H10Mg",
-            "C10H10Mg",
-            "C10H10Mg",
-            "C10H10Mg",
-            "C10H10Mg",
-            "C10H10Mg",
-            "C10H10Mg",
-            "C10H10Mg"
+            "Mg(C5H5)2"
         ],
         "orbitals": [
             "Mg 2p3/2"
@@ -1409,16 +1251,9 @@
     },
     "C[Sn](C)C.[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[Mn]": {
         "chemical_formula": [
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn",
-            "C8H9MnO5Sn"
+            "(CH3)3SnMn(CO)5",
+            "(CH3)3SnMn(CO)5",
+            "(CH3)3SnMn(CO)5"
         ],
         "orbitals": [
             "Mn 2p3/2",
@@ -1438,19 +1273,8 @@
     },
     "CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.[Mn].[Mn]": {
         "chemical_formula": [
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4",
-            "C24H24Mn2N4O4"
+            "Mo2(OC.CHCHCHC(CH3)N.)4",
+            "Mo2(OC.CHCHCHC(CH3)N.)4"
         ],
         "orbitals": [
             "Mo 3d5/2",
@@ -1467,13 +1291,7 @@
     },
     "[BH3-][N+](C)(C)C": {
         "chemical_formula": [
-            "C3H12BN",
-            "C3H12BN",
-            "C3H12BN",
-            "C3H12BN",
-            "C3H12BN",
-            "C3H12BN",
-            "C3H12BN"
+            "(CH3)3NBH3"
         ],
         "orbitals": [
             "N 1s"
@@ -1487,13 +1305,7 @@
     },
     "B(CC)(CC)N": {
         "chemical_formula": [
-            "C4H12BN",
-            "C4H12BN",
-            "C4H12BN",
-            "C4H12BN",
-            "C4H12BN",
-            "C4H12BN",
-            "C4H12BN"
+            "H2BN(CH2CH3)2"
         ],
         "orbitals": [
             "N 1s"
@@ -1507,13 +1319,8 @@
     },
     "C1=CN=CC=C1Br": {
         "chemical_formula": [
-            "C5H4BrN",
-            "C5H4BrN",
-            "C5H4BrN",
-            "C5H4BrN",
-            "C5H4BrN",
-            "C5H4BrN",
-            "C5H4BrN"
+            "4-Br(NC5H4)",
+            "2-Br(NC5H4)"
         ],
         "orbitals": [
             "N 1s",
@@ -1530,13 +1337,7 @@
     },
     "C(C#N)Cl": {
         "chemical_formula": [
-            "C2H2ClN",
-            "C2H2ClN",
-            "C2H2ClN",
-            "C2H2ClN",
-            "C2H2ClN",
-            "C2H2ClN",
-            "C2H2ClN"
+            "ClCH2CN"
         ],
         "orbitals": [
             "N 1s"
@@ -1550,12 +1351,7 @@
     },
     "C(#N)C(Cl)(Cl)Cl": {
         "chemical_formula": [
-            "C2Cl3N",
-            "C2Cl3N",
-            "C2Cl3N",
-            "C2Cl3N",
-            "C2Cl3N",
-            "C2Cl3N"
+            "Cl3CCN"
         ],
         "orbitals": [
             "N 1s"
@@ -1569,12 +1365,8 @@
     },
     "CC(=O)N": {
         "chemical_formula": [
-            "C2H5NO",
-            "C2H5NO",
-            "C2H5NO",
-            "C2H5NO",
-            "C2H5NO",
-            "C2H5NO"
+            "HCONHCH3",
+            "CH3NHHCO"
         ],
         "orbitals": [
             "N 1s",
@@ -1591,11 +1383,8 @@
     },
     "CNC": {
         "chemical_formula": [
-            "C2H7N",
-            "C2H7N",
-            "C2H7N",
-            "C2H7N",
-            "C2H7N"
+            "(CH3)2NH",
+            "(CH3)2NH"
         ],
         "orbitals": [
             "N 1s",
@@ -1612,11 +1401,8 @@
     },
     "CCN": {
         "chemical_formula": [
-            "C2H7N",
-            "C2H7N",
-            "C2H7N",
-            "C2H7N",
-            "C2H7N"
+            "CH3CH2NH2",
+            "CH3CH2NH2"
         ],
         "orbitals": [
             "N 1s",
@@ -1633,12 +1419,7 @@
     },
     "C(CO)N": {
         "chemical_formula": [
-            "C2H7NO",
-            "C2H7NO",
-            "C2H7NO",
-            "C2H7NO",
-            "C2H7NO",
-            "C2H7NO"
+            "H2N(CH2)2OH"
         ],
         "orbitals": [
             "N 1s"
@@ -1652,12 +1433,7 @@
     },
     "C(CN)N": {
         "chemical_formula": [
-            "C2H8N2",
-            "C2H8N2",
-            "C2H8N2",
-            "C2H8N2",
-            "C2H8N2",
-            "C2H8N2"
+            "H2N(CH2)2NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -1671,13 +1447,7 @@
     },
     "C(CCl)C#N": {
         "chemical_formula": [
-            "C3H4ClN",
-            "C3H4ClN",
-            "C3H4ClN",
-            "C3H4ClN",
-            "C3H4ClN",
-            "C3H4ClN",
-            "C3H4ClN"
+            "ClCH2CH2CN"
         ],
         "orbitals": [
             "N 1s"
@@ -1691,13 +1461,7 @@
     },
     "C=CCN.Cl": {
         "chemical_formula": [
-            "C3H8ClN",
-            "C3H8ClN",
-            "C3H8ClN",
-            "C3H8ClN",
-            "C3H8ClN",
-            "C3H8ClN",
-            "C3H8ClN"
+            "H2N(CH2)3Cl"
         ],
         "orbitals": [
             "N 1s"
@@ -1711,12 +1475,7 @@
     },
     "C(C#N)C#N": {
         "chemical_formula": [
-            "C3H2N2",
-            "C3H2N2",
-            "C3H2N2",
-            "C3H2N2",
-            "C3H2N2",
-            "C3H2N2"
+            "NCCH2CN"
         ],
         "orbitals": [
             "N 1s"
@@ -1730,11 +1489,8 @@
     },
     "CCC#N": {
         "chemical_formula": [
-            "C3H5N",
-            "C3H5N",
-            "C3H5N",
-            "C3H5N",
-            "C3H5N"
+            "C2H5CN",
+            "C2H5CN"
         ],
         "orbitals": [
             "N 1s",
@@ -1751,12 +1507,8 @@
     },
     "CN(C)C#N": {
         "chemical_formula": [
-            "C3H6N2",
-            "C3H6N2",
-            "C3H6N2",
-            "C3H6N2",
-            "C3H6N2",
-            "C3H6N2"
+            "(CH3)2NCN*",
+            "(CH3)2N*CN"
         ],
         "orbitals": [
             "N 1s",
@@ -1773,11 +1525,7 @@
     },
     "CCCN": {
         "chemical_formula": [
-            "C3H9N",
-            "C3H9N",
-            "C3H9N",
-            "C3H9N",
-            "C3H9N"
+            "CH3CH2CH2NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -1791,12 +1539,7 @@
     },
     "C(CN)CO": {
         "chemical_formula": [
-            "C3H9NO",
-            "C3H9NO",
-            "C3H9NO",
-            "C3H9NO",
-            "C3H9NO",
-            "C3H9NO"
+            "H2N(CH2)3OH"
         ],
         "orbitals": [
             "N 1s"
@@ -1810,12 +1553,7 @@
     },
     "COCCN": {
         "chemical_formula": [
-            "C3H9NO",
-            "C3H9NO",
-            "C3H9NO",
-            "C3H9NO",
-            "C3H9NO",
-            "C3H9NO"
+            "H2N(CH2)2OCH3"
         ],
         "orbitals": [
             "N 1s"
@@ -1829,13 +1567,8 @@
     },
     "CP(=N)(C)C": {
         "chemical_formula": [
-            "C3H10NP",
-            "C3H10NP",
-            "C3H10NP",
-            "C3H10NP",
-            "C3H10NP",
-            "C3H10NP",
-            "C3H10NP"
+            "P(CH3)3NH",
+            "(CH3)3PNH"
         ],
         "orbitals": [
             "N 1s",
@@ -1852,13 +1585,7 @@
     },
     "C(CN)CN": {
         "chemical_formula": [
-            "C3H10N2",
-            "C3H10N2",
-            "C3H10N2",
-            "C3H10N2",
-            "C3H10N2",
-            "C3H10N2",
-            "C3H10N2"
+            "H2N(CH2)3NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -1872,12 +1599,7 @@
     },
     "C(=C/C#N)\\C#N": {
         "chemical_formula": [
-            "C4H2N2",
-            "C4H2N2",
-            "C4H2N2",
-            "C4H2N2",
-            "C4H2N2",
-            "C4H2N2"
+            "NCCHCHCN"
         ],
         "orbitals": [
             "N 1s"
@@ -1891,12 +1613,7 @@
     },
     "C#CCC#[NH+]": {
         "chemical_formula": [
-            "C4H4N+",
-            "C4H4N+",
-            "C4H4N+",
-            "C4H4N+",
-            "C4H4N+",
-            "C4H4N+"
+            "N.CHCHCHC.H"
         ],
         "orbitals": [
             "N 1s"
@@ -1910,11 +1627,7 @@
     },
     "C=CCC#N": {
         "chemical_formula": [
-            "C4H5N",
-            "C4H5N",
-            "C4H5N",
-            "C4H5N",
-            "C4H5N"
+            "C.H2CH2C.HCN"
         ],
         "orbitals": [
             "N 1s"
@@ -1928,13 +1641,7 @@
     },
     "COC(=O)CC#N": {
         "chemical_formula": [
-            "C4H5NO2",
-            "C4H5NO2",
-            "C4H5NO2",
-            "C4H5NO2",
-            "C4H5NO2",
-            "C4H5NO2",
-            "C4H5NO2"
+            "C2H5OC(O)CN"
         ],
         "orbitals": [
             "N 1s"
@@ -1948,11 +1655,7 @@
     },
     "CCCC#N": {
         "chemical_formula": [
-            "C4H7N",
-            "C4H7N",
-            "C4H7N",
-            "C4H7N",
-            "C4H7N"
+            "CH3CH2CH2CN"
         ],
         "orbitals": [
             "N 1s"
@@ -1966,11 +1669,7 @@
     },
     "CC(C)[N+]#[C-]": {
         "chemical_formula": [
-            "C4H7N",
-            "C4H7N",
-            "C4H7N",
-            "C4H7N",
-            "C4H7N"
+            "(CH3)2CHCN"
         ],
         "orbitals": [
             "N 1s"
@@ -1984,11 +1683,7 @@
     },
     "C1CCNC1": {
         "chemical_formula": [
-            "C4H9N",
-            "C4H9N",
-            "C4H9N",
-            "C4H9N",
-            "C4H9N"
+            "HN.CH2CH2CH2C.H2"
         ],
         "orbitals": [
             "N 1s"
@@ -2002,12 +1697,7 @@
     },
     "CC(=O)N(C)C": {
         "chemical_formula": [
-            "C4H9NO",
-            "C4H9NO",
-            "C4H9NO",
-            "C4H9NO",
-            "C4H9NO",
-            "C4H9NO"
+            "CH3CON(CH3)2"
         ],
         "orbitals": [
             "N 1s"
@@ -2021,14 +1711,7 @@
     },
     "CC(=O)NN(C)C": {
         "chemical_formula": [
-            "C4H10N2O",
-            "C4H10N2O",
-            "C4H10N2O",
-            "C4H10N2O",
-            "C4H10N2O",
-            "C4H10N2O",
-            "C4H10N2O",
-            "C4H10N2O"
+            "(CH3)2NC(O)NHCH3"
         ],
         "orbitals": [
             "N 1s"
@@ -2042,12 +1725,8 @@
     },
     "CCNCC": {
         "chemical_formula": [
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N"
+            "(C2H5)2NH",
+            "(C2H5)2NH"
         ],
         "orbitals": [
             "N 1s",
@@ -2064,12 +1743,7 @@
     },
     "CCCCN": {
         "chemical_formula": [
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N"
+            "CH3CH2CH2CH2NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2083,12 +1757,7 @@
     },
     "CCC(C)N": {
         "chemical_formula": [
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N"
+            "CH3CH2CH(CH3)NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2102,12 +1771,7 @@
     },
     "CC(C)(C)N": {
         "chemical_formula": [
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N",
-            "C4H11N"
+            "(CH3)2CNH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2121,13 +1785,7 @@
     },
     "C1=CN=CC=C1Cl": {
         "chemical_formula": [
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN"
+            "4-chloropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2141,13 +1799,7 @@
     },
     "C1=CC(=CN=C1)Cl": {
         "chemical_formula": [
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN"
+            "3-chloropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2161,13 +1813,7 @@
     },
     "C1=CC=NC(=C1)Cl": {
         "chemical_formula": [
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN",
-            "C5H4ClN"
+            "2-chloropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2181,12 +1827,7 @@
     },
     "C1=CN=CC=C1F": {
         "chemical_formula": [
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN"
+            "4-fluoropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2200,12 +1841,7 @@
     },
     "C1=CC(=CN=C1)F": {
         "chemical_formula": [
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN"
+            "3-fluoropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2219,12 +1855,7 @@
     },
     "C1=CC=NC(=C1)F": {
         "chemical_formula": [
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN",
-            "C5H4FN"
+            "2-fluoropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2238,14 +1869,7 @@
     },
     "C1=CN=CC=C1[N+](=O)[O-]": {
         "chemical_formula": [
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2"
+            "4-nitropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2259,14 +1883,7 @@
     },
     "C1=CC(=CN=C1)[N+](=O)[O-]": {
         "chemical_formula": [
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2"
+            "3-nitropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2280,14 +1897,7 @@
     },
     "C1=CC=NC(=C1)[N+](=O)[O-]": {
         "chemical_formula": [
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2",
-            "C5H4N2O2"
+            "2-nitropyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2301,9 +1911,6 @@
     },
     "C1=CC=NC=C1": {
         "chemical_formula": [
-            "C5H5N",
-            "C5H5N",
-            "C5H5N",
             "C5H5N",
             "C5H5N"
         ],
@@ -2322,12 +1929,7 @@
     },
     "C1=CNC=CC1=O": {
         "chemical_formula": [
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO"
+            "4-hydroxypyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2341,12 +1943,10 @@
     },
     "C1=CC(=O)NC=C1": {
         "chemical_formula": [
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO"
+            "2-hydroxypyridine",
+            "2-hydroxypyridine",
+            "2-pyridone",
+            "2-Pyridone"
         ],
         "orbitals": [
             "N 1s",
@@ -2369,12 +1969,8 @@
     },
     "C1=CC=[N+](C=C1)[O-]": {
         "chemical_formula": [
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO",
-            "C5H5NO"
+            "Pyridine-N-oxide",
+            "Pyridine N-oxide"
         ],
         "orbitals": [
             "N 1s",
@@ -2391,13 +1987,9 @@
     },
     "C1=CNC(=O)C(=C1)O": {
         "chemical_formula": [
-            "C5H5NO2",
-            "C5H5NO2",
-            "C5H5NO2",
-            "C5H5NO2",
-            "C5H5NO2",
-            "C5H5NO2",
-            "C5H5NO2"
+            "N-(OH)-2-pyridone",
+            "N-(OH)-2-pyridone (CO*)",
+            "N-(OH)-2-pyridone (O*H)"
         ],
         "orbitals": [
             "N 1s",
@@ -2417,12 +2009,8 @@
     },
     "C1=CC=NC(=C1)N": {
         "chemical_formula": [
-            "C5H6N2",
-            "C5H6N2",
-            "C5H6N2",
-            "C5H6N2",
-            "C5H6N2",
-            "C5H6N2"
+            "2-aminopyridine (pyridine N)",
+            "2-aminopyridine (amino N)"
         ],
         "orbitals": [
             "N 1s",
@@ -2439,12 +2027,8 @@
     },
     "CC1=CC(=CN=C1)N": {
         "chemical_formula": [
-            "C6H8N2",
-            "C6H8N2",
-            "C6H8N2",
-            "C6H8N2",
-            "C6H8N2",
-            "C6H8N2"
+            "3-aminopyridine (pyridine N)",
+            "3-aminopyridine (amino N)"
         ],
         "orbitals": [
             "N 1s",
@@ -2461,12 +2045,8 @@
     },
     "C1=CN=CC=C1N": {
         "chemical_formula": [
-            "C5H6N2",
-            "C5H6N2",
-            "C5H6N2",
-            "C5H6N2",
-            "C5H6N2",
-            "C5H6N2"
+            "4-aminopyridine (pyridine N)",
+            "4-aminopyridine (amino N)"
         ],
         "orbitals": [
             "N 1s",
@@ -2483,11 +2063,7 @@
     },
     "CCCCC#N": {
         "chemical_formula": [
-            "C5H9N",
-            "C5H9N",
-            "C5H9N",
-            "C5H9N",
-            "C5H9N"
+            "CH3(CH2)3CN"
         ],
         "orbitals": [
             "N 1s"
@@ -2501,12 +2077,7 @@
     },
     "CCCCN=C=O": {
         "chemical_formula": [
-            "C5H9NO",
-            "C5H9NO",
-            "C5H9NO",
-            "C5H9NO",
-            "C5H9NO",
-            "C5H9NO"
+            "C.H2CH2CH2CON.CH3"
         ],
         "orbitals": [
             "N 1s"
@@ -2520,12 +2091,7 @@
     },
     "C1CCNCC1": {
         "chemical_formula": [
-            "C5H11N",
-            "C5H11N",
-            "C5H11N",
-            "C5H11N",
-            "C5H11N",
-            "C5H11N"
+            "HN.CH2CH2CH2CH2C.H2"
         ],
         "orbitals": [
             "N 1s"
@@ -2539,13 +2105,7 @@
     },
     "C(CCN)CCN": {
         "chemical_formula": [
-            "C5H14N2",
-            "C5H14N2",
-            "C5H14N2",
-            "C5H14N2",
-            "C5H14N2",
-            "C5H14N2",
-            "C5H14N2"
+            "H2N(CH2)5NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2559,13 +2119,7 @@
     },
     "C1=CC(=CC=C1N)Cl": {
         "chemical_formula": [
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN"
+            "p-ClC6H4NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2579,13 +2133,7 @@
     },
     "C1=CC(=CC(=C1)Cl)N": {
         "chemical_formula": [
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN",
-            "C6H6ClN"
+            "m-ClC6H4NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2599,13 +2147,7 @@
     },
     "C1=CC(=CN=C1)C(F)(F)F": {
         "chemical_formula": [
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N"
+            "3-(trifluoromethyl)pyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2619,13 +2161,7 @@
     },
     "C1=CN=CC=C1C(F)(F)F": {
         "chemical_formula": [
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N"
+            "4-(trifluoromethyl)pyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2639,13 +2175,7 @@
     },
     "C1=CC=NC(=C1)C(F)(F)F": {
         "chemical_formula": [
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N",
-            "C6H4F3N"
+            "2-(trifluoromethyl)pyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2659,12 +2189,7 @@
     },
     "C1=CC=NC(=C1)C#N": {
         "chemical_formula": [
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2"
+            "2-cyanopyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2678,12 +2203,7 @@
     },
     "C1=CC(=CN=C1)C#N": {
         "chemical_formula": [
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2"
+            "3-cyanopyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2697,12 +2217,7 @@
     },
     "C1=CN=CC=C1C#N": {
         "chemical_formula": [
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2",
-            "C6H4N2"
+            "4-cyanopyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2716,10 +2231,6 @@
     },
     "C1=CN=CC=C1C=O": {
         "chemical_formula": [
-            "C6H5NO",
-            "C6H5NO",
-            "C6H5NO",
-            "C6H5NO",
             "C6H5NO",
             "C6H5NO"
         ],
@@ -2738,9 +2249,6 @@
     },
     "C1=CC=C(C=C1)[N+](=O)[O-]": {
         "chemical_formula": [
-            "C6H5NO2",
-            "C6H5NO2",
-            "C6H5NO2",
             "C6H5NO2",
             "C6H5NO2",
             "C6H5NO2",
@@ -2767,14 +2275,7 @@
     },
     "C1=CC(=CC(=C1)[N+](=O)[O-])N": {
         "chemical_formula": [
-            "C6H6N2O2",
-            "C6H6N2O2",
-            "C6H6N2O2",
-            "C6H6N2O2",
-            "C6H6N2O2",
-            "C6H6N2O2",
-            "C6H6N2O2",
-            "C6H6N2O2"
+            "m-O2NC6H4N*H2"
         ],
         "orbitals": [
             "N 1s"
@@ -2788,11 +2289,7 @@
     },
     "CC1=CC=CC=N1": {
         "chemical_formula": [
-            "C6H7N",
-            "C6H7N",
-            "C6H7N",
-            "C6H7N",
-            "C6H7N"
+            "2-methylpyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2806,11 +2303,7 @@
     },
     "CC1=CC=NC=C1": {
         "chemical_formula": [
-            "C6H7N",
-            "C6H7N",
-            "C6H7N",
-            "C6H7N",
-            "C6H7N"
+            "4-methylpyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2824,11 +2317,7 @@
     },
     "CC1=CN=CC=C1": {
         "chemical_formula": [
-            "C6H7N",
-            "C6H7N",
-            "C6H7N",
-            "C6H7N",
-            "C6H7N"
+            "3-methylpyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2842,12 +2331,7 @@
     },
     "C1=CC(=CC=C1N)O": {
         "chemical_formula": [
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO"
+            "p-HOC6H4NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2861,12 +2345,7 @@
     },
     "C1=CC(=CC(=C1)O)N": {
         "chemical_formula": [
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO"
+            "m-HOC6H4NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2880,12 +2359,8 @@
     },
     "COC1=CC=NC=C1": {
         "chemical_formula": [
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO"
+            "2-methoxypyridine",
+            "2-methoxypyridine"
         ],
         "orbitals": [
             "N 1s",
@@ -2902,12 +2377,7 @@
     },
     "COC1=CN=CC=C1": {
         "chemical_formula": [
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO"
+            "3-methoxypyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -2921,12 +2391,7 @@
     },
     "CCN1C=CC=C1C=O": {
         "chemical_formula": [
-            "C7H9NO",
-            "C7H9NO",
-            "C7H9NO",
-            "C7H9NO",
-            "C7H9NO",
-            "C7H9NO"
+            "HOC.CHCHCHC(CH3)N."
         ],
         "orbitals": [
             "N 1s"
@@ -2940,12 +2405,8 @@
     },
     "CC(=O)C1=CC=CN1": {
         "chemical_formula": [
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO"
+            "OC.CHCHCHC(CH3)N.H",
+            "OC.CHCHCHC(CH3)N.H"
         ],
         "orbitals": [
             "N 1s",
@@ -2962,12 +2423,8 @@
     },
     "COC1=CC=CC=N1": {
         "chemical_formula": [
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO",
-            "C6H7NO"
+            "N-(CH3)-2-pyridine",
+            "2-(OCH3)(NC5H4)"
         ],
         "orbitals": [
             "N 1s",
@@ -2984,13 +2441,7 @@
     },
     "CCN1CCCC1=O": {
         "chemical_formula": [
-            "C6H11NO",
-            "C6H11NO",
-            "C6H11NO",
-            "C6H11NO",
-            "C6H11NO",
-            "C6H11NO",
-            "C6H11NO"
+            "C.H2(CH2)3CON.HCH3"
         ],
         "orbitals": [
             "N 1s"
@@ -3004,13 +2455,7 @@
     },
     "C1CN2CCN1CC2": {
         "chemical_formula": [
-            "C6H12N2",
-            "C6H12N2",
-            "C6H12N2",
-            "C6H12N2",
-            "C6H12N2",
-            "C6H12N2",
-            "C6H12N2"
+            "N(CH2CH2)3N"
         ],
         "orbitals": [
             "N 1s"
@@ -3024,12 +2469,7 @@
     },
     "C1CCC(CC1)N": {
         "chemical_formula": [
-            "C6H13N",
-            "C6H13N",
-            "C6H13N",
-            "C6H13N",
-            "C6H13N",
-            "C6H13N"
+            "cyclo-C6H11NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -3043,13 +2483,7 @@
     },
     "CCN(CC)C(=O)C": {
         "chemical_formula": [
-            "C6H13NO",
-            "C6H13NO",
-            "C6H13NO",
-            "C6H13NO",
-            "C6H13NO",
-            "C6H13NO",
-            "C6H13NO"
+            "CH3CON(C2H5)2"
         ],
         "orbitals": [
             "N 1s"
@@ -3063,12 +2497,8 @@
     },
     "CCN(CC)CC": {
         "chemical_formula": [
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N"
+            "(C2H5)3N",
+            "(C2H5)3N"
         ],
         "orbitals": [
             "N 1s",
@@ -3085,12 +2515,7 @@
     },
     "CCCCNCC": {
         "chemical_formula": [
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N"
+            "(CH3CH2CH2)2NH"
         ],
         "orbitals": [
             "N 1s"
@@ -3104,12 +2529,7 @@
     },
     "CC(C)NC(C)C": {
         "chemical_formula": [
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N",
-            "C6H15N"
+            "((CH3)2CH)2NH"
         ],
         "orbitals": [
             "N 1s"
@@ -3123,13 +2543,7 @@
     },
     "C(CCCN)CCN": {
         "chemical_formula": [
-            "C6H16N2",
-            "C6H16N2",
-            "C6H16N2",
-            "C6H16N2",
-            "C6H16N2",
-            "C6H16N2",
-            "C6H16N2"
+            "H2N(CH2)6NH2"
         ],
         "orbitals": [
             "N 1s"
@@ -3143,15 +2557,7 @@
     },
     "CN1N2N(P3N(N1P(P(N2C)P3C)C)C)C": {
         "chemical_formula": [
-            "C6H18N6P4",
-            "C6H18N6P4",
-            "C6H18N6P4",
-            "C6H18N6P4",
-            "C6H18N6P4",
-            "C6H18N6P4",
-            "C6H18N6P4",
-            "C6H18N6P4",
-            "C6H18N6P4"
+            "P4(NCH3)6"
         ],
         "orbitals": [
             "N 1s"
@@ -3165,12 +2571,8 @@
     },
     "C1=CC(=CC=C1C#N)N": {
         "chemical_formula": [
-            "C7H6N2",
-            "C7H6N2",
-            "C7H6N2",
-            "C7H6N2",
-            "C7H6N2",
-            "C7H6N2"
+            "p-N*CC6H4NH2",
+            "p-NCC6H4N*H2"
         ],
         "orbitals": [
             "N 1s",
@@ -3187,12 +2589,7 @@
     },
     "CC(=O)C1=CC=NC=C1": {
         "chemical_formula": [
-            "C7H7NO",
-            "C7H7NO",
-            "C7H7NO",
-            "C7H7NO",
-            "C7H7NO",
-            "C7H7NO"
+            "4-acetylpyridine"
         ],
         "orbitals": [
             "N 1s"
@@ -3206,12 +2603,7 @@
     },
     "CC(=O)C1=CN=CC=C1": {
         "chemical_formula": [
-            "C7H7NO",
-            "C7H7NO",
-            "C7H7NO",
-            "C7H7NO",
-            "C7H7NO",
-            "C7H7NO"
+            "3-acetylpyridine"
         ],
         "orbitals": [
             "N 1s"
