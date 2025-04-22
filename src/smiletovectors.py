@@ -2,7 +2,7 @@
 from rdkit import Chem
 import numpy as np
 
-def get_full_neighbor_vectors(smiles):
+def get_full_neighbor_vectors(smiles, add_bonds=True):
     '''
     This function will generate a vector of size (100, 1) 
     for all non-H atoms in given smile notation. Where each index 
@@ -13,6 +13,12 @@ def get_full_neighbor_vectors(smiles):
     For CO
     C: [0, 0, 0, 0, 0, 0, 0, 1, 0, ...0]
     O: [0, 0, 0, 0, 0, 1, 0, 0, ....0]
+
+    If add_bonds is turned on, it multiplies the bonds with neighbors
+    For example: Propene (H2C=CH-CH3)
+    C:[2,0,0,0,0,2,....] first carbon
+    C:[1,0,0,0,0,3,....] second carbon
+    C:[3,0,0,0,0,1,....] third carbon
     '''
     mol = Chem.MolFromSmiles(smiles)
     mol = Chem.AddHs(mol)
@@ -28,8 +34,12 @@ def get_full_neighbor_vectors(smiles):
 
         for nbr in atom.GetNeighbors():
             atomic_num = nbr.GetAtomicNum()
+            if add_bonds=True:
+                bond_order = mol.GetBondBetweenAtoms(atom.GetIdx(),nbr.GetIdx()).GetBondTypeAsDouble()
+            else: 
+                bond_order = 1
             if atomic_num < 100:
-                vec[atomic_num-1][0] += 1
+                vec[atomic_num-1][0] += 1*bond_order
 
         atom_vectors.append((atom.GetIdx(), atom.GetSymbol(), vec))
 
