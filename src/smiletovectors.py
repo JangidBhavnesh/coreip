@@ -20,8 +20,11 @@ def get_full_neighbor_vectors(smiles, add_bonds=True):
     C:[1,0,0,0,0,3,....] second carbon
     C:[3,0,0,0,0,1,....] third carbon
     '''
-    mol = Chem.MolFromSmiles(smiles)
-    mol = Chem.AddHs(mol)
+    try: 
+        mol = Chem.MolFromSmiles(smiles)
+        mol = Chem.AddHs(mol)
+    except:
+        mol = Chem.MolFromSmiles(smiles,sanitize=False) ## for bad cases, doesn't always get the right answer
 
     atom_vectors = []
 
