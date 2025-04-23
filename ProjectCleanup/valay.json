@@ -3616,7 +3616,7 @@
             "C*H3CO2H",
             "C*H3CO2H",
             "CH3C*O2H",
-            "CH3C*O2H",
+            "CH3C*O2H"
         ],
         "orbitals": [
             "C 1s",
@@ -3709,41 +3709,19 @@
     },
     "COC": {
         "chemical_formula": [
-            "(CH3)2O",
-            "(CH3)2O",
-            "(CH3)2O",
-            "(CH3)2O",
-            "(CH3)2O",
+            "(C*H3)2O*",
             "(CH3)2O"
         ],
         "orbitals": [
             "C 1s",
-            "C 1s",
-            "C 1s",
-            "C 1s",
-            "C 1s",
-            "O 1s",
-            "O 1s",
             "O 1s"
         ],
         "binding_energies": [
             292.5,
-            292.91,
-            292.17,
-            292.3,
-            292.55,
-            538.59,
-            538.61,
             539.03
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 26 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 8 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 142 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 142 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 8 in Jolly et al.)"
         ]
     },
@@ -4777,7 +4755,7 @@
             "C 1s"
         ],
         "binding_energies": [
-            290.84,
+            290.84
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 163 in Jolly et al.)"
@@ -4885,17 +4863,17 @@
         "chemical_formula": [
             "C*H2CHOCH3",
             "CH2C*HOC*H3",
-            "CH2CHOCH3",
+            "CH2CHOCH3"
         ],
         "orbitals": [
             "C 1s",
             "C 1s",
-            "O 1s",
+            "O 1s"
         ],
         "binding_energies": [
             290.11,
             292.31,
-            539.01,
+            539.01
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 63 in Jolly et al.)",
