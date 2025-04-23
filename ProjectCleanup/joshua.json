@@ -209,7 +209,7 @@
     },
     "C1=CC=C2C(=C1)C=CC=C2N": {
         "chemical_formula": [
-            "1-aminoaphthalene"
+            "1-aminonaphthalene"
         ],
         "orbitals": [
             "N 1s"
@@ -351,13 +351,9 @@
         "chemical_formula": [
             "NO2",
             "NO2",
-            "NO2",
-            "NO2",
             "NO2"
         ],
         "orbitals": [
-            "N 1s",
-            "N 1s",
             "N 1s",
             "N 1s",
             "N 1s"
@@ -365,14 +361,28 @@
         "binding_energies": [
             412.6,
             412.9,
-            413.3,
-            541.3,
-            542.0
+            413.3
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 51 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)"
+        ]
+    },
+    "C(=O)=[O]": {
+        "chemical_formula": [
+            "CO2",
+            "CO2"
+        ],
+        "orbitals": [
+            "O 1s",
+            "O 1s"
+        ],
+        "binding_energies": [
+            541.3,
+            542.0
+        ],
+        "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)"
         ]
@@ -380,77 +390,41 @@
     "N#N": {
         "chemical_formula": [
             "N2",
-            "N2",
-            "N2",
             "N2"
         ],
         "orbitals": [
-            "N 1s",
-            "N 1s",
             "N 1s",
             "N 1s"
         ],
         "binding_energies": [
             409.9,
-            409.93,
-            409.95,
-            409.52
+            409.93
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 148 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 2 , 22 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 170 in Jolly et al.)"
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 2 , 22 in Jolly et al.)"
         ]
     },
     "[N-]=[N+]=O": {
         "chemical_formula": [
             "N*NO",
-            "N*NO",
-            "N*NO",
-            "N*NO",
             "NN*O",
-            "NN*O",
-            "NN*O",
-            "NN*O",
-            "N2O",
             "N2O"
         ],
         "orbitals": [
             "N 1s",
             "N 1s",
-            "N 1s",
-            "N 1s",
-            "N 1s",
-            "N 1s",
-            "N 1s",
-            "N 1s",
-            "O 1s",
             "O 1s"
         ],
         "binding_energies": [
             408.5,
-            408.6,
-            408.75,
-            408.77,
             412.5,
-            412.5,
-            412.62,
-            412.64,
-            541.4,
-            541.42
+            541.4
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 51 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 46 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 51 , 2 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 46 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)"
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)"
         ]
     },
     "N1=S=NS1": {
@@ -462,7 +436,7 @@
         "orbitals": [
             "N 1s",
             "S 2s",
-            "P 2p3/2"
+            "S 2p3/2"
         ],
         "binding_energies": [
             405.86,
@@ -533,7 +507,7 @@
             "O 1s"
         ],
         "binding_energies": [
-            541.35
+            537.88
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 124 , 17 in Jolly et al.)"
@@ -557,36 +531,28 @@
         "chemical_formula": [
             "CH3(CO*)OH",
             "CH3(CO*)OH",
-            "CH3(CO*)OH",
-            "CH3(CO)O*H",
             "CH3(CO)O*H"
         ],
         "orbitals": [
-            "O 1s",
-            "O 1s",
             "O 1s",
             "O 1s",
             "O 1s"
         ],
         "binding_energies": [
             538.29,
-            538.36,
             540.0,
-            540.09,
-            540.15
+            540.09
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)"
         ]
     },
     "C(=C/O)\\C=O": {
         "chemical_formula": [
-            "HCOCHCHOH (CO ?)",
-            "HCOCHCHOH (OH ?)"
+            "HCO*CHCHOH",
+            "HCOCHCHO*H"
         ],
         "orbitals": [
             "O 1s",
@@ -667,8 +633,8 @@
     },
     "CC(C=O)C=O": {
         "chemical_formula": [
-            "HCOCHCHOCH3 (CO ?)",
-            "HCOCHCHOCH3 (OCH3 ?)"
+            "HCO*CHCHOCH3",
+            "HCOCHCHO*CH3"
         ],
         "orbitals": [
             "O 1s",
@@ -759,19 +725,29 @@
     },
     "CC(=O)CC(=S)C": {
         "chemical_formula": [
-            "thioacetylacetone (keto)",
-            "thioacetylacetone (enol)"
+            "thioacetylacetone (keto)"
         ],
         "orbitals": [
-            "O 1s",
             "O 1s"
         ],
         "binding_energies": [
-            537.47,
+            537.47
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "CC(O)=CC(=S)C": {
+        "chemical_formula": [
+            "thioacetylacetone (enol)"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
             539.11
         ],
         "references": [
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
         ]
     },
@@ -837,8 +813,8 @@
     },
     "C1=CC=C(C=C1)C(=O)O": {
         "chemical_formula": [
-            "C.OC(OH)CHCHCHCHC.H (CO ?)",
-            "C.OC(OH)CHCHCHCHC.H (OH ?)"
+            "C.O*C(OH)CHCHCHCHC.H",
+            "C.OC(O*H)CHCHCHCHC.H"
         ],
         "orbitals": [
             "O 1s",
@@ -855,8 +831,8 @@
     },
     "OC=C1C=CC=C1C=O": {
         "chemical_formula": [
-            "HCOC5H3CHOH (CO ?)",
-            "HCOC5H3CHOH (OH ?)"
+            "HCO*C5H3CHOH",
+            "HCOC5H3CHO*H"
         ],
         "orbitals": [
             "O 1s",
@@ -873,8 +849,8 @@
     },
     "C1=CC(=O)N(C=C1)CCO": {
         "chemical_formula": [
-            "N-(OC2H5)-2-Pyridone (CO*)",
-            "N-(O*C2H5)-2-Pyridone (CO*)"
+            "N-(OC2H5)-2-Pyridone*",
+            "N-(O*C2H5)-2-Pyridone"
         ],
         "orbitals": [
             "O 1s",
@@ -903,21 +879,31 @@
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)"
         ]
     },
-    "C(CC)OC(\\C=C(\\C)/S)=O": {
+    "C(CC)OC(\\C=C(\\C)/S)O": {
         "chemical_formula": [
-            "propyl 3-mercaptocrotonate (keto)",
             "propyl 3-mercaptocrotonate (enol)"
         ],
         "orbitals": [
-            "O 1s",
             "O 1s"
         ],
         "binding_energies": [
-            537.56,
             539.07
         ],
         "references": [
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "C(CC)OC(\\C=C(\\C)/S)=O": {
+        "chemical_formula": [
+            "propyl 3-mercaptocrotonate (keto)"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            537.56
+        ],
+        "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
         ]
     },
@@ -941,8 +927,8 @@
     },
     "COC(=O)C1=CC=CC=C1": {
         "chemical_formula": [
-            "C.OC(OCH3)CHCHCHCHC.H (CO ?)",
-            "C.OC(OCH3)CHCHCHCHC.H (OCH3 ?)"
+            "C.O*C(OCH3)CHCHCHCHC.H",
+            "C.OC(O*CH3)CHCHCHCHC.H"
         ],
         "orbitals": [
             "O 1s",
@@ -960,21 +946,35 @@
     "C(C)(=O)C1C(CCCC1)=S": {
         "chemical_formula": [
             "2-acetylcyclohexanethione (keto)",
-            "2-acetylcyclohexanethione (enol)",
             "2-acetylcyclohexanethione"
         ],
         "orbitals": [
-            "O 1s",
             "O 1s",
             "S 2p3/2"
         ],
         "binding_energies": [
             537.2,
-            539.5,
             168.9
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "C(C)(O)C1C(CCCC1)=S": {
+        "chemical_formula": [
+            "2-acetylcyclohexanethione (enol)",
+            "2-acetylcyclohexanethione"
+        ],
+        "orbitals": [
+            "O 1s",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            539.5,
+            168.9
+        ],
+        "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
         ]
@@ -982,29 +982,43 @@
     "C(C)(=S)C1C(CCCC1)=O": {
         "chemical_formula": [
             "2-thioacetylcyclohexanone (keto)",
-            "2-thioacetylcyclohexanone (enol)",
             "2-thioacetylcyclohexanone"
         ],
         "orbitals": [
-            "O 1s",
             "O 1s",
             "S 2p3/2"
         ],
         "binding_energies": [
             537.1,
-            538.5,
             168.6
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
+        ]
+    },
+    "C(C)(=S)C1C(CCCC1)O": {
+        "chemical_formula": [
+            "2-thioacetylcyclohexanone (enol)",
+            "2-thioacetylcyclohexanone"
+        ],
+        "orbitals": [
+            "O 1s",
+            "S 2p3/2"
+        ],
+        "binding_energies": [
+            538.5,
+            168.6
+        ],
+        "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
         ]
     },
     "OC1=CC=C2C=CC=C3C=CC(C1=C32)=O": {
         "chemical_formula": [
-            "9-Hydroxyphenalenone (CO ?)",
-            "9-Hydroxyphenalenone (OH ?)"
+            "9-Hydroxyphenalenone (CO*)",
+            "9-Hydroxyphenalenone (O*H)"
         ],
         "orbitals": [
             "O 1s",
@@ -1175,8 +1189,8 @@
     },
     "[O-][O+]=O": {
         "chemical_formula": [
-            "O3 (Terminal O*)",
-            "O3 (Central O*)"
+            "OOO*",
+            "OO*O"
         ],
         "orbitals": [
             "O 1s",
@@ -1493,8 +1507,8 @@
     },
     "C1=CSS2=C1C=CS2": {
         "chemical_formula": [
-            "1,6,6a-trithiapentalene (1,6 S*)",
-            "1,6,6a-trithiapentalene (6a S*)"
+            "1,6,6a-trithiapentalene (SSS*)",
+            "1,6,6a-trithiapentalene (SS*S)"
         ],
         "orbitals": [
             "S 2p3/2",
@@ -1528,7 +1542,7 @@
             "4-(methylthio)pent-3-en-2-one"
         ],
         "orbitals": [
-            "P 2p3/2"
+            "S 2p3/2"
         ],
         "binding_energies": [
             169.79
@@ -1539,8 +1553,8 @@
     },
     "CC1SS2SC(=CC2=C1)C": {
         "chemical_formula": [
-            "2,5-di(CH3)-1*,6*,6a-trithiapentalene",
-            "2,5-di(CH3)-1,6,6a*-trithiapentalene"
+            "2,5-di(CH3)-1,6,6a-trithiapentalene (SSS*)",
+            "2,5-di(CH3)-1,6,6a-trithiapentalene (SS*S)"
         ],
         "orbitals": [
             "S 2p3/2",
@@ -1575,7 +1589,7 @@
             "(SiH3)2S"
         ],
         "orbitals": [
-            "P 2p3/2",
+            "S 2p3/2",
             "Si 2p"
         ],
         "binding_energies": [
