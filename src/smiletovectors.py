@@ -37,7 +37,7 @@ def get_full_neighbor_vectors(smiles, add_bonds=True):
 
         for nbr in atom.GetNeighbors():
             atomic_num = nbr.GetAtomicNum()
-            if add_bonds=True:
+            if add_bonds==True:
                 bond_order = mol.GetBondBetweenAtoms(atom.GetIdx(),nbr.GetIdx()).GetBondTypeAsDouble()
             else: 
                 bond_order = 1
