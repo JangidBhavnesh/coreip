@@ -2,10 +2,10 @@
     "C/C(=C\\C(=O)C(F)(F)F)/O[Al](O/C(=C\\C(=O)C(F)(F)F)/C)O/C(=C\\C(=O)C(F)(F)F)/C": {
         "chemical_formula": [
             "Al(CF3COCHCOCH3)3",
-            "Al(CF3COCHCOCH3)3",
-            "Al(CF3COCHCOCH3)3",
-            "Al(CF3COCHCOCH3)3",
-            "Al(CF3COCHCOCH3)3",
+            "Al(CF3COC*HCOCH3)3",
+            "Al(CF3COCHCOC*H3)3",
+            "Al(CF3C*OCHC*OCH3)3",
+            "Al(C*F3COCHCOCH3)3",
             "Al(CF3COCHCOCH3)3"
         ],
         "orbitals": [
@@ -36,9 +36,9 @@
     "C(=C(\\O[Al](O/C(=C\\C(=O)C(F)(F)F)/C(F)(F)F)O/C(=C\\C(=O)C(F)(F)F)/C(F)(F)F)/C(F)(F)F)\\C(=O)C(F)(F)F": {
         "chemical_formula": [
             "Al(CF3COCHCOCF3)3",
-            "Al(CF3COCHCOCF3)3",
-            "Al(CF3COCHCOCF3)3",
-            "Al(CF3COCHCOCF3)3",
+            "Al(CF3COC*HCOCF3)3",
+            "Al(CF3C*OCHC*OCF3)3",
+            "Al(C*F3COCHCOC*F3)3",
             "Al(F3CCOCHCOCF3)3",
             "Al(CF3COCHCOCF3)3"
         ],
@@ -70,9 +70,9 @@
     "C/C(=C/C(=O)C)/O[Al](O/C(=C\\C(=O)C)/C)O/C(=C\\C(=O)C)/C": {
         "chemical_formula": [
             "Al(CH3COCHCOCH3)3",
-            "Al(CH3COCHCOCH3)3",
-            "Al(CH3COCHCOCH3)3",
-            "Al(CH3COCHCOCH3)3",
+            "Al(CH3COC*HCOCH3)3",
+            "Al(C*H3COCHCOC*H3)3",
+            "Al(CH3C*OCHC*OCH3)3",
             "Al(CH3COCHCOCH3)3"
         ],
         "orbitals": [
@@ -100,9 +100,9 @@
     "CC(/C(=C/C(=O)C(C)(C)C)/O[Al](O/C(=C\\C(=O)C(C)(C)C)/C(C)(C)C)O/C(=C\\C(=O)C(C)(C)C)/C(C)(C)C)(C)C": {
         "chemical_formula": [
             "Al((CH3)3CCOCHCOC(CH3)3)3",
-            "Al((CH3)3CCOCHCOC(CH3)3)3",
-            "Al((CH3)3CCOCHCOC(CH3)3)3",
-            "Al((CH3)3CCOCHCOC(CH3)3)3"
+            "Al((C*H3)3C*COCHCOC*(C*H3)3)3",
+            "Al((CH3)3CCOC*HCOC(CH3)3)3",
+            "Al((CH3)3CC*OCHC*OC(CH3)3)3"
         ],
         "orbitals": [
             "Al 2p3/2",
@@ -125,7 +125,7 @@
     },
     "[As]12[As]3[As]1[As]23": {
         "chemical_formula": [
-            "As4"
+            "As*4"
         ],
         "orbitals": [
             "As 2p3/2"
@@ -139,7 +139,7 @@
     },
     "C[As](C)C": {
         "chemical_formula": [
-            "As(CH3)3"
+            "As*(CH3)3"
         ],
         "orbitals": [
             "As 3s"
@@ -153,7 +153,7 @@
     },
     "C1=CC=[As]C=C1": {
         "chemical_formula": [
-            "AsC5H5"
+            "As*C5H5"
         ],
         "orbitals": [
             "As 3s"
@@ -167,9 +167,9 @@
     },
     "F[As](F)F": {
         "chemical_formula": [
-            "AsF3",
-            "AsF3",
-            "AsF3"
+            "As*F3",
+            "AsF*3",
+            "AsF*3"
         ],
         "orbitals": [
             "As 3d",
@@ -189,7 +189,7 @@
     },
     "F[As](F)(F)(F)F": {
         "chemical_formula": [
-            "AsF5"
+            "As*F5"
         ],
         "orbitals": [
             "As 3d"
@@ -203,9 +203,9 @@
     },
     "B(Br)(Br)Br": {
         "chemical_formula": [
-            "BBr3",
-            "BBr3",
-            "BBr3"
+            "B*Br3",
+            "BBr*3",
+            "BBr*3"
         ],
         "orbitals": [
             "B 1s",
@@ -225,7 +225,7 @@
     },
     "B(C)(C)C": {
         "chemical_formula": [
-            "B(CH3)3"
+            "B*(CH3)3"
         ],
         "orbitals": [
             "B 1s"
@@ -239,10 +239,10 @@
     },
     "B(OC)(OC)OC": {
         "chemical_formula": [
-            "B(OCH3)3",
-            "B(OCH3)3",
-            "B(OCH3)3",
-            "B(OCH3)3"
+            "B*(OCH3)3",
+            "B*(OCH3)3",
+            "B(O*CH3)3",
+            "B(OC*H3)3"
         ],
         "orbitals": [
             "B 1s",
@@ -265,8 +265,8 @@
     },
     "B.CN(C)C": {
         "chemical_formula": [
-            "N(CH3)3BH3",
-            "N(CH3)3BH3"
+            "N(CH3)3B*H3",
+            "N(C*H3)3BH3"
         ],
         "orbitals": [
             "B 1s",
@@ -283,9 +283,9 @@
     },
     "[BH3-][P+](C)(C)C": {
         "chemical_formula": [
-            "P(CH3)3BH3",
-            "P(CH3)3BH3",
-            "(CH3)3PBH3"
+            "P(CH3)3B*H3",
+            "P(C*H3)3BH3",
+            "P*(CH3)3BH3"
         ],
         "orbitals": [
             "B 1s",
@@ -305,9 +305,9 @@
     },
     "B(CC)(CC)Cl": {
         "chemical_formula": [
-            "ClB(CH2CH3)2",
-            "ClB(CH2CH3)2",
-            "ClB(CH2CH3)2",
+            "ClB*(CH2CH3)2",
+            "ClB(CH2C*H3)2",
+            "ClB(C*H2CH3)2",
             "ClB(CH2CH3)2"
         ],
         "orbitals": [
@@ -332,8 +332,8 @@
     "BN(CC)CC": {
         "chemical_formula": [
             "H2BN(CH2CH3)2",
-            "H2BN(CH2CH3)2",
-            "H2BN(CH2CH3)2"
+            "H2BN(CH2C*H3)2",
+            "H2BN(C*H2CH3)2"
         ],
         "orbitals": [
             "B 1s",
@@ -354,8 +354,8 @@
     "B(CC)(CC)CC": {
         "chemical_formula": [
             "B(CH2CH3)3",
-            "B(CH2CH3)3",
-            "B(CH2CH3)3"
+            "B(CH2C*H3)3",
+            "B(C*H2CH3)3"
         ],
         "orbitals": [
             "B 1s",
@@ -375,10 +375,10 @@
     },
     "B(OCC)(OCC)OCC": {
         "chemical_formula": [
-            "B(OC2H5)3",
-            "B(OC2H5)3",
-            "B(OC2H5)3",
-            "B(OC2H5)3"
+            "B(OCH2CH3)3",
+            "B(OCH2C*H3)3",
+            "B(OC*H2CH3)3",
+            "B(OCH2CH3)3"
         ],
         "orbitals": [
             "B 1s",
@@ -402,8 +402,8 @@
     "[BH3-][N+](CC)(CC)CC": {
         "chemical_formula": [
             "H3BN(CH2CH3)3",
-            "H3BN(CH2CH3)3",
-            "H3BN(CH2CH3)3",
+            "H3BN(CH2C*H3)3",
+            "H3BN(C*H2CH3)3",
             "H3BN(CH2CH3)3"
         ],
         "orbitals": [
@@ -427,7 +427,7 @@
     },
     "B1(C2=C(C=CS2)C=NN1C)C": {
         "chemical_formula": [
-            "C5H3SBN2(CH3)3"
+            "C5H3SB*N2(CH3)3"
         ],
         "orbitals": [
             "B 1s"
@@ -442,9 +442,9 @@
     "[B-](C)(C)(C)C#[N+]C(C)(C)C": {
         "chemical_formula": [
             "(CH3)3CNCB(CH3)3",
-            "(CH3)3CNCB(CH3)3",
-            "(CH3)3CNCB(CH3)3",
-            "(CH3)3CNCB(CH3)3",
+            "(CH3)3C*NC*B(CH3)3",
+            "(C*H3)3CNCB(CH3)3",
+            "(CH3)3CNCB(C*H3)3",
             "(CH3)3CNCB(CH3)3"
         ],
         "orbitals": [
@@ -473,7 +473,7 @@
         "chemical_formula": [
             "BCl3",
             "BCl3",
-            "BCl3"
+            "BCl*3"
         ],
         "orbitals": [
             "B 1s",
@@ -512,8 +512,8 @@
     "B(I)(I)I": {
         "chemical_formula": [
             "BI3",
-            "BI3",
-            "BI3"
+            "BI*3",
+            "BI*3"
         ],
         "orbitals": [
             "B 1s",
@@ -533,8 +533,8 @@
     },
     "B(B(N(C)C)N(C)C)(N(C)C)N(C)C": {
         "chemical_formula": [
-            "((CH3)2N)2BB(N(CH3)2)2",
-            "((CH3)2N)2BB(N(CH3)2)2"
+            "((CH3)2N)2B*B*(N(CH3)2)2",
+            "((C*H3)2N)2BB(N(C*H3)2)2"
         ],
         "orbitals": [
             "B 1s",
@@ -551,10 +551,10 @@
     },
     "B(CC)(CC)CC.B(CC)(CC)CC": {
         "chemical_formula": [
-            "B2H2(C3H7)4",
-            "((CH3CH2CH2)2BH)2",
-            "((CH3CH2CH2)2BH)2",
-            "((CH3CH2CH2)2BH)2"
+            "((CH3CH2CH2)2B*H)2",
+            "((CH3CH2C*H2)2BH)2",
+            "((CH3C*H2CH2)2BH)2",
+            "((C*H3CH2CH2)2BH)2"
         ],
         "orbitals": [
             "B 1s",
@@ -578,7 +578,7 @@
     "B1C2BC1B2": {
         "chemical_formula": [
             "1,5-C2B3H5",
-            "1,5-C2B3H5"
+            "1,5-C*2B3H5"
         ],
         "orbitals": [
             "B 1s",
@@ -596,9 +596,9 @@
     "B1(C2(B(C1(B2CC)CC)CC)CC)CC": {
         "chemical_formula": [
             "1,5-C2B3(CH2CH3)5",
-            "1,5-C2B3(CH2CH3)5",
-            "1,5-C2B3(CH2CH3)5",
-            "1,5-C2B3(CH2CH3)5"
+            "1,5-C*2B3(CH2CH3)5",
+            "1,5-C2B3(C*H2CH3)5",
+            "1,5-C2B3(CH2C*H3)5"
         ],
         "orbitals": [
             "B 1s",
@@ -621,7 +621,7 @@
     },
     "[Bi].[Bi]": {
         "chemical_formula": [
-            "Bi2"
+            "Bi*2"
         ],
         "orbitals": [
             "Bi 4f7/2"
@@ -715,10 +715,10 @@
     },
     "[Ti](Br)(Br)(Br)Br": {
         "chemical_formula": [
-            "TiBr4",
-            "TiBr4",
-            "TiBr4",
-            "TiBr4"
+            "TiBr*4",
+            "TiBr*4",
+            "Ti*Br4",
+            "Ti*Br4"
         ],
         "orbitals": [
             "Br 3p3/2",
@@ -741,9 +741,9 @@
     },
     "C(F)(F)(F)Br": {
         "chemical_formula": [
-            "CBrF3",
-            "BrCF3",
-            "BrCF3"
+            "CBr*F3",
+            "BrC*F3",
+            "BrCF*3"
         ],
         "orbitals": [
             "Br 3d5/2",
@@ -1253,7 +1253,7 @@
     },
     "[B]N(C)C , C(C)#N.B": {
         "chemical_formula": [
-            "H3BCNCH3"
+            "H3BN(CH3)2"
         ],
         "orbitals": [
             "C 1s"
@@ -1267,8 +1267,8 @@
     },
     "C[N-]C.[B+3].[B+3]": {
         "chemical_formula": [
-            "B2H5N(CH3)2",
-            "H2BH(N(CH3)2)BH2"
+            "B2H5N(C*H3)2",
+            "H2BH(N*(CH3)2)BH2"
         ],
         "orbitals": [
             "C 1s",
@@ -1285,7 +1285,7 @@
     },
     "B(=BC)B=BC": {
         "chemical_formula": [
-            "1,6-C2B4H6"
+            "1,6-C*2B4H6"
         ],
         "orbitals": [
             "C 1s"
@@ -1711,7 +1711,7 @@
     },
     "CP1(=NP(=NP(=N1)(Cl)Cl)(Cl)Cl)Cl": {
         "chemical_formula": [
-            "P3N3Cl5CH3",
+            "P3N3Cl5C*H3",
             "N3P3CH3Cl5 (CCl*)",
             "N3P3CH3Cl5 (PCl*)",
             "CH3Cl5P3N3",
@@ -2361,8 +2361,8 @@
     },
     "CCCl": {
         "chemical_formula": [
-            "CH3CH2Cl (CH2)",
-            "CH3CH2Cl (CH3)",
+            "CH3C*H2Cl",
+            "C*H3CH2Cl",
             "CH3CH2Cl",
             "C2H5Cl",
             "C2H5Cl"
@@ -2519,8 +2519,8 @@
     },
     "CC(Cl)Cl": {
         "chemical_formula": [
-            "CH3CHCl2 (CH)",
-            "CH3CHCl2 (CH3)",
+            "CH3C*HCl2",
+            "C*H3CHCl2",
             "CH3CHCl2",
             "CH3CHCl2"
         ],
@@ -2627,8 +2627,8 @@
     },
     "CC(Cl)(Cl)Cl": {
         "chemical_formula": [
-            "CH3CCl3 (CCl3)",
-            "CH3CCl3 (CH3)",
+            "CH3C*Cl3",
+            "C*H3CCl3",
             "CH3CCl3",
             "CH3CCl3"
         ],
@@ -2675,8 +2675,8 @@
     },
     "CP1(=NP(=NP(=N1)(Cl)Cl)(Cl)Cl)C": {
         "chemical_formula": [
-            "P,P-P3N3C14(CH3)2",
-            "(CH3)2Cl4P3N3",
+            "P,P-P3N3C14(C*H3)2",
+            "(CH3)2Cl*4P3N3",
             "(CH3)2Cl4P3N3",
             "(CH3)2Cl4P3N3"
         ],
@@ -3522,7 +3522,7 @@
             "(NH2)2CNC*N",
             "(NH2)2C*NCN",
             "(NH2)2CNCN*",
-            "(NH2)2C*NCN",
+            "(NH2)2CN*CN",
             "(N*H2)2CNCN"
         ],
         "orbitals": [
@@ -3549,8 +3549,6 @@
     },
     "CC=O": {
         "chemical_formula": [
-            "C.H2OC.H2",
-            "C.H2OC.H2",
             "C*H3CHO",
             "CH3C*HO",
             "CH3CHO",
@@ -3560,15 +3558,11 @@
         "orbitals": [
             "C 1s",
             "C 1s",
-            "C 1s",
-            "C 1s",
             "O 1s",
             "O 1s",
             "O 1s"
         ],
         "binding_energies": [
-            292.5,
-            292.91,
             291.35,
             294.0,
             538.5,
@@ -3576,8 +3570,6 @@
             538.64
         ],
         "references": [
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 26 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 40 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 14 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 14 in Jolly et al.)",
@@ -3587,10 +3579,6 @@
     },
     "COC=O": {
         "chemical_formula": [
-            "C*H3CO2H",
-            "C*H3CO2H",
-            "CH3C*O2H",
-            "CH3C*O2H",
             "HCO2C*H3",
             "HC*O2CH3",
             "H(CO*)OCH3",
@@ -3601,20 +3589,12 @@
         "orbitals": [
             "C 1s",
             "C 1s",
-            "C 1s",
-            "C 1s",
-            "C 1s",
-            "C 1s",
             "O 1s",
             "O 1s",
             "O 1s",
             "O 1s"
         ],
         "binding_energies": [
-            291.55,
-            291.6,
-            295.38,
-            295.6,
             292.78,
             295.14,
             538.45,
@@ -3624,15 +3604,37 @@
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+        ]
+    },
+    "CC(O)=O": {
+        "chemical_formula": [
+            "C*H3CO2H",
+            "C*H3CO2H",
+            "CH3C*O2H",
+            "CH3C*O2H",
+        ],
+        "orbitals": [
+            "C 1s",
+            "C 1s",
+            "C 1s",
+            "C 1s"
+        ],
+        "binding_energies": [
+            291.55,
+            291.6,
+            295.38,
+            295.6
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 17 in Jolly et al.)"
         ]
     },
     "C[Hg]C": {
@@ -3718,11 +3720,15 @@
             "C 1s",
             "C 1s",
             "C 1s",
+            "C 1s",
+            "C 1s",
             "O 1s",
             "O 1s",
             "O 1s"
         ],
         "binding_energies": [
+            292.5,
+            292.91,
             292.17,
             292.3,
             292.55,
@@ -3731,6 +3737,8 @@
             539.03
         ],
         "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 26 , 2 in Jolly et al.)",
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 8 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 142 in Jolly et al.)",
@@ -4711,7 +4719,7 @@
     },
     "C=CC#N": {
         "chemical_formula": [
-            "H2CCHCN",
+            "H2C*C*HC*N",
             "CH2CHCN",
             "CH2CHCN",
             "CH2CHCN"
@@ -4761,6 +4769,20 @@
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 24 in Jolly et al.)"
         ]
     },
+    "C=C=C": {
+        "chemical_formula": [
+            "H2CCCH2"
+        ],
+        "orbitals": [
+            "C 1s"
+        ],
+        "binding_energies": [
+            290.84,
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 163 in Jolly et al.)"
+        ]
+    },
     "C=CC=O": {
         "chemical_formula": [
             "C*H2C*HCHO"
@@ -4795,23 +4817,15 @@
     },
     "CC=C": {
         "chemical_formula": [
-            "C.H2CH2C.H2",
-            "C.H2CH2C.H2",
             "CH3CHCH2"
         ],
         "orbitals": [
-            "C 1s",
-            "C 1s",
             "C 1s"
         ],
         "binding_energies": [
-            290.68,
-            290.6,
             290.68
         ],
         "references": [
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 25 , 2 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 26 , 2 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 156 in Jolly et al.)"
         ]
     },
@@ -4855,28 +4869,38 @@
     },
     "CCC=O": {
         "chemical_formula": [
-            ".C*H2CHOCH3",
+            "CH3CH2CHO"
+        ],
+        "orbitals": [
+            "O 1s"
+        ],
+        "binding_energies": [
+            538.5
+        ],
+        "references": [
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+        ]
+    },
+    "C=C(O)C": {
+        "chemical_formula": [
+            "C*H2CHOCH3",
             "CH2C*HOC*H3",
             "CH2CHOCH3",
-            "CH3CH2CHO"
         ],
         "orbitals": [
             "C 1s",
             "C 1s",
             "O 1s",
-            "O 1s"
         ],
         "binding_energies": [
             290.11,
             292.31,
             539.01,
-            538.5
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 63 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
+            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)"
         ]
     },
     "CC(=O)OC": {
@@ -5407,7 +5431,7 @@
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 123 in Jolly et al.)"
         ]
     },
-    "CCCCCl": {
+    "C(C)(C)(C)Cl": {
         "chemical_formula": [
             "C(C*H3)3Cl",
             "C*(CH3)3Cl"
@@ -5655,8 +5679,8 @@
     },
     "C[Ge](C)(C(F)(F)F)C(F)(F)F": {
         "chemical_formula": [
-            "(CF3)2Ge(CH3)2",
-            "(CF3)2Ge(CH3)2",
+            "(CF3)2Ge(C*H3)2",
+            "(C*F3)2Ge(CH3)2",
             "(CF3)2Ge(CH3)2",
             "(CF3)2Ge(CH3)2",
             "(CF3)2Ge(CH3)2"
@@ -5685,8 +5709,8 @@
     },
     "C(=C(/C(F)(F)F)\\F)(\\C(F)(F)F)/F": {
         "chemical_formula": [
-            "CF3C*FCFCF3",
-            "CF3CFCFC*F3"
+            "CF3C*FC*FCF3",
+            "C*F3CFCFC*F3"
         ],
         "orbitals": [
             "C 1s",
@@ -5721,8 +5745,8 @@
     },
     "C[Ge](C(F)(F)F)(C(F)(F)F)C(F)(F)F": {
         "chemical_formula": [
-            "(CF3)3Ge(CH3)",
-            "(CF3)3Ge(CH3)",
+            "(CF3)3Ge(C*H3)",
+            "(C*F3)3Ge(CH3)",
             "(CF3)3Ge(CH3)",
             "(CF3)3Ge(CH3)",
             "(CF3)3Ge(CH3)"
@@ -6145,7 +6169,7 @@
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)"
         ]
     },
-    "CP1(=O)CCC(=O)O1": {
+    "C1OP2OCC1O2": {
         "chemical_formula": [
             "O.P(OCH2)2C*.C*H3",
             "O.P(OC*H2)2C.CH3",
@@ -6879,10 +6903,10 @@
             "CF3C*OCHC*(OH)CF3",
             "C*F3COCHC(OH)C*F3",
             "CF3COCHC(OH)CF3",
-            "CF3COCHC(OH)CF3 (CO* ?)",
             "CF3COCHC(OH)CF3",
             "CF3COCHC(OH)CF3",
-            "CF3COCHC(OH)CF3 (OH ?)"
+            "CF3COCHC(OH)CF3",
+            "CF3COCHC(OH)CF3"
         ],
         "orbitals": [
             "C 1s",
