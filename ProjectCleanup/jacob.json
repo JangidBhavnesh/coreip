@@ -93,7 +93,7 @@
     },
     "FC(C(=O)O)(F)F.C[GeH2]C": {
         "chemical_formula": [
-            "((CH3)2GeH)OC(O)CF3"
+            "((CH3)2GeH2)OC(O)CF3"
         ],
         "orbitals": [
             "F 1s"
@@ -107,7 +107,7 @@
     },
     "C(=C(F)F)(C(F)(F)F)C(F)(F)F": {
         "chemical_formula": [
-            "CF3C*FCFCF3",
+            "CF3CF*CFCF3",
             "CF*3CFCFCF3"
         ],
         "orbitals": [
@@ -202,7 +202,7 @@
         ],
         "binding_energies": [
             696.66,
-            696.66
+            696.71
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 157 in Jolly et al.)",
@@ -219,22 +219,13 @@
         ],
         "orbitals": [
             "F 1s",
-            "F 1s",
             "N 1s",
-            "N 1s",
-            "N 1s"
         ],
         "binding_energies": [
             694.5,
-            695.3,
-            412.5,
-            413.0,
-            414.4
+            412.5
         ],
         "references": [
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 52 in Jolly et al.)"
         ]
@@ -330,26 +321,22 @@
     "[N+]([O-])(F)(F)F": {
         "chemical_formula": [
             "NOF3",
-            "ONF3",
-            "ONF3"
+            "NOF3",
         ],
         "orbitals": [
             "O 1s",
             "N 1s",
-            "N 1s"
         ],
         "binding_energies": [
             541.96,
             417.0,
-            417.0
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 158 in Jolly et al.)",
-            "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 51 , 2 in Jolly et al.)",
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 158 in Jolly et al.)"
         ]
     },
-    "N#S(F)(F)F": {
+        "N#S(F)(F)F": {
         "chemical_formula": [
             "NSF3",
             "NSF3",
@@ -471,12 +458,12 @@
     },
     "FP(=S)(F)F": {
         "chemical_formula": [
-            "SPF3",
-            "SPF3",
-            "SPF3",
-            "SPF3",
-            "SPF3",
-            "SPF3",
+            "PSF3",
+            "PSF3",
+            "PSF3",
+            "PSF3",
+            "PSF3",
+            "PSF3",
             "PSF3",
             "PSF3"
         ],
@@ -488,7 +475,7 @@
             "P 2p3/2",
             "P 2p3/2",
             "S 2s",
-            "P 2p3/2"
+            "S 2p3/2"
         ],
         "binding_energies": [
             694.9,
@@ -519,7 +506,7 @@
         ],
         "orbitals": [
             "F 1s",
-            "Ga 3p3/2",
+            "Ge 3p3/2",
             "Ge 3d"
         ],
         "binding_energies": [
@@ -919,8 +906,8 @@
         "chemical_formula": [
             "(CH2CHCHCH2)Fe(CO)3",
             "(CH2CHCHCH2)Fe(CO)3",
-            "Fe(CO)3C4H6",
-            "(CH2)3CFe(CO)3"
+            "(CH2CHCHCH2)Fe(CO)3",
+            "(CH2CHCHCH2)Fe(CO)3"
         ],
         "orbitals": [
             "Fe 2p3/2",
@@ -930,7 +917,7 @@
         ],
         "binding_energies": [
             714.8,
-            714.8,
+            714.84,
             539.0,
             539.36
         ],
@@ -988,7 +975,7 @@
             "GeI4"
         ],
         "orbitals": [
-            "Ga 3p3/2",
+            "Ge 3p3/2",
             "Ge 3d",
             "I 3d5/2"
         ],
@@ -1213,7 +1200,7 @@
             "Sn 3d5/2"
         ],
         "binding_energies": [
-            624.42,
+            626.42,
             493.92
         ],
         "references": [
@@ -1271,7 +1258,7 @@
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 11 in Jolly et al.)"
         ]
     },
-    "CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.[Mn].[Mn]": {
+    "CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.CC1=NC([O])=CC=C1.[Mo].[Mo]": {
         "chemical_formula": [
             "Mo2(OC.CHCHCHC(CH3)N.)4",
             "Mo2(OC.CHCHCHC(CH3)N.)4"
@@ -1366,7 +1353,7 @@
     "CC(=O)N": {
         "chemical_formula": [
             "HCONHCH3",
-            "CH3NHHCO"
+            "HCONHCH3"
         ],
         "orbitals": [
             "N 1s",
@@ -1568,7 +1555,7 @@
     "CP(=N)(C)C": {
         "chemical_formula": [
             "P(CH3)3NH",
-            "(CH3)3PNH"
+            "P(CH3)3NH"
         ],
         "orbitals": [
             "N 1s",
@@ -1771,7 +1758,7 @@
     },
     "CC(C)(C)N": {
         "chemical_formula": [
-            "(CH3)2CNH2"
+            "(CH3)3CNH2"
         ],
         "orbitals": [
             "N 1s"
@@ -2035,7 +2022,7 @@
             "N 1s"
         ],
         "binding_energies": [
-            404.48,
+            404.67,
             405.8
         ],
         "references": [
