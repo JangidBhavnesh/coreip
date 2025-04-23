@@ -7,7 +7,7 @@ from src.paulingelectro import get_eleneg_diff_mat
 import matplotlib.pyplot as plt
 from scipy import optimize
 from rdkit import Chem
-
+from model_p2 import *
 au2eV = 27.21139
 
 ### Helper functions from hackathon
@@ -54,66 +54,21 @@ def giveorbitalenergy(ele, orb):
 
 if __name__=='__main__':
     np.random.seed(42)
-    # Input arguments
     in_filename = sys.argv[1] # networkx .json file
-        
+    out_filename = 'graphs.pt' # File to save pyTorch graphs
+    if len(sys.argv) > 2:
+        out_filename = sys.argv[2]
+    
     # Load in networkx graphs
     data = load_data_from_file(in_filename)
-    smiles = list(data.keys())
-    en_mat = get_eleneg_diff_mat()
-    
-    exp_energies = []
-    ref_energies = []
-    cmat = []
-    lmat = []
-    for smile in smiles:
-        try:
-            vectors = get_full_neighbor_vectors(smile)
-            nodes, node_raw_data = zip(*data[smile].nodes(data=True))
-            
-            # Hydrogen will never have a core binding energy
-            # For atom-centric data formatting, Hydrogen may be safely omitted
-            temp_list = []
-            for n in node_raw_data:
-                if n['atom_type'] == 'H':
-                    continue
-                temp_list += [n]
-            node_raw_data = tuple(temp_list)
-        except:
-            print(f"Skipping smile {smile} due to RDKit error")
-            continue
-            
-        for v, n in zip(vectors, node_raw_data):
-            idx, symbol, vec = v
-            for orb, binding_e in zip(n['orbitals'], n['binding_energies']):
-                if orb == -1 or binding_e == -1:
-                    continue
-
-                temp_lmat = np.zeros(en_mat.shape[0])
-                temp_lmat[Chem.Atom(symbol).GetAtomicNum() - 1] = 1
-                
-                temp_cmat = [vec]
-                
-                lmat += [temp_lmat]
-                cmat += [temp_cmat]
-                exp_energies += [binding_e]
-                orb_en = -giveorbitalenergy(symbol, orb)
-                ref_energies += [orb_en]
-
-    full_lmat = np.array(lmat)
-    full_lmat = np.atleast_2d(full_lmat)
-    full_cmat = np.array(cmat).squeeze().T
-    full_cmat = full_cmat.reshape(full_lmat.T.shape)
-    full_exp_energies = np.array(exp_energies)
-    full_ref_energies = np.array(ref_energies)
-    
-    null_loss = np.sqrt(np.mean((full_ref_energies - full_exp_energies)**2))
-    print(f"Null Loss: {null_loss:.3f}eV")
+    num_elements = 100
+    # [Atomic Num, formal charge, e_neg_score, quantum number 'n', quantum number 'l', atomic_orbital_e, binding_e]
+    graph_data = networkx2arr(data, num_elements)
     
     def get_xvec(weights, element_list):
         return np.array([weights[el] for el in element_list])
     
-    num_total_data = len(full_lmat)
+    num_total_data = graph_data.shape[0]
     num_cross_val = 4
     subset_size = num_total_data // num_cross_val
     
@@ -129,39 +84,25 @@ if __name__=='__main__':
         train_idx = indices[mask]
         test_idx = indices[~mask]
         
-        lmat = full_lmat[train_idx, :]
-        cmat = full_cmat[:, train_idx]
-        exp_energies = full_exp_energies[train_idx]
-        ref_energies = full_ref_energies[train_idx]
-        lemcmat = np.einsum('ij,jk,ki->i', lmat, en_mat, cmat)
-        lemcmat = np.vstack([lemcmat, np.ones(lemcmat.shape)]).T
-        element_list = lmat.argmax(axis=1)
-        weights = np.zeros(cmat.shape[0]*2)
+        exp_energies = graph_data[train_idx,6]
+        ref_energies = graph_data[train_idx, 5]
+        lemcmat = graph_data[train_idx, 2]
+        element_list = graph_data[train_idx, 0].flatten()
 
-        def errorfunc(x):
-            xvec = get_xvec(x.reshape(cmat.shape[0],2), element_list)
-            loss = np.sqrt(np.mean((np.sum(lemcmat * xvec,axis=1) + ref_energies - exp_energies) ** 2))
-            return loss
-    
-        results = optimize.minimize(errorfunc, weights)
-        weights = results['x']
+        weights, loss = train_model_p2(element_list, lemcmat, ref_energies, exp_energies)
         with open(f"model_p2_CV{n_cv}_weights.txt", 'w') as f:
-            f.write(str(weights.reshape(cmat.shape[0],2)))
+            f.write(str(weights.reshape(-1,2)))
             
-        train_loss += [results['fun']]
-        print(f"CV #{n_cv}: Training RMSE over {np.sum(mask)} samples: {results['fun']:.3f}eV")
+        train_loss += [loss]
+        print(f"CV #{n_cv}: Training RMSE over {np.sum(mask)} samples: {loss:.3f}eV")
 
-        lmat = full_lmat[test_idx, :]
-        cmat = full_cmat[:, test_idx]
-        exp_energies = full_exp_energies[test_idx]
-        ref_energies = full_ref_energies[test_idx]
-        lemcmat = np.einsum('ij,jk,ki->i', lmat, en_mat, cmat)
-        lemcmat = np.vstack([lemcmat, np.ones(lemcmat.shape)]).T
-        element_list = lmat.argmax(axis=1)
-        xvec = get_xvec(weights.reshape(cmat.shape[0],2), element_list)
-        
-        predict = np.sum(lemcmat * xvec, axis=1) + ref_energies
-        predict_loss = np.sqrt(np.mean((predict-exp_energies) ** 2))
+        exp_energies = graph_data[test_idx, 6]
+        ref_energies = graph_data[test_idx, 5]
+        exp_minus_ref = exp_energies - ref_energies
+        element_list = graph_data[test_idx, 0]
+        lemcmat = graph_data[test_idx, 2]
+
+        predict, predict_loss = test_model_p2(weights, element_list, lemcmat, ref_energies, exp_energies)
         test_loss = [predict_loss]
         print(f"CV #{n_cv}: Testing RMSE over {np.sum(~mask)} samples: {predict_loss:.3f}eV")
 
