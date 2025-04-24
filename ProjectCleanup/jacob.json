@@ -212,14 +212,11 @@
     "[N-](F)F": {
         "chemical_formula": [
             "NF2",
-            "NF2",
-            "NF2",
-            "NF2",
             "NF2"
         ],
         "orbitals": [
             "F 1s",
-            "N 1s",
+            "N 1s"
         ],
         "binding_energies": [
             694.5,
@@ -321,15 +318,15 @@
     "[N+]([O-])(F)(F)F": {
         "chemical_formula": [
             "NOF3",
-            "NOF3",
+            "NOF3"
         ],
         "orbitals": [
             "O 1s",
-            "N 1s",
+            "N 1s"
         ],
         "binding_energies": [
             541.96,
-            417.0,
+            417.0
         ],
         "references": [
             "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 158 in Jolly et al.)",
