@@ -29,7 +29,7 @@ def seed(seed=0):
     torch.backends.cudnn.deterministic=True
     torch.backends.cudnn.benchmark=False
 
-def load_clean_data(fname):
+def load_clean_data(fname, device):
     dat = torch.load(fname, weights_only=False)
     dat_new = []
     for d in dat:
@@ -42,10 +42,10 @@ def load_clean_data(fname):
             print("Bad Smile Found:", d.smile)
             del d
             continue
-        d.x = torch.tensor(d.x.astype("float32"), dtype=torch.float32)
-        d.y=torch.tensor(d.y.astype("float32"), dtype=torch.float32)
-        d.edge_attr=torch.tensor(d.edge_attr, dtype=torch.float32)
-        d.edge_index=torch.tensor(d.edge_index, dtype=torch.long)
+        d.x = torch.tensor(d.x.astype("float32"), dtype=torch.float32).to(device)
+        d.y=torch.tensor(d.y.astype("float32"), dtype=torch.float32).to(device)
+        d.edge_attr=torch.tensor(d.edge_attr, dtype=torch.float32).to(device)
+        d.edge_index=torch.tensor(d.edge_index, dtype=torch.long).to(device)
         del d.smile
         dat_new = dat_new+[d]
     return dat_new
@@ -328,9 +328,10 @@ if __name__=='__main__':
     # Input arguments
     in_fname = sys.argv[1] # pytorch graphs file
     seed(0)
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # Clean up data and split into train/val/test
-    data=load_clean_data(in_fname)
+    data=load_clean_data(in_fname, device)
     train_loader, val_loader, test_loader = split_data(data) 
 
     RESULTS = {}
