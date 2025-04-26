@@ -29,7 +29,7 @@ def seed(seed=0):
     torch.backends.cudnn.deterministic=True
     torch.backends.cudnn.benchmark=False
 
-def load_clean_data(fname, device):
+def load_clean_data(fname):
     dat = torch.load(fname, weights_only=False)
     dat_new = []
     for d in dat:
@@ -42,28 +42,13 @@ def load_clean_data(fname, device):
             print("Bad Smile Found:", d.smile)
             del d
             continue
-        d.x = torch.tensor(d.x.astype("float32"), dtype=torch.float32).to(device)
-        d.y=torch.tensor(d.y.astype("float32"), dtype=torch.float32).to(device)
-        d.edge_attr=torch.tensor(d.edge_attr, dtype=torch.float32).to(device)
-        d.edge_index=torch.tensor(d.edge_index, dtype=torch.long).to(device)
+        d.x = torch.tensor(d.x.astype("float32"), dtype=torch.float32)
+        d.y=torch.tensor(d.y.astype("float32"), dtype=torch.float32)
+        d.edge_attr=torch.tensor(d.edge_attr, dtype=torch.float32)
+        d.edge_index=torch.tensor(d.edge_index, dtype=torch.long)
         del d.smile
         dat_new = dat_new+[d]
     return dat_new
-
-def split_data(data):
-    print("\nNumber of Graphs: ", len(data))
-
-    random.shuffle(data)
-    train_dataset = data[:m.floor(0.8*len(data))]
-    val_dataset = data[m.floor(0.8*len(data)):m.floor(0.9*len(data))]
-    test_dataset = data[m.floor(0.9*len(data)):]
-
-    train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
-    val_loader = DataLoader(val_dataset, batch_size=32, shuffle=False)
-    test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
-    print(f"Datset splits: {len(train_dataset)} training, {len(val_dataset)} validation, {len(test_dataset)} test samples.")
-    return train_loader, val_loader, test_loader
-
 
 class MPNNLayer(MessagePassing):
     def __init__(self, emb_dim=64, edge_dim=1, aggr='add'):
@@ -231,22 +216,6 @@ class MPNNModel(Module):
        
         return out.view(-1)
 
-
-def train(model, train_loader, optimizer, device):
-    model.train()
-    loss_all = 0
-    len_all = 0
-    for data in train_loader:
-        data=data.to(device)
-        optimizer.zero_grad()
-        pred = model(data)
-        loss = F.l1_loss(pred, data.y)
-        loss.backward()
-        loss_all += loss.item() * len(pred)
-        len_all+=len(pred)
-        optimizer.step()
-    return loss_all/len_all
-
 #evaluate
 def eval(model, loader, device):
     model.eval()
@@ -270,88 +239,26 @@ def eval(model, loader, device):
     return error/len_all, pred_collected, act_collected, feat_collected
 
 
-def run_expt(model, model_name, train_loader, val_loader, test_loader, n_epochs=10):
-    print(f"Running experiment for {model_name}, training on {len(train_loader.dataset)} samples for {n_epochs} epochs.")
-
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-    print("\nModel architecture:")
-    print(model)
-    total_param = 0
-    for param in model.parameters():
-        total_param += np.prod(list(param.data.size()))
-    print(f'Total parameters: {total_param}')
-    model = model.to(device)
-
-    # Adam optimizer with LR 1e-3
-    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
-
-    # LR scheduler which decays LR when validation metric doesn't improve
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(
-        optimizer, mode='min', factor=0.9, patience=5, min_lr=0.00001)
-
-    print("\nStart training:")
-    best_val_error = None
-    perf_per_epoch = [] # Track Test/Val MAE vs. epoch (for plotting)
-    t = time.time()
-    for epoch in range(1, n_epochs+1):
-        # Call LR scheduler at start of each epoch
-        lr = scheduler.optimizer.param_groups[0]['lr']
-
-        # Train model for one epoch, return avg. training loss
-        loss = train(model, train_loader, optimizer, device)
-
-        # Evaluate model on validation set
-        val_error, pred, act, feat = eval(model, val_loader, device)
-
-        if best_val_error is None or val_error <= best_val_error:
-            # Evaluate model on test set if validation metric improves
-            test_error, pred_tst, act_tst, feat_collected = eval(model, test_loader, device)
-            best_val_error = val_error
-
-        if epoch % 5 == 0:
-            # Print and track stats every 5 epochs
-            print(f'Epoch: {epoch:03d}, LR: {lr:5f}, Loss: {loss:.7f}, '
-                  f'Val MAE: {val_error:.7f}, Test MAE: {test_error:.7f}')
-
-        scheduler.step(val_error)
-        perf_per_epoch.append((loss, test_error, val_error, epoch, model_name))
-
-    t = time.time() - t
-    train_time = t/60
-    print(f"\nDone! Training took {train_time:.2f} mins. Best validation MAE: {best_val_error:.7f}, corresponding test MAE: {test_error:.7f}.")
-    torch.save(model, "GNN0.pt")
-    return loss, best_val_error, test_error, train_time, perf_per_epoch, pred_tst, act_tst, feat_collected
-    
-
 if __name__=='__main__':
     # Input arguments
     in_fname = sys.argv[1] # pytorch graphs file
     seed(0)
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    # Clean up data and split into train/val/test
-    data=load_clean_data(in_fname, device)
-    train_loader, val_loader, test_loader = split_data(data) 
-
-    RESULTS = {}
-    DF_RESULTS = pd.DataFrame(columns=["Train MAE", "Test MAE", "Val MAE", "Epoch", "Model"])
+    # clean up data and split into train/val/test
+    data=load_clean_data(in_fname)
+    
+    # Test data = last 10 percent of suffled data
+    random.shuffle(data)
+    test_loader = DataLoader(data[m.floor(0.9*len(data)):], batch_size=32, shuffle=False)
 
     # Setup model architecture
-    model = MPNNModel(num_layers=4, emb_dim=64, in_dim=6, edge_dim=1, out_dim=1)
+    #model = MPNNModel(num_layers=4, emb_dim=64, in_dim=6, edge_dim=1, out_dim=1)
+    model=torch.load("GNN_Best.pt", weights_only=False)
     model_name = type(model).__name__
-
-    # Run train/validate/test
-    loss, best_val_error, test_error, train_time, perf_per_epoch, pred, act, feat = run_expt(
-    model,
-    model_name,
-    train_loader,
-    val_loader,
-    test_loader,
-    n_epochs=100
-)
-
-    RESULTS[model_name] = (loss, best_val_error, test_error, train_time)
-    df_temp = pd.DataFrame(perf_per_epoch, columns=["Train MAE", "Test MAE", "Val MAE", "Epoch", "Model"])
-    DF_RESULTS = DF_RESULTS.append(df_temp, ignore_index=True)
-    DF_RESULTS.to_csv("GNN0_Training_Results.csv")
+    test_error, pred, act, feat = eval(model, test_loader, device="cuda")
+    print("Test Error: ", test_error)
+    df = pd.DataFrame({"Pred": np.array(pred), "Act": np.array(act) })
+    df["Error"] = df["Pred"]- df["Act"]
+    df["Abs Error"] = df["Error"].abs()
+    print("Number of data: ", len(df))
+    print(df.sort_values(by="Abs Error", ascending=False).head(20))
