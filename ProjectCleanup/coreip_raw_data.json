@@ -101,7 +101,7 @@
     "Al((CH3)3CCOCHCOC(CH3)3)3",
     "Al((C*H3)3C*COCHCOC*(C*H3)3)3",
     "Al((CH3)3CCOC*HCOC(CH3)3)3",
-    "Al((CH3)3CC*OCHC*OC(CH3)3)3"
+    "Al((CH3)3CCO*CHCO*C(CH3)3)3"
   ],
    "orbitals":
     [
@@ -265,8 +265,8 @@
     [
     "B*(OCH3)3",
     "B*(OCH3)3",
-    "B(O*CH3)3",
-    "B(OC*H3)3"
+    "B(OC*H3)3",
+    "B(O*CH3)3"
   ],
    "orbitals":
     [
@@ -3058,7 +3058,7 @@
   "chemical_formula":
     [
     "CF3C*O2H",
-    "CF*3CO2H",
+    "C*F3CO2H",
     "CF3(CO*)OH",
     "CF3(CO*)OH",
     "CF3(CO)O*H",
@@ -5624,7 +5624,7 @@
     [
     "OCC*CO",
     "OC*CC*O",
-    "OCC*CO"
+    "OCCCO"
   ],
    "orbitals":
     [
@@ -7095,8 +7095,8 @@
     "C5H5Cr(NO)2NO2",
     "C5H5Cr(NO)2NO2",
     "C5H5Cr(N*O)2NO2",
-    "C5H5Cr(NO)2N*O2",
-    "C5H5Cr(N*O)2NO2"
+    "C5H5Cr(NO)2NO*2",
+    "C5H5Cr(NO*)2NO2"
   ],
    "orbitals":
     [
@@ -7552,8 +7552,8 @@
   "chemical_formula":
     [
     "P(OCH2)3C*C*H3",
-    "P(O*CH2)3CCH3",
     "P(OCH2)3C*C*H3",
+    "P(O*CH2)3CCH3",
     "P(OCH2)3CCH3"
   ],
    "orbitals":
@@ -9261,7 +9261,7 @@
     "C*5H5Co(CO)2",
     "C5H5Co(C*O)2",
     "C2H5Co(CO)2",
-    "C*5H5Co(CO)2"
+    "C5H5Co(CO)2"
   ],
    "orbitals":
     [
@@ -10101,7 +10101,7 @@
   "COC(=O)C=C.[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[Fe]": {
   "chemical_formula":
     [
-    "Fe(CO)4CH2CHCOOCH*3",
+    "Fe(CO)4CH2CHCOOC*H3",
     "Fe(CO)4C*H2C*HCOOCH3",
     "Fe(CO)4CH2CHOOCH3",
     "Fe(CO*)4CH2CHCOO*CH3",
@@ -10135,7 +10135,7 @@
     "(CH3)3SiNC*Fe(C*O)4",
     "(CH3)3SiNCFe(CO)4",
     "(CH3)3SiNCFe(CO)4",
-    "(C*H3)3SiNCFe(CO)4",
+    "(CH3)3SiNCFe(CO)4",
     "(CH3)3SiNCFe(CO)4"
   ],
    "orbitals":
@@ -10197,7 +10197,7 @@
     "(C*5H5)Mn(CO)2C*S",
     "(C5H5)Mn(C*O)2CS",
     "(C5H5)Mn(CO)2CS",
-    "(C5H5)Mn(C*O)2CS",
+    "(C5H5)Mn(CO*)2CS",
     "(C5H5)Mn(CO)2CS"
   ],
    "orbitals":
@@ -10253,7 +10253,7 @@
     [
     "C3*H5Mn(CO)5",
     "C3H5Mn(C*O)5",
-    "C3H5Mn(C*O)5",
+    "C3H5Mn(CO)5",
     "C3H5Mn(CO)5"
   ],
    "orbitals":
@@ -10938,10 +10938,10 @@
   "[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[CH].[Co].[Co].[Co]": {
   "chemical_formula":
     [
-    "HC*Co3(CO)9",
-    "HCCo3(C*O)9",
-    "HCCo3(CO)9",
-    "HCCo3(CO)9"
+    "C*H4Co3(CO)9",
+    "CH4Co3(C*O)9",
+    "CH4Co3(CO)9",
+    "CH4Co3(CO)9"
   ],
    "orbitals":
     [
@@ -11428,7 +11428,7 @@
     "Mo(C*O)5P(N(CH3)2)3",
     "Mo(CO)5P(N(CH3)2)3",
     "Mo(CO)5P(N(CH3)2)3",
-    "Mo(CO)5P(N(C*H3)2)3"
+    "Mo(CO)5P(N(CH3)2)3"
   ],
    "orbitals":
     [
