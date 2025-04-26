@@ -1401,9 +1401,9 @@
   "CCOC(=O)CBr": {
   "chemical_formula":
     [
-    "BrCH2C02CH2C*H3",
-    "BrC*H2C02C*H2CH3",
-    "BrCH2C*02CH2CH3",
+    "BrCH2CO2CH2C*H3",
+    "BrC*H2CO2C*H2CH3",
+    "BrCH2C*O2CH2CH3",
     "BrCH2(CO*)OC2H5",
     "BrCH2(CO)O*C2H5"
   ],
@@ -4431,9 +4431,9 @@
   "[2H]C([2H])([2H])C(=O)C([2H])([2H])[2H]": {
   "chemical_formula":
     [
-    "(C*D3)2CO",
-    "(CD3)2C*O",
-    "(CD3)2CO"
+    "(C*H3)2CO",
+    "(CH3)2C*O",
+    "(CH3)2CO"
   ],
    "orbitals":
     [
