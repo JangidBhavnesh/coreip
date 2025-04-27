@@ -6,3 +6,5 @@ GNN0_Training_Results.csv gives the train/validation/test MAE as a function of e
 TEST_Predictions.csv gives the predicted values for the test set in the form [index, predicted, actual, error, absolute error], sorted by absolute error. 
 
 Highest error system is a element/orbital combination which is non-existant in training data. The next three are the system which has two very different values in the literature, so the reported average may be of poor quality.
+
+This training was done with the intial graph_data.json data.
