@@ -8572,54 +8572,14 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 184 in Jolly et al.)"
   ]
 },
-  "C1=CC(=CN=C1)C(=O)O": {
+  "O=N(=O)C1=CC=CC=C1": {
   "chemical_formula":
     [
     "C6H5NO2 (3 C*)",
     "C6H5NO2",
     "C6H5NO2",
-    "C6H5NO2"
-  ],
-   "orbitals":
-    [
-    "C 1s",
-    "O 1s",
-    "O 1s",
-    "O 1s"
-  ],
-   "binding_energies":
-    [
-    291.0, 538.3, 538.63, 538.68
-  ],
-   "references":
-    [
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)",
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)",
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 124 , 17 in Jolly et al.)"
-  ]
-},
-  "C1=CN=CC=C1C(=O)O": {
-  "chemical_formula":
-    [
-    "C6H5NO2 (4 C*)"
-  ],
-   "orbitals":
-    [
-    "C 1s"
-  ],
-   "binding_energies":
-    [
-    291.1
-  ],
-   "references":
-    [
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)"
-  ]
-},
-  "C1=CC=NC(=C1)C(=O)O": {
-  "chemical_formula":
-    [
+    "C6H5NO2",
+    "C6H5NO2 (4 C*)",
     "C6H5NO2 (2 C*)",
     "C6H5NO2 (1 C*)",
     "C6H5NO2 (C*H)",
@@ -8628,16 +8588,26 @@
    "orbitals":
     [
     "C 1s",
+    "O 1s",
+    "O 1s",
+    "O 1s",
+    "C 1s",
+    "C 1s",
     "C 1s",
     "C 1s",
     "C 1s"
   ],
    "binding_energies":
     [
-    291.3, 292.1, 291.13, 292.08
+    291.0, 538.3, 538.63, 538.68, 291.1, 291.3, 292.1, 291.13, 292.08
   ],
    "references":
     [
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)",
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)",
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 124 , 17 in Jolly et al.)",
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
@@ -9652,7 +9622,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)"
   ]
 },
-  "N#CC1=CC=CC=C1": {
+  "C#[N+]C1=CC=CC=C1": {
   "chemical_formula":
     [
     "C*6H5NC (C 2,3,4,5,6)",
@@ -15379,7 +15349,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
   ]
 },
-  "C1=CN=CC=C1C=O": {
+  "O=NC1=CC=CC=C1": {
   "chemical_formula":
     [
     "C6H5NO",
@@ -15778,7 +15748,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
   ]
 },
-  "CCN1C=CC=C(C1=O)O": {
+  "O=C1C=CC=CN1CCO": {
   "chemical_formula":
     [
     "N-hydroxylethyl-2-Pyridone"
@@ -15949,7 +15919,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 in Jolly et al.)"
   ]
 },
-  "CCC1=CC=CC(=C1N)C": {
+  "CCN(C)C1=CC=CC=C1": {
   "chemical_formula":
     [
     "C6H5N(CH3)C2H5"
@@ -15985,7 +15955,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 2 in Jolly et al.)"
   ]
 },
-  "C1CN1CCC2=CC=CC=C2": {
+  "C2=CC=C(N1CCCC1)C=C2": {
   "chemical_formula":
     [
     "C6H5N.(CH2)3C.H2"
@@ -16021,7 +15991,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
   ]
 },
-  "CN(C)C1=CC=C(C=C1)N(C)C": {
+  "CN(C)C1=CC=CC=C1N(C)C": {
   "chemical_formula":
     [
     "o-C6H4(N(CH3)2)2"
@@ -16057,7 +16027,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 in Jolly et al.)"
   ]
 },
-  "C1C2CC3CC1CC(C2)(C3)C#N": {
+  "C2=CC=C(N1CCCCC1)C=C2": {
   "chemical_formula":
     [
     "C6H5N.(CH2)4C.H2"
@@ -16075,7 +16045,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
   ]
 },
-  "C1CCC(CC1)N=CC2=CC=CC=C2": {
+  "C3=CC=C(C12CCN(CC1)CC2)C=C3": {
   "chemical_formula":
     [
     "N(CH2CH2)3CC6H5"
