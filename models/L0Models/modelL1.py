@@ -124,7 +124,7 @@ if __name__ == '__main__':
         'MAE': mae,
         'STDEV': stdev,
         'RMSE': rmse,
-        'Mean Error': mean_error,
+        'MSE': mean_error, # mean-signed error
         'Max Error': max_error}
 
     print("\nError Statistics:")
