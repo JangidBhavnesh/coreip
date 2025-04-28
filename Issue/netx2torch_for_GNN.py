@@ -130,13 +130,13 @@ def process_nodes(node_raw_data, vectors):
         orbitals = np.array(orbitals)
         orbitals = np.atleast_1d(orbitals[orbitals !=  None])
         if len(orbitals) == 0:
-            print("No Orbitals Remaining. This graph doesn't get written out")
-            return None, None
+            # print("No Orbitals Remaining. This graph doesn't get written out")
+            continue
         
         binding_energies = np.array(binding_energies)
         binding_energies = binding_energies[binding_energies != None]
         if len(binding_energies) == 0:
-            return None, None
+            continue
         
         # If there are duplicate orbitals
         if len(orbitals) > 1:            
@@ -175,7 +175,8 @@ def networkx2torch(data):
         ### Process Node information
         nodes, node_raw_data = zip(*graph.nodes(data=True))
         node_data, dup_orbs = process_nodes(node_raw_data, vectors)
-        if node_data is None or dup_orbs is None:
+
+        if len(node_data) == 0:
             continue
         
         # If any node has multiple orbital/binding_energy pairs

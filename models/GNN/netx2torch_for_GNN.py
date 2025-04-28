@@ -96,6 +96,7 @@ def process_nodes(node_raw_data, vectors):
     node_data = []
     dup_orbs = {}
     temp_list = []
+    
     for n in node_raw_data:
         if n['atom_type'] == 'H':
             continue
@@ -106,7 +107,7 @@ def process_nodes(node_raw_data, vectors):
     for node_idx, data in enumerate(zip(vectors, node_data_no_H)):
         v, n = data
         idx, symbol, cmat = v
-    
+         
         lmat = np.zeros((1,EN_MAT.shape[0]))
         lmat[0, Chem.Atom(symbol).GetAtomicNum() - 1] = 1
         
@@ -129,12 +130,12 @@ def process_nodes(node_raw_data, vectors):
         orbitals = np.array(orbitals)
         orbitals = np.atleast_1d(orbitals[orbitals !=  None])
         if len(orbitals) == 0:
-            return None, None
+            continue
         
         binding_energies = np.array(binding_energies)
         binding_energies = binding_energies[binding_energies != None]
         if len(binding_energies) == 0:
-            return None, None
+            continue
         
         # If there are duplicate orbitals
         if len(orbitals) > 1:            
@@ -156,8 +157,8 @@ def networkx2torch(data):
     torch_graphs = []
     for graph_num, smile in enumerate(smiles):
         graph = data[smile]
-        #if smile != 'B(Br)(Br)Br':
-         #   continue
+        print("System: ", smile)
+
         try:
             vectors = get_full_neighbor_vectors(smile)
         except:
@@ -172,7 +173,8 @@ def networkx2torch(data):
         ### Process Node information
         nodes, node_raw_data = zip(*graph.nodes(data=True))
         node_data, dup_orbs = process_nodes(node_raw_data, vectors)
-        if node_data is None or dup_orbs is None:
+
+        if len(node_data) == 0:
             continue
         
         # If any node has multiple orbital/binding_energy pairs
