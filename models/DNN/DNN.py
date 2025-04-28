@@ -11,7 +11,7 @@ from torch.utils.data import DataLoader, TensorDataset
 from torchvision import datasets, transforms
 
 au2eV = 27.21139
-en_mat = get_eleneg_diff_mat()
+EN_MAT = get_eleneg_diff_mat()
 
 ### Helper functions from hackathon
 def load_data_from_file(filename) -> dict:
@@ -87,20 +87,28 @@ def get_eneg_mats(smile, num_elements=100):
     cmat = np.hstack(cmats)
     return lmat, cmat
 
-
 def process_nodes(node_raw_data, vectors):
     node_data = []
-    assert len(vectors) == len(node_raw_data), f'{len(vectors)} != {len(node_raw_data)}'
-    for node_idx, data in enumerate(zip(vectors, node_raw_data)):
+    dup_orbs = {}
+    temp_list = []
+    
+    for n in node_raw_data:
+        if n['atom_type'] == 'H':
+            continue
+        temp_list += [n]
+    node_data_no_H = tuple(temp_list)
+
+    assert len(vectors) == len(node_data_no_H), f'{len(vectors)} != {len(node_data_no_H)}'
+    for node_idx, data in enumerate(zip(vectors, node_data_no_H)):
         v, n = data
         idx, symbol, cmat = v
-        
-        lmat = np.zeros((1,en_mat.shape[0]))
+         
+        lmat = np.zeros((1,EN_MAT.shape[0]))
         lmat[0, Chem.Atom(symbol).GetAtomicNum() - 1] = 1
         
-        e_neg_score = np.einsum('ij,jk,ki->i', lmat, en_mat, cmat)[0]
+        e_neg_score = np.einsum('ij,jk,ki->i', lmat, EN_MAT, cmat)[0]        
         
-        atom_type = n['atom_type']
+        symbol = n['atom_type']
         formal_charge = n['formal_charge']
         
         for orb, binding_e in zip(n['orbitals'], n['binding_energies']):
@@ -108,12 +116,12 @@ def process_nodes(node_raw_data, vectors):
                 continue
             ref_e = -giveorbitalenergy(symbol, orb)
             n, l = get_n_l(orb)
-            assert symbol == atom_type
             # Binding energy normalized against reference energy
             # AKA, train against the difference from reference atomic orbital energy
             # Each entry is as follows:
             # [Atomic Num, formal charge, e_neg_score, quantum number 'n', quantum number 'l', binding_e - atomic_orbital_e]
             node_data += [np.array([Chem.Atom(symbol).GetAtomicNum(), formal_charge, e_neg_score, n, l, binding_e-ref_e],dtype=np.float32)]
+    node_data = np.atleast_2d(node_data)   
     return node_data
 
 def networkx2arr(data):
@@ -142,11 +150,10 @@ def networkx2arr(data):
         
         ### Process Node information
         new_data = process_nodes(node_raw_data, vectors)
-        if len(new_data) != 0:
+        if new_data.size != 0:
             graph_data += [np.atleast_2d(new_data)]
         else:
             print("Found no information in this graph")
-
     return np.vstack(graph_data)
 
 class NeuralNetwork(nn.Module):
@@ -155,14 +162,14 @@ class NeuralNetwork(nn.Module):
         self.flatten = nn.Flatten()
         self.linear_relu_stack = nn.Sequential(
             nn.Linear(5, 256),
-            nn.Hardswish(),
-            # nn.Dropout(0.1),
+            nn.ReLU(),
+            nn.Dropout(0.1),
             nn.Linear(256,256),
-            nn.Hardswish(),
-            # nn.Dropout(0.1),
+            nn.ReLU(),
+            nn.Dropout(0.1),
             nn.Linear(256,256),
-            nn.Hardswish(),
-            # nn.Dropout(0.1),
+            nn.ReLU(),
+            nn.Dropout(0.1),
             nn.Linear(256, 1)
         )
 
@@ -189,6 +196,7 @@ def train_loop(dataloader, model, loss_fn, optimizer):
         if batch * batch_size >= size - batch_size:
             loss, current = loss.item(), batch * batch_size + len(X)
             print(f"loss: {loss:>7f}  [{current:>5d}/{size:>5d}]")
+    return loss
 
 
 def test_loop(dataloader, model, loss_fn):
@@ -207,16 +215,18 @@ def test_loop(dataloader, model, loss_fn):
 
     test_loss /= num_batches
     print(f"Test Avg loss: {test_loss:>8f} \n")
+    return test_loss
 
 if __name__=='__main__':
     # Input arguments
     in_filename = sys.argv[1] # networkx .json file
     
-    learning_rate = 1e-3
+    learning_rate = 1e-4
     batch_size = 16
-    epochs = 10
-    # loss_fn = nn.MSELoss()
-    loss_fn = nn.L1Loss()
+    epochs = 50
+    loss_fn = nn.MSELoss()
+
+    # loss_fn = nn.L1Loss()
     
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     print(f"Using {device} device")
@@ -225,19 +235,14 @@ if __name__=='__main__':
     
     # Load in networkx graphs
     data = load_data_from_file(in_filename)
-    # graph_data = torch.tensor(networkx2arr(data))
     graph_data = networkx2arr(data)
-    # unique_data = graph_data
     unique_data = np.unique(graph_data, axis=0)
-    # max_values = np.max(np.abs(unique_data[:, :-1]))
-    # # unique_data[:,:-1] = unique_data[:,:-1] / max_values
-    
-    
-    np.random.seed(42)
+
+    # np.random.seed()
     indices = np.arange(unique_data.shape[0])
     np.random.shuffle(indices)
-    train_idx = indices[:len(indices)*8//10]
-    test_idx = indices[len(indices)*8//10:]
+    train_idx = indices[:len(indices)*9//10]
+    test_idx = indices[len(indices)*9//10:]
 
     train_data_tensor = torch.tensor(unique_data[train_idx,:-1], dtype=torch.float32).to(device)
     train_labels_tensor = torch.tensor(unique_data[train_idx,-1], dtype=torch.float32).to(device)
@@ -254,8 +259,19 @@ if __name__=='__main__':
         train_loop(train_dataloader, model, loss_fn, optimizer)
         test_loop(test_dataloader, model, loss_fn)
 
+    temp = []
     for X, y in test_dataloader:
         pred = model(X).flatten()
-        print(np.sqrt(np.mean((pred-y).cpu().detach().numpy()**2)))
-
+        for n in (pred-y).cpu().detach().numpy(): 
+            temp += [n]
     
+    stats = {
+    'MAE': np.mean(np.abs(temp)),
+    'STDEV': np.std(temp),
+    'RMSE': np.sqrt(np.mean(np.array(temp)**2)),
+    'MSE': np.mean(temp), # Mean-Signed Error
+    'Max Error': np.max(temp)}
+
+    print("\nError Statistics:")
+    for key, value in stats.items():
+        print(f"{key}: {value:.4f}")
