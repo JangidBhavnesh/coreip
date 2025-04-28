@@ -165,6 +165,8 @@ if __name__=='__main__':
         
         predict = lemcmat * xvec + ref_energies
         predict_loss = np.sqrt(np.mean((predict-exp_energies) ** 2))
+        np.save("predict_"+str(n_cv),np.array(exp_energies))
+        np.save("error_"+str(n_cv),np.array(predict-exp_energies))
         test_loss = [predict_loss]
         test_error.append(predict-exp_energies)
         print(f"CV #{n_cv}: Testing RMSE over {np.sum(~mask)} samples: {predict_loss:.3f}eV")
