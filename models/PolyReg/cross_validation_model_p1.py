@@ -1,4 +1,6 @@
 import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))) # Not the cleanest way of doing this, yet.
 import json
 import networkx as nx
 import numpy as np
@@ -39,7 +41,7 @@ def get_n_l(orb):
     return n, l
 
 def giveorbitalenergy(ele, orb):
-    with open('orbitalenergy.json', 'r') as f:
+    with open('../../src/orbitalenergy.json', 'r') as f:
         data = json.load(f)
     try:
         orbenegele = data[ele]
@@ -55,7 +57,12 @@ def giveorbitalenergy(ele, orb):
 if __name__=='__main__':
     np.random.seed(42)
     # Input arguments
-    in_filename = sys.argv[1] # networkx .json file
+    in_filename = 'graph_data.json'
+    if len(sys.argv) > 1:
+        in_filename = sys.argv[1] # networkx .json file
+    out_filename = 'graphs.pt' # File to save pyTorch graphs
+    if len(sys.argv) > 2:
+        out_filename = sys.argv[2]
         
     # Load in networkx graphs
     data = load_data_from_file(in_filename)
@@ -119,6 +126,7 @@ if __name__=='__main__':
     
     train_loss = []
     test_loss = []
+    test_error = []
     
     indices = np.arange(num_total_data)
     np.random.shuffle(indices)
@@ -158,29 +166,67 @@ if __name__=='__main__':
         predict = lemcmat * xvec + ref_energies
         predict_loss = np.sqrt(np.mean((predict-exp_energies) ** 2))
         test_loss = [predict_loss]
+        test_error.append(predict-exp_energies)
         print(f"CV #{n_cv}: Testing RMSE over {np.sum(~mask)} samples: {predict_loss:.3f}eV")
 
     print(f"Average {num_cross_val}-fold CV Training RMSE: {np.mean(train_loss)}eV")
     print(f"Average {num_cross_val}-fold CV Testing RMSE: {np.mean(test_loss)}eV")
+    '''
+    CV #0: Training RMSE over 4543 samples: 13.892eV
+    CV #0: Testing RMSE over 649 samples: 13.480eV
+    CV #1: Training RMSE over 4543 samples: 13.834eV
+    CV #1: Testing RMSE over 649 samples: 13.920eV
+    CV #2: Training RMSE over 4543 samples: 13.833eV
+    CV #2: Testing RMSE over 649 samples: 16.225eV
+    CV #3: Training RMSE over 4543 samples: 13.857eV
+    CV #3: Testing RMSE over 649 samples: 14.542eV
+    CV #4: Training RMSE over 4543 samples: 13.803eV
+    CV #4: Testing RMSE over 649 samples: 14.124eV
+    CV #5: Training RMSE over 4543 samples: 13.841eV
+    CV #5: Testing RMSE over 649 samples: 14.316eV
+    CV #6: Training RMSE over 4543 samples: 13.826eV
+    CV #6: Testing RMSE over 649 samples: 13.952eV
+    CV #7: Training RMSE over 4543 samples: 13.790eV
+    CV #7: Testing RMSE over 649 samples: 14.243eV
+    Average 8-fold CV Training RMSE: 13.834517864871225eV
+    Average 8-fold CV Testing RMSE: 14.24309927757225eV
+    '''
+
+    test_error = np.array(test_error)
+
+    # Error statisitcs
+    mae = np.mean([np.mean(np.abs(er)) for er in test_error])
+    stdev = np.mean([np.std(er) for er in test_error])
+    rmse = np.mean([np.sqrt(np.mean(er**2)) for er in test_error])
+    mean_error = np.mean([np.mean(er) for er in test_error])
+    max_error = np.max([np.max(np.abs(er)) for er in test_error])
+
+    stats = {
+        'MAE': mae,
+        'STDEV': stdev,
+        'RMSE': rmse,
+        'MSE': mean_error, # Mean-Signed Error
+        'Max Error': max_error}
+
+    print("\nError Statistics:")
+    for key, value in stats.items():
+        print(f"{key}: {value:.4f}")
     
-'''
-Null Loss: 19.345eV
-CV #0: Training RMSE over 4425 samples: 14.230eV
-CV #0: Testing RMSE over 632 samples: 14.060eV
-CV #1: Training RMSE over 4425 samples: 14.194eV
-CV #1: Testing RMSE over 632 samples: 14.298eV
-CV #2: Training RMSE over 4425 samples: 14.216eV
-CV #2: Testing RMSE over 632 samples: 14.174eV
-CV #3: Training RMSE over 4425 samples: 14.220eV
-CV #3: Testing RMSE over 632 samples: 14.132eV
-CV #4: Training RMSE over 4425 samples: 14.233eV
-CV #4: Testing RMSE over 632 samples: 14.031eV
-CV #5: Training RMSE over 4425 samples: 14.191eV
-CV #5: Testing RMSE over 632 samples: 14.754eV
-CV #6: Training RMSE over 4425 samples: 14.186eV
-CV #6: Testing RMSE over 632 samples: 14.444eV
-CV #7: Training RMSE over 4425 samples: 14.154eV
-CV #7: Testing RMSE over 632 samples: 14.585eV
-Average 8-fold CV Training RMSE: 14.2029826374819eV
-Average 8-fold CV Testing RMSE: 14.585169357824542eV
-'''
+    # # Plotting the erros
+    # fig, ax = plt.subplots(figsize=(8, 5))
+    # ax.bar(stats.keys(), stats.values())
+    # ax.set_ylabel('Error Value')
+    # ax.set_title('Error Statistics')
+    # plt.xticks(rotation=45)
+    # plt.grid(axis='y', linestyle='--', alpha=0.7)
+    # plt.tight_layout()
+    # plt.show()
+
+    '''
+    Error Statistics:
+    MAE: 11.4768
+    STDEV: 10.3479
+    RMSE: 14.3502
+    MSE: 9.8850
+    Max Error: 159.2767
+    '''
