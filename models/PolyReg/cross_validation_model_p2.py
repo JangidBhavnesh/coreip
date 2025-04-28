@@ -1,4 +1,6 @@
 import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))) # Not the cleanest way of doing this, yet.
 import json
 import networkx as nx
 import numpy as np
@@ -39,7 +41,7 @@ def get_n_l(orb):
     return n, l
 
 def giveorbitalenergy(ele, orb):
-    with open('orbitalenergy.json', 'r') as f:
+    with open('../../src/orbitalenergy.json', 'r') as f:
         data = json.load(f)
     try:
         orbenegele = data[ele]
@@ -52,9 +54,13 @@ def giveorbitalenergy(ele, orb):
     cbenergy *= au2eV
     return cbenergy
 
+
 if __name__=='__main__':
     np.random.seed(42)
-    in_filename = sys.argv[1] # networkx .json file
+    # Input arguments
+    in_filename = 'graph_data.json'
+    if len(sys.argv) > 1:
+        in_filename = sys.argv[1] # networkx .json file
     out_filename = 'graphs.pt' # File to save pyTorch graphs
     if len(sys.argv) > 2:
         out_filename = sys.argv[2]
@@ -74,7 +80,7 @@ if __name__=='__main__':
     
     train_loss = []
     test_loss = []
-    
+    test_error = []
     indices = np.arange(num_total_data)
     np.random.shuffle(indices)
     subset_idx = np.random.permutation(num_total_data)[:(num_cross_val*subset_size)]
@@ -102,10 +108,61 @@ if __name__=='__main__':
         element_list = graph_data[test_idx, 0]
         lemcmat = graph_data[test_idx, 2]
 
-        predict, predict_loss = test_model_p2(weights, element_list, lemcmat, ref_energies, exp_energies)
+        predict, errors = test_model_p2(weights, element_list, lemcmat, ref_energies, exp_energies)
+        predict_loss = np.sqrt(np.mean((errors) ** 2))
         test_loss = [predict_loss]
+        test_error.append(errors)
         print(f"CV #{n_cv}: Testing RMSE over {np.sum(~mask)} samples: {predict_loss:.3f}eV")
 
     print(f"Average {num_cross_val}-fold CV Training RMSE: {np.mean(train_loss)}eV")
     print(f"Average {num_cross_val}-fold CV Testing RMSE: {np.mean(test_loss)}eV")
     
+
+    test_error = np.array(test_error)
+
+    # Error statisitcs
+    mae = np.mean([np.mean(np.abs(er)) for er in test_error])
+    stdev = np.mean([np.std(er) for er in test_error])
+    rmse = np.mean([np.sqrt(np.mean(er**2)) for er in test_error])
+    mean_error = np.mean([np.mean(er) for er in test_error])
+    max_error = np.max([np.max(np.abs(er)) for er in test_error])
+
+    stats = {
+        'MAE': mae,
+        'STDEV': stdev,
+        'RMSE': rmse,
+        'MSE': mean_error, # Mean-Signed Error
+        'Max Error': max_error}
+
+    print("\nError Statistics:")
+    for key, value in stats.items():
+        print(f"{key}: {value:.4f}")
+    
+    # # Plotting the erros
+    # fig, ax = plt.subplots(figsize=(8, 5))
+    # ax.bar(stats.keys(), stats.values())
+    # ax.set_ylabel('Error Value')
+    # ax.set_title('Error Statistics')
+    # plt.xticks(rotation=45)
+    # plt.grid(axis='y', linestyle='--', alpha=0.7)
+    # plt.tight_layout()
+    # plt.show()
+    '''
+    CV #0: Training RMSE over 3894 samples: 3.112eV
+    CV #0: Testing RMSE over 1298 samples: 3.924eV
+    CV #1: Training RMSE over 3894 samples: 3.236eV
+    CV #1: Testing RMSE over 1298 samples: 6.301eV
+    CV #2: Training RMSE over 3894 samples: 3.281eV
+    CV #2: Testing RMSE over 1298 samples: 3.406eV
+    CV #3: Training RMSE over 3894 samples: 3.113eV
+    CV #3: Testing RMSE over 1298 samples: 4.059eV
+    Average 4-fold CV Training RMSE: 3.1855371045349883eV
+    Average 4-fold CV Testing RMSE: 4.0588858996889075eV
+
+    Error Statistics:
+    MAE: 1.6177
+    STDEV: 4.4216
+    RMSE: 4.4223
+    MSE: 0.0618
+    Max Error: 170.0104
+    '''
