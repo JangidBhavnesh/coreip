@@ -1,4 +1,6 @@
 import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../..'))) # Not the cleanest way of doing this, yet.
 import json
 import networkx as nx
 import numpy as np
@@ -45,7 +47,7 @@ def get_n_l(orb):
     l = get_l(str(orb[1]))
     return n, l
 
-def giveorbitalenergy(ele, orb, orbital_energy_file='orbitalenergy.json'):
+def giveorbitalenergy(ele, orb, orbital_energy_file='../../src/orbitalenergy.json'):
     '''
     For a given element and orbital, return the orbital energy in eV
     '''
@@ -158,8 +160,9 @@ def test_model_p3(weights, elements, e_neg, ref_e, exp_e):
     '''        
     xvec = get_xvec(weights.reshape(-1,3), elements)
     predict = np.sum(np.vstack((e_neg**2, e_neg, np.ones(e_neg.shape))).T * xvec,axis=1) + ref_e
-    loss = np.sqrt(np.mean((predict - exp_e) ** 2))
-    return predict, loss
+    # loss = np.sqrt(np.mean((predict - exp_e) ** 2))
+    error = predict - exp_e
+    return predict, error
 
 
 def train_model_p3(elements, e_neg, ref_e, exp_e, num_elements=100):
@@ -191,7 +194,9 @@ def train_model_p3(elements, e_neg, ref_e, exp_e, num_elements=100):
 
 if __name__=='__main__':
     # Input arguments
-    in_filename = sys.argv[1] # networkx .json file
+    in_filename = 'graph_data.json'
+    if len(sys.argv) > 1:
+        in_filename = sys.argv[1] # networkx .json file
     out_filename = 'graphs.pt' # File to save pyTorch graphs
     if len(sys.argv) > 2:
         out_filename = sys.argv[2]
@@ -224,6 +229,37 @@ if __name__=='__main__':
     element_list = graph_data[train_samples:train_samples+test_samples, 0]
     lemcmat = graph_data[train_samples:train_samples+test_samples, 2]
 
-    predict, predict_loss = test_model_p3(weights, element_list, lemcmat, ref_energies, exp_energies)
-    
+    predict, errors = test_model_p3(weights, element_list, lemcmat, ref_energies, exp_energies)
+    predict_loss =  np.sqrt(np.mean((errors) ** 2))
     print(f"Testing RMSE over {test_samples} samples: {predict_loss:.3f}eV")
+
+   # Error statisitcs
+    mae = np.mean(np.abs(errors))
+    stdev = np.std(errors)
+    rmse = np.sqrt(np.mean(errors**2))
+    mean_error = np.mean(errors)
+    max_error = np.max(np.abs(errors))
+
+    stats = {
+        'MAE': mae,
+        'STDEV': stdev,
+        'RMSE': rmse,
+        'MSE': mean_error, # Mean-Signed Error
+        'Max Error': max_error}
+
+    print("\nError Statistics:")
+    for key, value in stats.items():
+        print(f"{key}: {value:.4f}")
+    
+    # # Plotting the erros
+    # fig, ax = plt.subplots(figsize=(8, 5))
+    # ax.bar(stats.keys(), stats.values())
+    # ax.set_ylabel('Error Value')
+    # ax.set_title('Error Statistics')
+    # plt.xticks(rotation=45)
+    # plt.grid(axis='y', linestyle='--', alpha=0.7)
+    # plt.tight_layout()
+    # plt.show()
+
+
+

@@ -1,6 +1,9 @@
 # Let's create the model-0
 # This is the look up table for calculating the orbital energies based
 # on the atomic number and effective nuclear charges
+import json
+import matplotlib.pyplot as plt
+import numpy as np
 
 element_symbols = [
     "H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne",
@@ -100,4 +103,55 @@ def _get_orbital_energy(symbol, orb):
     orbenergy = -13.64*zeff*zeff/(n*n)
     return orbenergy
 
-print(_get_orbital_energy('C', '1s'))
+def _get_error(data):
+    errors = []
+    for tempdata in data.values():
+        for node in tempdata['nodes']:
+            refbe = node['binding_energies']
+            atom = node['atom_type']
+            orbitals = node['orbitals']
+
+            assert len(orbitals) == len(refbe), 'Something is wrong with this data'
+
+            for orb, ref_energy in zip(orbitals, refbe):
+                if orb == -1:
+                    break
+                orbital_prefix = orb[:2]
+                cal_energy = -1. * _get_orbital_energy(atom, orbital_prefix) # Koopman's theorem, IP = -HOMO
+                errors.append(cal_energy - ref_energy)
+    return errors
+
+
+if __name__ == '__main__':
+    with open('graph_data.json', 'r') as f:
+        data = json.load(f)
+
+    errors = np.array(_get_error(data))
+    
+    # Error Statistics
+    mae = np.mean(np.abs(errors))
+    stdev = np.std(errors)
+    rmse = np.sqrt(np.mean(errors**2))
+    mean_error = np.mean(errors)
+    max_error = np.max(np.abs(errors))
+
+    stats = {
+        'MAE': mae,
+        'STDEV': stdev,
+        'RMSE': rmse,
+        'MSE': mean_error, # mean-signed error
+        'Max Error': max_error}
+
+    print("\nError Statistics:")
+    for key, value in stats.items():
+        print(f"{key}: {value:.4f}")
+
+    # # Plotting the erros
+    # fig, ax = plt.subplots(figsize=(8, 5))
+    # ax.bar(stats.keys(), stats.values())
+    # ax.set_ylabel('Error Value')
+    # ax.set_title('Error Statistics')
+    # plt.xticks(rotation=45)
+    # plt.grid(axis='y', linestyle='--', alpha=0.7)
+    # plt.tight_layout()
+    # plt.show()
