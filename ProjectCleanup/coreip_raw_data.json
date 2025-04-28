@@ -11081,7 +11081,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)"
   ]
 },
-  "CC(=O)/C=C(C)/O[Ni]O/C(C)=C/C(C)=O": {
+  "[Ni]1234.CC(:O->1):C:C(:O->2)C.CC(:O->3):C:C(:O->4)C": {
   "chemical_formula":
     [
     "Ni(C*H3COC*HCOC*H3)2",
@@ -13982,7 +13982,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 68 in Jolly et al.)"
   ]
 },
-  "FP(F)F.FP(F)F.FP(F)F.FP(F)F.[Ni]": {
+  "[Ni]1234.P(F)(F)(F)->1.P(F)(F)(F)->2.P(F)(F)(F)->3.P(F)(F)(F)->4": {
   "chemical_formula":
     [
     "Ni(PF3)4",
