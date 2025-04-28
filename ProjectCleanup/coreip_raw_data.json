@@ -599,7 +599,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 3 in Jolly et al.)"
   ]
 },
-  "B(CC)(CC)CC.B(CC)(CC)CC": {
+  "[BH-](CCC)(CCC)[BH-](CCC)(CCC)": {
   "chemical_formula":
     [
     "((CH3CH2CH2)2B*H)2",
@@ -672,7 +672,7 @@
     null, null, null
   ]
 },
-  "Bi2": {
+  "[Bi]#[Bi]": {
   "chemical_formula":
     [
     "Bi2"
@@ -972,7 +972,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 11 in Jolly et al.)"
   ]
 },
-  "[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[C-]#[O+].[Mn]Br": {
+  "[Mn](Br)(C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "BrMn(CO)5",
@@ -1143,7 +1143,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 9 in Jolly et al.)"
   ]
 },
-  "Br.Br.[Fe].[Fe].[N]=O.[N]=O.[N]=O.[N]=O": {
+  "[Br][Fe]([N]=O)([N]=O)=[Fe](Br)([N]=O)([N]=O)": {
   "chemical_formula":
     [
     "Fe2(NO)4Br2",
@@ -1359,7 +1359,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 161 in Jolly et al.)"
   ]
 },
-  "CN(C)B1[H+][BH2-][H+]1]": {
+  "CN(C)B1[H+][BH2-][H+]1": {
   "chemical_formula":
     [
     "B2H5N(C*H3)2",
@@ -2304,7 +2304,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 14 in Jolly et al.)"
   ]
 },
-  "O=C=[Mn](N=O)(N=O)N=O": {
+  "[Mn](N=O)(N=O)(N=O)(C#[O+])": {
   "chemical_formula":
     [
     "Mn(NO)3CO",
@@ -3411,7 +3411,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 119 in Jolly et al.)"
   ]
 },
-  "[C-](=O)N=O.[C-](=O)N=O.[Fe+2]": {
+  "[Fe](C#[O+])(C#[O+])(N(=O)=O)(N(=O)=O)": {
   "chemical_formula":
     [
     "Fe(CO)2(NO)2",
@@ -4827,7 +4827,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 10 in Jolly et al.)"
   ]
 },
-  "C[Ge](C)(C)N=[N+]=[N-]": {
+  "C[Ge](C)(C)[N-]=[N+]=[N-]": {
   "chemical_formula":
     [
     "(CH3)3GeN3",
@@ -5385,7 +5385,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 11 in Jolly et al.)"
   ]
 },
-  "C[P+](C)(C)[Mn](N=O)(N=O)N=O": {
+  "[Mn](N=O)(N=O)(N=O)(<-[P](C)(C)C)": {
   "chemical_formula":
     [
     "Mn(NO)3P(CH3)3",
@@ -5565,24 +5565,6 @@
    "references":
     [
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 in Jolly et al.)",
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 in Jolly et al.)"
-  ]
-},
-  "CP(C)CN": {
-  "chemical_formula":
-    [
-    "P(CH3)3NH"
-  ],
-   "orbitals":
-    [
-    "C 1s"
-  ],
-   "binding_energies":
-    [
-    290.8
-  ],
-   "references":
-    [
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 in Jolly et al.)"
   ]
 },
@@ -5853,7 +5835,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 162 in Jolly et al.)"
   ]
 },
-  "C(=C(F)F)(C(=C(F)F)F)F": {
+  "C1(F)(F)C(F)(F)C(F)=C1(F)": {
   "chemical_formula":
     [
     "C.F2CF2C*FC.F",
@@ -6261,7 +6243,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
   ]
 },
-  "[CH+]1O[Mo+2]23(O1)O[CH+]O[Mo+2]24(O[CH+]O3)O[CH+]O4": {
+  "O->1:C:O->2.O->3:C:O->4.O->5:C:O->6.O->7:C:O->8.[Mo]1235$[Mo]4678": {
   "chemical_formula":
     [
     "Mo2(O2CH)4",
@@ -6432,7 +6414,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)"
   ]
 },
-  "CC12OP1(=O)O2": {
+  "C(C)(OP12)(CO1)(CO2)": {
   "chemical_formula":
     [
     "O.P(OCH2)2C*.C*H3",
@@ -7137,7 +7119,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 30 in Jolly et al.)"
   ]
 },
-  "C(=O)=[Mn]([Si](F)(F)F)(=C=O)(=C=O)(=C=O)=C=O": {
+  "[Mn]([Si](F)(F)F)(C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "SiF3Mn(CO)5",
@@ -7227,7 +7209,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 69 in Jolly et al.)"
   ]
 },
-  "C=C[CH2-].O=N[Fe](C#[O+])C#[O+]": {
+  "C->2:C->1:C->[Fe]12(C#[O+])(C#[O+])([N]=O)": {
   "chemical_formula":
     [
     "Fe(C*3H5)(CO)2NO",
@@ -7377,7 +7359,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 96 in Jolly et al.)"
   ]
 },
-  "[CH-]1C=CC=C1.O=[N-][Ni+2]": {
+  "[CH+]->21C->3=C->4C->5=C1->6.O=N[Ni]23456": {
   "chemical_formula":
     [
     "Ni(C5H5)NO",
@@ -7404,7 +7386,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 79 in Jolly et al.)"
   ]
 },
-  "C(=C=[C+]N)C#CN": {
+  "C1=CC=C[C+]1[N+]#[N]": {
   "chemical_formula":
     [
     "C.*HC*HC*HC*HC.NN",
@@ -7431,7 +7413,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 148 in Jolly et al.)"
   ]
 },
-  "[C-]1(C=CC=C1).[WH](N=O)N=O": {
+  "[CH+]1->2(C->3=C->4C->5=C1->6).[WH]23456(N=O)N=O": {
   "chemical_formula":
     [
     "C5H5W(NO)2H",
@@ -7740,7 +7722,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 115 in Jolly et al.)"
   ]
 },
-"C=C(Cl)Cl.[O+]#C[Fe+2](C#[O+])(C#[O+])C#[O+]": {
+"C->1=C->2(Cl)Cl.[O+]#C[Fe]12(C#[O+])(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "Fe(C*O)4Cl2CCH2",
@@ -7770,7 +7752,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 186 in Jolly et al.)"
   ]
 },
-  "Cl/C=C/Cl.[O+]#C[Fe+2](C#[O+])(C#[O+])C#[O+]": {
+  "Cl/C->1=C->2/Cl.[O+]#C[Fe]12(C#[O+])(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "Fe(C*O)4 trans-ClCHCHCl",
@@ -7798,7 +7780,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 186 in Jolly et al.)"
   ]
 },
-  "C(=O)=[Cr](=C=S)(=C=O)(=C=O)(=C=O)=C=O": {
+  "[Cr](C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[S+])": {
   "chemical_formula":
     [
     "Cr(CO)5C*S",
@@ -8008,27 +7990,10 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)"
   ]
 },
-  "C1=CC=C(C(=C1)N)F": {
-  "chemical_formula":
-    [
-    "p-FC6H4NH2 (2 C*)"
-  ],
-   "orbitals":
-    [
-    "C 1s"
-  ],
-   "binding_energies":
-    [
-    290.27
-  ],
-   "references":
-    [
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)"
-  ]
-},
   "C1=CC(=CC=C1N)F": {
   "chemical_formula":
     [
+    "p-FC6H4NH2 (2 C*)",
     "p-FC6H4NH2 (C*NH2)",
     "p-FC6H4NH2 (C*F)",
     "p-FC6H4NH2",
@@ -8039,13 +8004,14 @@
     [
     "C 1s",
     "C 1s",
+    "C 1s",
     "F 1s",
     "N 1s",
     "N 1s"
   ],
    "binding_energies":
     [
-    291.44, 292.28, 692.65, 405.49, 405.59
+    290.27, 291.44, 292.28, 692.65, 405.49, 405.59
   ],
    "references":
     [
@@ -8053,10 +8019,11 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
   ]
 },
-  "C1=CC=C(C(=C1)O)F": {
+  "C1=C(F)C=C(C(=C1)O)": {
   "chemical_formula":
     [
     "p-FC6H4OH (2, 3 C*)",
@@ -8281,7 +8248,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 36 , 67 in Jolly et al.)"
   ]
 },
-  "C[N+]#[C-].C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "C[N+]#[C][Fe](C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "CH3NCFe(CO)4",
@@ -8308,7 +8275,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 161 in Jolly et al.)"
   ]
 },
-  "C=C.C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "C->1=C->[Fe]1(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "C*2H4Fe(CO)4",
@@ -8335,7 +8302,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 172 in Jolly et al.)"
   ]
 },
-  "CP(C)C.CP(C)C.N(=O)[Fe]N=O": {
+  "[Fe](N=O)(N=O)(<-P(C)(C)(C))(<-P(C)(C)(C))": {
   "chemical_formula":
     [
     "Fe(NO)2(P(CH3)3)2",
@@ -8440,7 +8407,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
   ]
 },
-  "C[Ge](C)C.C[Ge](C)C.[Se]": {
+  "[Se]([Ge](C)(C)C)([Ge](C)(C)C)": {
   "chemical_formula":
     [
     "((CH3)3Ge)2Se",
@@ -8464,7 +8431,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
   ]
 },
-  "C[Ge](C)C.C[Ge](C)C.[Te]": {
+  "[Te]([Ge](C)(C)C)([Ge](C)(C)C)": {
   "chemical_formula":
     [
     "((CH3)3Ge)2Te",
@@ -8971,7 +8938,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 18 in Jolly et al.)"
   ]
 },
-  "C[Sn](C)C.C[Sn](C)C": {
+  "C[Sn](C)(C)=[Sn](C)(C)C": {
   "chemical_formula":
     [
     "Sn2(CH3)6",
@@ -9112,7 +9079,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 26 in Jolly et al.)"
   ]
 },
-  "C(=O)=[W](=C=S)(=C=O)(=C=O)(=C=O)=C=O": {
+  "[W](C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[S+])": {
   "chemical_formula":
     [
     "W(CO)5CS",
@@ -9202,7 +9169,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 35 in Jolly et al.)"
   ]
 },
-  "C1=CC=C(C(=C1)C=O)Cl": {
+  "C1(C=O)=CC=C(C(=C1))Cl": {
   "chemical_formula":
     [
     "p-ClC6H4CHO (C*C)",
@@ -9229,7 +9196,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 14 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Co](C#[O+]).C1=CC=C[C-]1": {
+  "[O+]#C[Co]23456(C#[O+]).C1->2=C->3C->4=C->5[CH+]1->6": {
   "chemical_formula":
     [
     "C*5H5Co(CO)2",
@@ -9256,7 +9223,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 79 in Jolly et al.)"
   ]
 },
-  "C1=C[C-]C=C1.[O+]#C[Cr](C#[O+])N=S": {
+  "C1->2=C->3[CH+]->4C->5=C1->6.[O+]#C[Cr]23456(C#[O+])N=S": {
   "chemical_formula":
     [
     "Cr(C*5H5)(CO)2NS",
@@ -9289,7 +9256,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 144 in Jolly et al.)"
   ]
 },
-  "O=N[Cr](C#[O+])(C#[O+]).C1=CC=C[C-]1": {
+  "O=N[Cr]2345(C#[O+])(C#[O+])<-C1=C->2C->3=C->4[CH+]1->5": {
   "chemical_formula":
     [
     "Cr(C*5H5)(CO)2NO",
@@ -9454,7 +9421,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 74 in Jolly et al.)"
   ]
 },
-  "CP(C)C.C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "[Fe](C#[O+])(C#[O+])(C#[O+])(C#[O+])(<-P(C)(C)(C))": {
   "chemical_formula":
     [
     "Fe(C*O)4P(CH3)3",
@@ -9514,7 +9481,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 79 in Jolly et al.)"
   ]
 },
-  "C/C=C[Mn](C#[O+])(C#[O+])(C#[O+])C#[O+]": {
+  "C->1:C->2:C->[Mn]12(C#[O+])(C#[O+])(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "(C*3H5)Mn(CO)4",
@@ -9541,7 +9508,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 156 in Jolly et al.)"
   ]
 },
-  "C1=C[C-]C=C1.O=N[Mo](C#[O+])C#[O+]": {
+  "C1->2=C->3[CH+]->4C->5=C1->6.O=N[Mo]23456(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "Mo(C*5H5)(CO)2NO",
@@ -9676,7 +9643,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 4 in Jolly et al.)"
   ]
 },
-  "C1=C[C-]C=C1.O=N[W](C#[O+])C#[O+]": {
+  "C1->2=C->3[CH+]->4C->5=C1->6.O=N[W]23456(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "W(C*5H5)(CO)2NO",
@@ -9706,27 +9673,10 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 139 in Jolly et al.)"
   ]
 },
-  "C1=CC(=CC(=C1)N)C#N": {
+  "C1=C(N)C=CC(=C1)C#N": {
   "chemical_formula":
     [
-    "p-NCC6H4NH2 (3 C*)"
-  ],
-   "orbitals":
-    [
-    "C 1s"
-  ],
-   "binding_energies":
-    [
-    290.55
-  ],
-   "references":
-    [
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)"
-  ]
-},
-  "C1=CC=C(C(=C1)C#N)N": {
-  "chemical_formula":
-    [
+    "p-NCC6H4NH2 (3 C*)",
     "p-NCC6H4NH2 (2 C*)",
     "p-NCC6H4NH2 (C*CN)",
     "p-NC*C6H4NH2",
@@ -9737,14 +9687,16 @@
     "C 1s",
     "C 1s",
     "C 1s",
+    "C 1s",
     "C 1s"
   ],
    "binding_energies":
     [
-    290.89, 291.36, 291.8, 292.09
+    290.55, 290.89, 291.36, 291.8, 292.09
   ],
    "references":
     [
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 37 in Jolly et al.)",
@@ -10075,7 +10027,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 186 in Jolly et al.)"
   ]
 },
-  "C[Si](C)(C)[N+]#[C-].C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "C[Si](C)(C)[N+]#[C][Fe](C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "(C*H3)3SiNCFe(CO)4",
@@ -10138,7 +10090,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 164 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Mn](C#[O+])(C#[S+]).C1=CC=C[C-]1": {
+  "[O+]#C[Mn]2345(C#[O+])(C#[S+])<-C1=C->2C->3=C->4[CH+]->51": {
   "chemical_formula":
     [
     "(C*5H5)Mn(CO)2C*S",
@@ -10168,7 +10120,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 144 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Mn](C#[O+])(C#[O+]).C1=CC=C[C-]1": {
+  "[O+]#C[Mn]2345(C#[O+])(C#[O+])<-C1=C->2C->3=C->4[CH+]->51": {
   "chemical_formula":
     [
     "(C*5H5)Mn(CO)3",
@@ -10195,7 +10147,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 79 in Jolly et al.)"
   ]
 },
-  "CCC[Mn](C#[O+])(C#[O+])(C#[O+])(C#[O+])C#[O+]": {
+  "C->1:C->2:C->[Mn]12(C#[O+])(C#[O+])(C#[O+])(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "C3*H5Mn(CO)5",
@@ -10222,7 +10174,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 79 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Re](C#[O+])(C#[O+]).C1=CC=C[C-]1": {
+  "[O+]#C[Re]2345(C#[O+])(C#[O+])<-C1=C->2C->3=C->4[CH+]->51": {
   "chemical_formula":
     [
     "(C*5H5)Re(CO)3",
@@ -10249,7 +10201,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 153 in Jolly et al.)"
   ]
 },
-  "C(=O)=[Mn](CCC)(=C=O)(=C=O)(=C=O)=C=O": {
+  "[Mn](CCC)(C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "(C*3H7)Mn(CO)5",
@@ -10300,7 +10252,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 14 in Jolly et al.)"
   ]
 },
-  "CP(C)C.C(=O)=[Mo](=C=O)(=C=O)(=C=O)=C=O": {
+  "[Mo](C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])(<-P(C)(C)(C))": {
   "chemical_formula":
     [
     "Mo(C*O)5P(CH3)3",
@@ -10330,7 +10282,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 155 in Jolly et al.)"
   ]
 },
-  "P(OC)(OC)OC.C(=O)=[Mo](=C=O)(=C=O)(=C=O)=C=O": {
+  "[Mo](C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])(P(OC)(OC)(OC))": {
   "chemical_formula":
     [
     "Mo(CO)5P(OCH3)3",
@@ -10621,7 +10573,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 79 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Fe](C#[O+])(C#[O+])(C#[O+]).[N]1=CC=CC=C1": {
+  "[Fe]234567(C#[O+])(C#[O+])(C#[O+])(C#[O+]).[N]1->2=C->3C->4=C->5C->6=C->71": {
   "chemical_formula":
     [
     "Fe(CO)4C5H5N",
@@ -10648,7 +10600,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 186 in Jolly et al.)"
   ]
 },
-  "C(C)(C)(C)[N+]#[C-].C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "C(C)(C)(C)[N+]#[C][Fe](C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "(CH3)3C*NC*Fe(C*O)4",
@@ -10678,7 +10630,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 161 in Jolly et al.)"
   ]
 },
-  "C=[Fe](=C=O)(=C=O)(=C=O)=C=O.C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "[Fe]1(C#[O+])(C#[O+])(C#[O+])(C#[O+])C[Fe]1(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "(H2C*)Fe2(CO)8",
@@ -10705,7 +10657,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 93 in Jolly et al.)"
   ]
 },
-  "[O+]#C[V](C#[O+])(C#[O+])(C#[O+]).C1=CC=C[C-]1": {
+  "[O+]#C[V]2345(C#[O+])(C#[O+])(C#[O+])<-C1=C->2C->3=C->4[CH+]->51": {
   "chemical_formula":
     [
     "C*5H5V(CO)4",
@@ -10732,7 +10684,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 32 in Jolly et al.)"
   ]
 },
-  "CC1=CC=CC1[Mn](C#[O+])(C#[O+])C#[O+]": {
+  "CC->21=C->3C->4=C->5[CH+]->61.[Mn]23456(C#[O+])(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "(C*H3C*5H4)Mn(CO)3",
@@ -10759,7 +10711,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 153 in Jolly et al.)"
   ]
 },
-  "C[Mo](C#[O+])(C#[O+])(C#[O+]).C1=CC=C[C-]1": {
+  "C[Mo]2345(C#[O+])(C#[O+])(C#[O+])<-C1=C->2C->3=C->4[CH+]->51": {
   "chemical_formula":
     [
     "(CO)3Mo(C*H3)(C*5H5)",
@@ -10837,7 +10789,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 111 in Jolly et al.)"
   ]
 },
-  "C1=CC=C[C-]1.C1=CC=C[C-]1.[Co+2]": {
+  "C1->2=C->3C->4=C->5[CH+]1->6.[Co]23456789%10%11.C1->7=C->8C->9=C->%10[CH+]1->%11": {
   "chemical_formula":
     [
     "Co(C5H5)2",
@@ -10936,7 +10888,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 43 in Jolly et al.)"
   ]
 },
-  "C1=CC=C[C-]1.C1=CC=C[C-]1.[Cr+2]": {
+  "C1->2=C->3C->4=C->5[CH+]1->6.[Cr]23456789%10%11.C1->7=C->8C->9=C->%10[CH+]1->%11": {
   "chemical_formula":
     [
     "Cr(C5H5)2"
@@ -10987,7 +10939,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 116 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Fe](C#[O+])(C#[O+])C1C=CC=CC=C1": {
+  "[Fe]234567(C#[O+])(C#[O+])(C#[O+]).C->21C->3=C->4C->5=C->6C->7=1C": {
   "chemical_formula":
     [
     "C*7H8Fe(CO)3",
@@ -11014,7 +10966,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 55 in Jolly et al.)"
   ]
 },
-  "COC(=O)C1C(C(=O)OC)[Fe]1(C#[O+])(C#[O+])(C#[O+])C#[O+]": {
+  "COC(=O)C->1C(C(=O)OC)->[Fe]1(C#[O+])(C#[O+])(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "Fe(C*O)4C*H3OOC*CHCHC*OOCH3",
@@ -11044,7 +10996,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 186 in Jolly et al.)"
   ]
 },
-  "[O+]#C[V](C#[O+])(C#[O+])C1C=CC=CC=C1": {
+  "[V]2345678(C#[O+])(C#[O+])(C#[O+]).[CH+]1->2C->3=C->4C->5=C->6C->7=C1->8": {
   "chemical_formula":
     [
     "(C*7H7)V(CO)3",
@@ -11071,7 +11023,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 32 in Jolly et al.)"
   ]
 },
-  "C1=CC=C[C-]1.C1=CC=C[C-]1.[Mg+2]": {
+  "C1->2=C->3C->4=C->5[CH+]1->6.[Mg]23456789%10%11.C1->7=C->8C->9=C->%10[CH+]1->%11": {
   "chemical_formula":
     [
     "Mg(C5H5)2",
@@ -11093,7 +11045,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 39 in Jolly et al.)"
   ]
 },
-  "C1=CC=C[C-]1.C1=CC=C[C-]1.[Mn+2]": {
+  "C1->2=C->3C->4=C->5[CH+]1->6.[Mn]23456789%10%11.C1->7=C->8C->9=C->%10[CH+]1->%11": {
   "chemical_formula":
     [
     "Mn(C5H5)2"
@@ -11111,7 +11063,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 39 in Jolly et al.)"
   ]
 },
-  "C1=CC=C[C-]1.C1=CC=C[C-]1.[Ni+2]": {
+  "C1->2=C->3C->4=C->5[CH+]1->6.[Ni]23456789%10%11.C1->7=C->8C->9=C->%10[CH+]1->%11": {
   "chemical_formula":
     [
     "Ni(C5H5)2"
@@ -11288,7 +11240,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 92 in Jolly et al.)"
   ]
 },
-  "C1(=CC=CC=C1)[N+]#[C-].C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "C1(=CC=CC=C1)[N+]#[C][Fe](C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "C*6H5NCFe(CO)4",
@@ -11342,7 +11294,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)"
   ]
 },
-  "C(C)OP(OCC)OCC.C(=O)=[Mo](=C=O)(=C=O)(=C=O)=C=O": {
+  "C(C)OP(OCC)(OCC)->[Mo](C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "Mo(CO)5P(OC*H2C*H3)3",
@@ -11372,7 +11324,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 155 in Jolly et al.)"
   ]
 },
-  "CN(C)P(N(C)C)N(C)C.C(=O)=[Mo](=C=O)(=C=O)(=C=O)=C=O": {
+  "CN(C)P(N(C)(C))(N(C)C)->[Mo](C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "Mo(CO)5P(N(C*H3)2)3",
@@ -11402,7 +11354,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 155 in Jolly et al.)"
   ]
 },
-  "[H][Fe]([Co](C#[O+])(C#[O+])(C#[O+])C#[O+])([Co](C#[O+])(C#[O+])(C#[O+])C#[O+])[Co](C#[O+])(C#[O+])(C#[O+])C#[O+]": {
+  "[H][Fe](C#[O+])(C#[O+])(C#[O+])([Co]126(C#[O+])(C#[O+])(C4#[O+]))([Co]234(C#[O+])(C#[O+])([C]5#[O+]))([Co]315(C#[O+])(C#[O+])(C6#[O+]))": {
   "chemical_formula":
     [
     "(CO)3FeCo3(CO)9H",
@@ -11459,7 +11411,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 60 in Jolly et al.)"
   ]
 },
-  "O=C4[Fe]12(C#[O+])(C#[O+])(C#[O+])C(=O)[Fe]23(C#[O+])(C#[O+])(C#[O+])C(=O)[Fe]134(C#[O+])(C#[O+])C#[O+]": {
+  "[Fe]=1(C#[O+])(C#[O+])(C#[O+])=[Fe](C#[O+])(C#[O+])(C#[O+])=[Fe]1(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "Fe3(CO)12",
@@ -11486,7 +11438,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 93 in Jolly et al.)"
   ]
 },
-  "C1=C[C-]C=C1.C1=CC=C[CH-]C=C1.[V]": {
+  "C1->2=C->3[CH+]->4C->5=C1->6.C1->7=C->8C->9=C->%10[CH+]->%11C->%12=C1->%13.[V]23456789%10%11%12%13": {
   "chemical_formula":
     [
     "C5H5VC7H7",
@@ -11555,7 +11507,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 11 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Co](C[Co](C#[O+]).C1=CC=C[C-]1).C2=CC=C[C-]2": {
+  "[O+]#C[Co]23456(C[Co]789%10%11(C#[O+]).C1->2=C->3C->4=C->5[CH+]->61).C1->7=C->8C->9=C->%10[CH+]1->%11": {
   "chemical_formula":
     [
     "(C5H5CoCO)2C*H2",
@@ -11657,7 +11609,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Rh](C[Rh](C#[O+]).C1=CC=C[C-]1).C2=CC=C[C-]2": {
+  "[O+]#C[Rh]23456(C[Rh]789%10%11(C#[O+]).C1->2=C->3C->4=C->5[CH+]->61).C1->7=C->8C->9=C->%10[CH+]1->%11": {
   "chemical_formula":
     [
     "(C5H5RhCO)2C*H2",
@@ -11684,7 +11636,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 93 in Jolly et al.)"
   ]
 },
-  "CC1=C(C)C(C)([Mn](C#[O+])(C#[O+])C#[O+])C(C)=C1C": {
+  "C->21=C->3(C)[C+]->4(C)C->5(C)=C->61C.[Mn]23456(C#[O+])(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "(C*5(CH3)5)Mn(CO)3",
@@ -11711,7 +11663,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 153 in Jolly et al.)"
   ]
 },
-  "CC1=C(C)C(C)([Re](C#[O+])(C#[O+])C#[O+])C(C)=C1C": {
+  "CC->21=C->3(C)[C+]->4(C)C->5(C)=C->61C.[Re]23456(C#[O+])(C#[O+])C#[O+]": {
   "chemical_formula":
     [
     "(C*5(CH3)5)Re(CO)3",
@@ -11807,7 +11759,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 92 in Jolly et al.)"
   ]
 },
-  "O=C1[Fe](C#[O+])C(=O)[Fe]1C#[O+].C1=CC=CC1.C1=CC=CC1": {
+  "O=C1[Fe]23456(C#[O+])C(=O)[Fe]1789%10%11C#[O+].C1->2=C->3C->4=C->5C->61.C->71=C->8C->9=C->%10C->1%11": {
   "chemical_formula":
     [
     "(C*5H5)2Fe2(CO)4",
@@ -11954,7 +11906,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 1 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Mn](C#[O+])(C[Mn](C#[O+])(C#[O+]).C1=CC=C[C-]1).C2=CC=C[C-]2": {
+  "[O+]#C[Mn]23456(C#[O+])(C[Mn]789%10%11(C#[O+])(C#[O+]).C->21=C->3C->4=C->5[CH+]->61).C->71=C->8C->9=C->%10[CH+]->1%11": {
   "chemical_formula":
     [
     "(C5H5Mn(CO)2)2C*H2",
@@ -12014,7 +11966,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 92 in Jolly et al.)"
   ]
 },
-  "Cc4cccc(O[Cr](Oc1cccc(C)n1)[Cr](OC2=CC=CC(C)=N2)OC3=CC=CC(C)=N3)n4": {
+  "[Cr]%10%11%12%13%14%15%16%17$[Cr]23456789.C1->2(=O)C->3=C->4C(C)=N1->5.C1->6(=O)C->7=C->8C(C)=N1->9.C1->%10(=O)C->%11=C->%12C(C)=N1->%13.C1->%14(=O)C->%15=C->%16C(C)=N1->%17": {
   "chemical_formula":
     [
     "Cr2(OC.CHCHCHC(CH3)N.)4 (C*H)",
@@ -12044,7 +11996,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 147 in Jolly et al.)"
   ]
 },
-  "Cc4cccc(O[Mo](Oc1cccc(C)n1)[Mo](OC2=CC=CC(C)=N2)OC3=CC=CC(C)=N3)n4": {
+  "[Mo]%10%11%12%13%14%15%16%17$[Mo]23456789.C1->2(=O)C->3=C->4C(C)=N1->5.C1->6(=O)C->7=C->8C(C)=N1->9.C1->%10(=O)C->%11=C->%12C(C)=N1->%13.C1->%14(=O)C->%15=C->%16C(C)=N1->%17": {
   "chemical_formula":
     [
     "Mo2(OC.CHCHCHC(CH3)N.)4",
@@ -12065,7 +12017,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 147 in Jolly et al.)"
   ]
 },
-  "CCCC.[Cd]": {
+  "CC[Cd]CC": {
   "chemical_formula":
     [
     "Cd(C2H5)2"
@@ -12083,7 +12035,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 86 in Jolly et al.)"
   ]
 },
-  "CCCCCC.[Cd]": {
+  "CCC[Cd]CCC": {
   "chemical_formula":
     [
     "Cd(CH2CH2CH3)2"
@@ -12101,7 +12053,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 88 in Jolly et al.)"
   ]
 },
-  "[CH2][Si](C)(C)C.[CH2][Si](C)(C)C.[Cd]": {
+  "C[Si](C)(C)C[Cd]C[Si](C)(C)C": {
   "chemical_formula":
     [
     "Cd(CH2Si(CH3)3)2"
@@ -12143,7 +12095,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 177 in Jolly et al.)"
   ]
 },
-  "[2H]C(=C(Cl)Cl)[2H]": {
+  "C(=C(Cl)Cl)": {
   "chemical_formula":
     [
     "1,1-C2H2Cl2"
@@ -12470,7 +12422,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 145 , 105 in Jolly et al.)"
   ]
 },
-  "Cl[Mo](N=O)(N=O).C1=CC=C[C-]1": {
+  "Cl[Mo]23456(N=O)(N=O).C1->2=C->3C->4=C->5[CH+]1->6": {
   "chemical_formula":
     [
     "C5H5Mo(NO)2Cl",
@@ -12491,7 +12443,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 139 in Jolly et al.)"
   ]
 },
-  "Cl[W](N=O)(N=O).C1=CC=C[C-]1": {
+  "Cl[W]23456(N=O)(N=O).C1->2=C->3C->4=C->5[CH+]1->6": {
   "chemical_formula":
     [
     "C5H5W(NO)2Cl"
@@ -12548,7 +12500,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 38 in Jolly et al.)"
   ]
 },
-  "Cl\\C=C\\Cl.C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "Cl\\C->1=C->2\\Cl.[Fe]12(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "Fe(CO)4trans-ClCHCHCl"
@@ -12566,7 +12518,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 186 in Jolly et al.)"
   ]
 },
-  "ClC(=C)Cl.C(=O)=[Fe](=C=O)(=C=O)=C=O": {
+  "ClC->1(=C->2)Cl.[Fe]12(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "Fe(CO)4Cl2CCH2"
@@ -12995,7 +12947,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)"
   ]
 },
-  "[O+]#C[Cr](C#[O+])(N=S).C1=CC=C[C-]1": {
+  "[O+]#C[Cr]23456(C#[O+])(N=S).C1->2=C->3C->4=C->5[CH+]1->6": {
   "chemical_formula":
     [
     "Cr(C5H5)(CO)2NS"
@@ -13013,7 +12965,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 62 , 144 in Jolly et al.)"
   ]
 },
-  "[N-]=O.[N-]=O.[N-]=O.[N-]=O.[Cr+4]": {
+  "[Cr+4]([N-]=O)([N-]=O)([N-]=O)([N-]=O)": {
   "chemical_formula":
     [
     "Cr(NO)4",
@@ -13286,7 +13238,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)"
   ]
 },
-  "F[Si](F)(F)[Mn](=C=O)(=C=O)(=C=O)(=C=O)=C=O": {
+  "F[Si](F)(F)[Mn](C#[O+])(C#[O+])(C#[O+])(C#[O+])(C#[O+])": {
   "chemical_formula":
     [
     "SiF3Mn(CO)5",
@@ -13325,7 +13277,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)"
   ]
 },
-  "C1=C(C=C(C(=C1F)F)F)F": {
+  "C1(F)=C(F)C(F)=C(F)C=C1": {
   "chemical_formula":
     [
     "o-C6H2F4",
@@ -13370,7 +13322,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 49 in Jolly et al.)"
   ]
 },
-  "[N-](F)F": {
+  "[N](F)F": {
   "chemical_formula":
     [
     "NF2",
@@ -14105,7 +14057,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 65 in Jolly et al.)"
   ]
 },
-  "C=CC=C.[O+]#C[Fe](C#[O+])C#[O+]": {
+  "[Fe]1234(C#[O+])(C#[O+])(C#[O+]).C->1=C->2C->3=C->4": {
   "chemical_formula":
     [
     "(CH2C*HC*HCH2)Fe(CO)3",
@@ -14861,19 +14813,22 @@
   "chemical_formula":
     [
     "P(CH3)3NH",
+    "P(CH3)3NH",
     "P(CH3)3NH"
   ],
    "orbitals":
     [
+    "C 1s",
     "N 1s",
     "P 2p3/2"
   ],
    "binding_energies":
     [
-    402.55, 137.56
+      290.8, 402.55, 137.56
   ],
    "references":
-    [
+    [    
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 5 , 27 in Jolly et al.)"
   ]
@@ -14914,7 +14869,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 178 in Jolly et al.)"
   ]
 },
-  "C#CCC#[NH+]": {
+  "[N+]1C=CC=C1": {
   "chemical_formula":
     [
     "N.CHCHCHC.H"
@@ -14932,7 +14887,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
   ]
 },
-  "C=CCC#N": {
+  "C1CC1C#N": {
   "chemical_formula":
     [
     "C.H2CH2C.HCN"
@@ -15154,12 +15109,12 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 , 121 in Jolly et al.)"
   ]
 },
-  "C1=CNC(=O)C(=C1)O": {
+  "O[N]1C=CC=CC1(=O)": {
   "chemical_formula":
     [
-    "N-hydroxyl-2-pyridone",
-    "N-hydroxyl-2-pyridone (CO*)",
-    "N-hydroxyl-2-pyridone (O*H)"
+    "C.HCHCHCHCON.OH",
+    "C.HCHCHCHCON.OH (CO*)",
+    "C.HCHCHCHCON.OH (O*H)"
   ],
    "orbitals":
     [
@@ -15259,7 +15214,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 120 in Jolly et al.)"
   ]
 },
-  "CCCCN=C=O": {
+  "C1CCC(=O)N1C": {
   "chemical_formula":
     [
     "C.H2CH2CH2CON.CH3"
@@ -15451,7 +15406,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
   ]
 },
-  "CCN1C=CC=C1C=O": {
+  "C1(O)=CC=CC(C)=[N]1": {
   "chemical_formula":
     [
     "HOC.CHCHCHC(CH3)N."
@@ -15469,7 +15424,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 147 in Jolly et al.)"
   ]
 },
-  "CC(=O)C1=CC=CN1": {
+  "O=C1C=CC=C(C)N1": {
   "chemical_formula":
     [
     "OC.CHCHCHC(CH3)N.H",
@@ -15526,7 +15481,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)"
   ]
 },
-  "CCN1CCCC1=O": {
+  "C1CCCC(=O)[NH+]1C": {
   "chemical_formula":
     [
     "C.H2(CH2)3CON.HCH3"
@@ -15565,7 +15520,7 @@
   "C1CCC(CC1)N": {
   "chemical_formula":
     [
-    "cyclo-C6H11NH2"
+    "C6H11NH2"
   ],
    "orbitals":
     [
@@ -16147,7 +16102,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 2 , 22 in Jolly et al.)"
   ]
 },
-  "[N-]=[N+]=O": {
+  "N#[N+][O-]": {
   "chemical_formula":
     [
     "N*NO",
@@ -16237,7 +16192,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 44 , 2 in Jolly et al.)"
   ]
 },
-  "C1C=CC=[C-]1.C1C=CC=[C-]1.[Ni+2]": {
+  "[CH+]1->7C->8=C->9C->%10=C1->%11.[CH+]1->2C->3=C->4C->5=C1->6.[Ni]23456789%10%11": {
   "chemical_formula":
     [
     "Ni(C5H5)2"
@@ -16372,7 +16327,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 72 , 17 in Jolly et al.)"
   ]
 },
-  "CP(C)CO": {
+  "CP(C)(C)=O": {
   "chemical_formula":
     [
     "P(CH3)3O",
@@ -16588,7 +16543,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)"
   ]
 },
-  "CN1C=CC=C1C=O": {
+  "OC1=CC=CC(C)=N1": {
   "chemical_formula":
     [
     "HOC.CHCHCHC(CH3)N."
@@ -16606,7 +16561,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 147 in Jolly et al.)"
   ]
 },
-  "C1=CC=C(C(=C1)C=O)O": {
+  "C1=C(O)C=CC(=C1)C=O": {
   "chemical_formula":
     [
     "p-HO(C6H4)CHO*",
@@ -16627,7 +16582,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 6 in Jolly et al.)"
   ]
 },
-  "C1=CC=C(C=C1)C(=O)O": {
+  "C1(=O)C(O)=CC=CC=C1": {
   "chemical_formula":
     [
     "C.O*C(OH)CHCHCHCHC.H",
@@ -16744,7 +16699,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 175 in Jolly et al.)"
   ]
 },
-  "CC(=O)C1=CC=CC=C1O": {
+  "CC(=O)C1=CC=C(O)C=C1": {
   "chemical_formula":
     [
     "p-H3CO(C6H4)CHO*",
@@ -16765,7 +16720,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 59 in Jolly et al.)"
   ]
 },
-  "COC(=O)C1=CC=CC=C1": {
+  "C1(=O)C(OC)=CC=CC=C1": {
   "chemical_formula":
     [
     "C.O*C(OCH3)CHCHCHCHC.H",
@@ -17704,7 +17659,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 109 in Jolly et al.)"
   ]
 },
-  "C[Si](C)(C)C.O": {
+  "O([SiH](C)(C))([SiH](C)(C))": {
   "chemical_formula":
     [
     "((CH3)2SiH)2O"
@@ -18100,7 +18055,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 23 in Jolly et al.)"
   ]
 },
-  "B.[C-]#[O+]": {
+  "[BH3-][C]#[O+]": {
   "chemical_formula":
     [
     "BH3CO",
@@ -18184,7 +18139,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 3 in Jolly et al.)"
   ]
 },
-  "[H][C@@]12[BH]34[H][BH]356[H][BH]53[C@]1([H])[BH]4326": {
+  "[BH]12[BH]3[CH2]4[CH2]5[BH]1[BH]2345": {
   "chemical_formula":
     [
     "2,3-C2B4H8 (4, 6 B*)",
@@ -18208,7 +18163,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 3 in Jolly et al.)"
   ]
 },
-  "[BH]123[BH]45[CH]67[BH]89[CH]1([BH]2486)[BH]3597": {
+  "[BH]126[BH]37[BH]48[CH]59[BH]1([BH]2345)[CH]6789": {
   "chemical_formula":
     [
     "2,4-C2B5H7 (5, 6 B*)",
@@ -19048,7 +19003,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 7 in Jolly et al.)"
   ]
 },
-  "[C]#[O]": {
+  "[C-]#[O+]": {
   "chemical_formula":
     [
     "CO",
@@ -19447,7 +19402,7 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 174 in Jolly et al.)"
   ]
 },
-  "[Br-][Cs+]": {
+  "[Br][Cs]": {
   "chemical_formula":
     [
     "CsBr"
@@ -20527,8 +20482,8 @@
   "N1C(C=CC=C1)=O": {
   "chemical_formula":
     [
-    "2-pyridone",
-    "2-Pyridone"
+    "C.HCHCHCHCON.",
+    "C.HCHCHCHCON."
   ],
    "orbitals":
     [
