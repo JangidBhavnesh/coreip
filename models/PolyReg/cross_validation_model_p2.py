@@ -112,6 +112,8 @@ if __name__=='__main__':
         predict_loss = np.sqrt(np.mean((errors) ** 2))
         test_loss = [predict_loss]
         test_error.append(errors)
+        np.save("predict_"+str(n_cv),np.array(exp_energies))
+        np.save("error_"+str(n_cv),np.array(predict-exp_energies))
         print(f"CV #{n_cv}: Testing RMSE over {np.sum(~mask)} samples: {predict_loss:.3f}eV")
 
     print(f"Average {num_cross_val}-fold CV Training RMSE: {np.mean(train_loss)}eV")
