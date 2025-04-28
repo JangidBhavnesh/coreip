@@ -15607,24 +15607,6 @@
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 117 in Jolly et al.)"
   ]
 },
-  "O=C1C=CC=CN1CCO": {
-  "chemical_formula":
-    [
-    "N-hydroxylethyl-2-Pyridone"
-  ],
-   "orbitals":
-    [
-    "N 1s"
-  ],
-   "binding_energies":
-    [
-    407.41
-  ],
-   "references":
-    [
-    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)"
-  ]
-},
   "CC1=C(C=CC=C1N)N": {
   "chemical_formula":
     [
@@ -16531,20 +16513,23 @@
   "C1=CC(=O)N(C=C1)CCO": {
   "chemical_formula":
     [
-    "N-hydroxylethyl-2-Pyridone (Pyridone*)",
-    "N-hydroxylethyl-2-Pyridone (hydroxylethyl*)"
+    "C5H4ONCH2CH2O*H",
+    "C5H4O*NCH2CH2OH",
+    "C5H4ONCH2CH2OH"
   ],
    "orbitals":
     [
-    "O 1s",
-    "O 1s"
+      "O 1s",
+      "O 1s",
+      "N 1s"
   ],
    "binding_energies":
     [
-    536.49, 539.58
+      407.41, 536.49, 539.58
   ],
    "references":
     [
+    "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)",
     "Data obtained from Jolly et al., At. Data Nucl. Data Tables 31, 433 (1984). (Reference(s) 105 in Jolly et al.)"
   ]
