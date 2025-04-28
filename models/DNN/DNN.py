@@ -89,7 +89,6 @@ def get_eneg_mats(smile, num_elements=100):
 
 def process_nodes(node_raw_data, vectors):
     node_data = []
-    dup_orbs = {}
     temp_list = []
     
     for n in node_raw_data:
@@ -120,7 +119,10 @@ def process_nodes(node_raw_data, vectors):
             # AKA, train against the difference from reference atomic orbital energy
             # Each entry is as follows:
             # [Atomic Num, formal charge, e_neg_score, quantum number 'n', quantum number 'l', binding_e - atomic_orbital_e]
-            node_data += [np.array([Chem.Atom(symbol).GetAtomicNum(), formal_charge, e_neg_score, n, l, binding_e-ref_e],dtype=np.float32)]
+            # one-hot encoding of atomic number
+            temp_arr = lmat.flatten().tolist()
+            temp_arr += [formal_charge, e_neg_score, n, l, binding_e-ref_e]
+            node_data += [np.array(temp_arr,dtype=np.float32)]
     node_data = np.atleast_2d(node_data)   
     return node_data
 
@@ -157,11 +159,11 @@ def networkx2arr(data):
     return np.vstack(graph_data)
 
 class NeuralNetwork(nn.Module):
-    def __init__(self):
+    def __init__(self, in_dim):
         super().__init__()
         self.flatten = nn.Flatten()
         self.linear_relu_stack = nn.Sequential(
-            nn.Linear(5, 256),
+            nn.Linear(in_dim, 256),
             nn.ReLU(),
             nn.Dropout(0.1),
             nn.Linear(256,256),
@@ -225,18 +227,18 @@ if __name__=='__main__':
     batch_size = 16
     epochs = 50
     loss_fn = nn.MSELoss()
-
     # loss_fn = nn.L1Loss()
-    
-    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-    print(f"Using {device} device")
-    model = NeuralNetwork().to(device)
-    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-5)
-    
+
     # Load in networkx graphs
     data = load_data_from_file(in_filename)
     graph_data = networkx2arr(data)
     unique_data = np.unique(graph_data, axis=0)
+
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    print(f"Using {device} device")
+    model = NeuralNetwork(in_dim=graph_data[0].shape[0]-1).to(device)
+    optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate, weight_decay=1e-5)
+    
 
     # np.random.seed()
     indices = np.arange(unique_data.shape[0])
