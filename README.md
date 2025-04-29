@@ -1,7 +1,10 @@
-# coreip
+# Team: COREIP
 
-Team:
-Bhavnesh
-Joshua
+# Challenge: https://github.com/JangidBhavnesh/ai-sci-hackathon-2025
+
+Team Members:
+Bhavnesh Jangid
+Joshua 
 Valay
 Jacob
+
